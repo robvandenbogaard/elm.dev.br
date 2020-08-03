@@ -1,0 +1,6 @@
+[book]
+authors = ["Marcio Frayze David"]
+language = "pt-br"
+multilingual = false
+src = "src"
+title = "elm dev br"
