@@ -1,2 +1,81 @@
-# Aula 1
-Em breve =)
+# Aula 1 - Introdução
+
+## Seja bem-vinda!
+Este site foi criado para ensinar programação.
+Mas, o que é um progama de computador?
+Um **programa** nada mais é do que um texto que
+segue determinadas regras. O computador irá
+processar essas instruções e executá-las.
+
+A pessoa que escreve este tipo de texto
+é chamada de **Pessoa Desenvolvedora** ou Programadora.
+E o tipo de texto que esta pessoa escreve,
+que será lido pelo computador, recebe um nome
+especial: Código de Programação (normalmente
+chamado apenas de **código** ou **código fonte**).
+Neste curso, vou me referir a este tipo de
+texto como **código**.
+
+O conjunto de regras de como o programa deve
+ser escrito é definido por uma Linguagem de
+Programação. Ao longo da evolução da computação
+diversas linguagens de programação foram criadas.
+Neste curso vamos utilizar uma linguagem
+chamada *[Elm](https://elm-lang.org/)*.
+
+Este curso é dividido em várias aulas, mas todas
+seguem o mesmo formato:  
+No início do texto introduzo algum tema novo,
+mostro exemplos para explicar melhor o tema
+e em seguida proponho alguns desafios para você.
+É **muito** importante que você faça os desafios!
+É a parte mais importante (e divertida!) de toda
+aula.  
+Alguns desafios são fáceis, outros mais
+difíceis. É normal ter um pouco de dificuldade e faz parte
+do aprendizado. Explore, experimente e não tenha
+medo de errar. O máximo que pode acontecer é
+aparecer uma mensagem de erro :)
+
+## Mas afinal, como é escrito um código?
+
+Abaixo temos nosso primeiro exemplo! O Famoso _"Olá Mundo!"_, que
+apenas exibe este texto na tela.
+
+```
+import Html exposing (text)
+
+main =
+  text "Olá Mundo!"
+```
+
+Mas como fazemos para **executar** este código?  
+Para facilitar nossa vida, vamos fazer isso através do navegador! :)  
+Abra uma nova aba em seu navegador e acesse o seguinte site:
+[https://elm-lang.org/try](htts://elm-lang.org/try).  
+Em seguida, copie todo o código acima e cole na parte da esquerda do site.
+
+Pressione *Compile* e você deve ver o resultado da execução
+na direita de sua tela, conforme imagem abaixo:
+
+![Nosso primeiro código](/resources/elm-lang-try-ola-mundo.png)
+
+Parabéns! Você acaba de criar seu primeiro programa na linguagem de programação *Elm*!  
+
+## E agora?
+
+Neste curso vamos aprender como desenhar figuras
+na tela, criar animações e vamos desenvolver, juntos,
+jogos que você poderá jogar no seu computador.
+
+Agora siga para [Aula 2](/aula_2.html) e bons estudos!
+
+# Atenção
+
+Este curso ainda está sendo criado e por enquanto possui uma quantidade
+reduzida de aulas. Novas aulas vão ser publicadas ao longo das
+próximas semanas!
+
+Gostou da ideia deste projeto? Quer mandar alguma sugestão ou tirar
+alguma dúvida? Entre em contato com o autor enviando um e-mail para
+**marcio@segunda.tech**.

@@ -1,4 +1,15 @@
 # Summary
 
-- [Introdução](./introducao_0.md)
-- [Aula 1](./aula_1.md)
+- [Aula 1 - Introdução](./aula_1.md)
+- [Aula 2 - Desenhando na tela](./aula_2.md)
+  - [Desafios](./aula_2_desafios.md)
+  - [Resposta dos desafios](./aula_2_desafios_respostas.md)
+- [Aula 3 - Posicionando elementos](./aula_3.md)
+  - [Desafios](./aula_3_desafios.md)
+  - [Resposta dos desafios](./aula_3_desafios_respostas.md)
+- [Aula 4 - Criando funções](./aula_4.md)
+  - [Desafios](./aula_4_desafios.md)
+  - [Resposta dos desafios](./aula_4_desafios_respostas.md)
+- [Aula 5 - Passagem de parâmetros](./aula_5.md)
+  - [Desafios](./aula_5_desafios.md)
+  - [Resposta dos desafios](./aula_5_desafios_respostas.md)
