@@ -1,7 +1,7 @@
 # Aula 2: Resposta dos desafios
 
 Abra o seguinte endereço em uma outra aba em seu navegador:
-[https://elm-lang.org/try](htts://elm-lang.org/try).  
+<a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>.  
 
 Copie a resposta de cada exercício abaixo e
 tente entendê-las antes de pressionar *Compile*.  
@@ -48,9 +48,10 @@ black, lightGray, gray e darkGray.
 ## DESAFIO 3 (avançado): Crie 2 círculos, um dentro do outro.
 
 Para desenhar mais de uma figura geométrica,
-separamos cada uma com uma virgula. No exemplo
+separamos cada figura com uma vírgula. No exemplo
 abaixo temos um círculo vermelho dentro de um
-verde.
+verde.  
+Lembre-se que os símbolos **[** e **]** indicam uma lista.  
 
 ```
 import Playground exposing (..)
@@ -61,6 +62,13 @@ main =
     , circule red 50
     ]
 ```
+
+Você deve ser capaz de ler o código acima e interpreta-lo da
+seguinte maneira:  
+A nosso programa (*main*) é definido com sendo um
+desenho (*picture*) que contêm uma lista (indicada
+pelo símbolo **[**) de duas figuras que, neste caso,
+são dois círculos.
 
 ## DESAFIO 4 (avançado): Crie 4 círculos, um dentro do outro.
 

@@ -32,8 +32,6 @@ rodaTraseira =
 
 ## DESAFIO 2 (fácil): Desenhe frutas na árvore.
 
-O código abaixo representa uma árvore sem frutas.
-
 ```
 import Playground exposing (..)
 

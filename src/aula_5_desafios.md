@@ -39,8 +39,9 @@ que represente o tamanho do círculo.
 Tente aumentar e diminuir o tamanho
 do círculo.  
 __Dica__: Se você passar um valor muito grande ou muito pequeno
-provavelmente sua árvore ficará estranha. Não se preocupe com
-esses cenários por enquanto.
+provavelmente sua árvore ficará estranha, já que as folhas não
+estarão tocando o tronco. Não se preocupe com esses cenários
+por enquanto.
 
 ## E agora?
 

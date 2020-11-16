@@ -1,8 +1,15 @@
 # Aula 1 - Introdução
 
 ## Seja bem-vinda!
-Este site foi criado para ensinar programação.
-Mas, o que é um progama de computador?
+Este site foi criado para ensinar programação.  
+Você não precisa ter nenhum conhecimento prévio.
+Vamos desvendar os principais conceitos por trás desta
+área de forma gradual e divertida.  
+Ao longo do curso você aprenderá como desenhar figuras
+na tela, criar animações e vamos desenvolver, juntos,
+jogos simples que você poderá jogar no seu navegador!
+
+## O que é um programada de computador?
 Um **programa** nada mais é do que um texto que
 segue determinadas regras. O computador irá
 processar essas instruções e executá-las.
@@ -21,11 +28,11 @@ ser escrito é definido por uma Linguagem de
 Programação. Ao longo da evolução da computação
 diversas linguagens de programação foram criadas.
 Neste curso vamos utilizar uma linguagem
-chamada *[Elm](https://elm-lang.org/)*.
+chamada *<a href='https://elm-lang.org/' target='_blank'>Elm</a>*.
 
 Este curso é dividido em várias aulas, mas todas
 seguem o mesmo formato:  
-No início do texto introduzo algum tema novo,
+No início da aula introduzo algum tema novo,
 mostro exemplos para explicar melhor o tema
 e em seguida proponho alguns desafios para você.
 É **muito** importante que você faça os desafios!
@@ -52,7 +59,7 @@ main =
 Mas como fazemos para **executar** este código?  
 Para facilitar nossa vida, vamos fazer isso através do navegador! :)  
 Abra uma nova aba em seu navegador e acesse o seguinte site:
-[https://elm-lang.org/try](htts://elm-lang.org/try).  
+<a href=https://elm-lang.org/try target='_blank'>https://elm-lang.org/try</a>.  
 Em seguida, copie todo o código acima e cole na parte da esquerda do site.
 
 Pressione *Compile* e você deve ver o resultado da execução
@@ -64,17 +71,17 @@ Parabéns! Você acaba de criar seu primeiro programa na linguagem de programaç
 
 ## E agora?
 
-Neste curso vamos aprender como desenhar figuras
-na tela, criar animações e vamos desenvolver, juntos,
-jogos que você poderá jogar no seu computador.
+Nas próximas aulas vamos aprender a desenhar figuras na tela
+e aos poucos vamos discutir vários fundamentos da programação.  
+Você entenderá o que são funções, parâmetros e muito mais!
 
-Agora siga para [Aula 2](/aula_2.html) e bons estudos!
+Agora siga para [Aula 2](/aula_2.html) e bons estudos.
 
 # Atenção
 
 Este curso ainda está sendo criado e por enquanto possui uma quantidade
 reduzida de aulas. Novas aulas vão ser publicadas ao longo das
-próximas semanas!
+próximas semanas.
 
 Gostou da ideia deste projeto? Quer mandar alguma sugestão ou tirar
 alguma dúvida? Entre em contato com o autor enviando um e-mail para

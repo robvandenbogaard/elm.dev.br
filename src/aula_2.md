@@ -26,7 +26,7 @@ com esta linha.
 
 Hora de programar!  
 Vamos desenhar um círculo na tela?  
-Abra novamente o site [https://elm-lang.org/try](https://elm-lang.org/try)
+Abra novamente o site <a href='https://elm-lang.org/try' target='_blank'>https://elm-lang.org/try</a>
 em uma outra aba de seu navegador e cole o código abaixo.
 
 ```
@@ -41,7 +41,7 @@ Em seguida pressione *Compile* e veja o resultado da execução conforme imagem 
 
 ![Desenhando um circulo](/resources/elm-lang-try-circulo.png)
 
-Fácil né?! Mas o que está acontecendo?!
+Fácil né? Mas o que está acontecendo?!
 
 ## 3- O que é o *main*?
 
@@ -49,7 +49,7 @@ A palavra *main* em inglês significa principal.
 É através dela que indicamos para o computador
 onde começa nosso programa.  
 Portanto, todos os nossos programas vão precisar
-ter essa linha: 
+ter essa linha:
 
 ```
 main =
@@ -67,7 +67,7 @@ A palavra *picture* em inglês significa desenho.
 É através dela que expressamos para o computador
 que queremos desenhar algo na tela.  
 Em seguida criamos uma LISTA (representada pelos
-simbolos **[** e **]**) de formas geométricas, que 
+símbolos **[** e **]**) de formas geométricas, que 
 vão formar nosso desenho (*picture*). Neste exemplo
 nosso desenho é formado por apenas uma forma
 geométrica: um círculo.

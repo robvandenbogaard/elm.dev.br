@@ -9,9 +9,9 @@
 ## 1- Como desenhar outras figuras geométricas.
 
 Além de círculos, podemos desenhar:
-- Triagulos (triangle)
+- Triâgulos (triangle)
 - Quadrados (square)
-- Retangulos (rectangle)
+- Retângulos (rectangle)
 - Ovais (oval)
 - Pentagonos (pentagon)
 - Hexagonos (hexagon)
@@ -28,7 +28,7 @@ dentro do quadrado e por último um pequeno
 retângulo.  
 
 Mais uma vez, abra uma aba em seu navegador o site
-[https://elm-lang.org/try](https://elm-lang.org/try),
+<a href='https://elm-lang.org/try' target='_blank'>https://elm-lang.org/try</a>,
 cole o código abaixo e pressione *Compile* para ver o resultado.
 
 ```
@@ -43,8 +43,8 @@ main =
     ]
 ```
 
-Note que no caso do círculo, o segundo PARÂMETRO
-é o tamanho do RAIO. Já no quadrado, o segundo
+Note que no caso do círculo, o segundo parâmetro 
+é o tamanho do raio. Já no quadrado, o segundo
 parâmetro é o tamanho dos lados (lembre-se que
 os lados de um quadrado tem sempre o mesmo
 tamanho, por isso precisamos passar apenas um
@@ -52,8 +52,8 @@ número).
 
 No caso do triângulo, será desenhado um triângulo
 equilatero (todos os lados de tamanhos iguais).
-Mas o número do segundo parâmetro NÃO é o tamanho
-dos lados, mas sim o RAIO, ou seja, a distância
+Mas o número do segundo parâmetro **não** é o tamanho
+dos lados, mas sim o raio, ou seja, a distância
 entre o centro do triângulo e os 3 pontos que
 formam o triângulo (similar ao raio do círculo).  
 Ficou em dúvida? Altere o tamanho do triângulo
@@ -64,7 +64,7 @@ Note também que o retângulo recebe, além da cor,
 dois parâmetros numéricos.  
 Consegue imaginar o que significam?  
 O primeiro número representa a largura do
-retângulo e o último sua altura.
+retângulo e o último, sua altura.
 
 ## 2 - Posicionar uma forma geométrica.
 
@@ -79,24 +79,23 @@ complexos temos que posicionar os elementos
 na tela. Para isso, basta logo depois de
 declarar uma forma geométrica, colocar o
 simbolo **|>**, que indica que queremos
-aplicar uma transformação. Em seguida, podemos
+aplicar uma **transformação**. Em seguida, podemos
 pedir para o computador MOVER a forma geométrica
 com a operação *move* (mover em inglês).  
+
 Para mover algo precisamos passar dois
-PARÂMETROS: o valor do deslocamento no eixo
-x e o valor do deslocamento no eixo y.  
-O valor do eixo x vai deslocar a forma
+parâmetros: o valor do deslocamento no eixo
+*x* e o valor do deslocamento no eixo *y*.  
+O valor do eixo *x* vai deslocar a forma
 geométrica para direita do centro da tela
 (caso o valor seja positivo) ou para
 esquerda (caso o valor seja negativo).  
-O valor de y irá desloca-la
+O valor de *y* irá desloca-la
 para baixo (caso valor seja negativo)
 ou para cima (caso positivo).  
 __Dica__: o ponto 0,0 encontra-se bem no
 meio da tela e é a partir dele que
 vamos deslocar as formas geométricas.
-Ficou confusa? Tente alterar os valores
-e veja o resultado!
 
 No exemplo abaixo, desenhamos dois círculos,
 um ao lado do outro. Veja com atenção o
@@ -127,15 +126,16 @@ também rotacionar as formas.
 Podemos fazer com que o triângulo fique
 um pouco torto, por exemplo.
 Assim temos mais liberdade na hora de
-desenhar!  
+desenhar.  
 Rotacionar uma forma é muito similar ao
 que fizemos para mova-las. Utilizamos
 o simbolo **|>** seguido da palavra
 *rotate* (rotacionar em inglês).  
+
 O *rotate* recebe apenas um parâmetro,
 que é um número entre 0 e 360, que
-representa o grau do ângulo.
-Este valor também pode ser negativo.  
+representa o grau do ângulo. Este valor 
+também pode ser negativo.  
 Valores positivos rotacionam a figura
 no sentido ANTI-horário. Negativos,
 no sentido horário.  
@@ -165,6 +165,6 @@ Fácil né?! Experimente mudar os número e veja o que acontece.
 ## E agora?
 
 Agora chegou a hora de você colocar as mãos na massa
-e praticar um pouco!
+e praticar mais um pouco!
 
-Siga para os [desafios da Aula 3](/aula_3_desafios.html) e bons estudos!
+Siga para os [desafios da Aula 3](/aula_3_desafios.html) e bons estudos.

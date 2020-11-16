@@ -8,7 +8,7 @@ resolve-los antes de ver as respostas!
 
 Antes de mais nada, abra o seguinte endereço em uma
 outra aba em seu navegador:
-[https://elm-lang.org/try](htts://elm-lang.org/try).  
+<a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>.  
 
 Copie e compile/execute o mesmo código que vimos durante a aula 2:
 
@@ -56,9 +56,9 @@ círculo. Tente adicionar um segundo círculo de
 outra cor e um pouco menor que o primeiro.
 
 __Dicas__:
-- Lembre-se que os simbolos **[** e **]** indicam uma
+- Lembre-se que os símbolos **[** e **]** indicam uma
 lista. Então o segundo círculo deve estar
-dentro desses simbolos.
+dentro desses símbolos.
 - Pense na lista como sendo algo similar à lista
 de compras no supermercado, mas ao invés de
 alimentos, nossa lista vai guardar formas

@@ -4,10 +4,6 @@
 
 Para resolvermos este desafio, bastava chamarmos
 a função *fruta* mais algumas vezes.  
-__Dica__: O que aconteceria se tentassemos desenhar
-frutas fora da árvore?! Por enquanto não temos nenhuma
-forma de bloquear isso, mas em um sistema real, teríamos
-que pensar em formas de evitar que isso acontecesse.
 
 ```
 import Playground exposing (..)
@@ -38,6 +34,11 @@ fruta x y =
     |> move x y
 ```
 
+O que aconteceria se tentassemos desenhar
+frutas fora da árvore? Por enquanto não temos nenhuma
+forma de bloquear isso, mas em um sistema real, teríamos
+que pensar em formas de evitar que isso acontecesse.
+
 ## DESAFIO 2 (intermediário): Tamanho de folhas parametrizável.
 
 No mesmo código do desafio 1, crie
@@ -45,7 +46,7 @@ um parâmetro para a função *folhas*
 que represente o tamanho do círculo.  
 Tente aumentar e diminuir o tamanho
 do círculo.  
-__Dica__: Se você passar um valor muito grande ou muito pequeno
+__Dicas__: Se você passar um valor muito grande ou muito pequeno
 provavelmente sua árvore ficará estranha. Não se preocupe com
 esses cenários por enquanto.
 

@@ -8,7 +8,7 @@ resolve-los antes de ver as respostas!
 
 Antes de mais nada, abra o seguinte endereço em uma
 outra aba em seu navegador:
-[https://elm-lang.org/try](htts://elm-lang.org/try).  
+<a href='https://elm-lang.org/try'>htts://elm-lang.org/try</a>.  
 
 ## DESAFIO 1 (fácil): Desenhe um carro.
 

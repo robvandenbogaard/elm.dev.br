@@ -8,16 +8,20 @@ o que é uma função??
 ## O que vamos aprender?
 
 1. O que é uma funcão?
+  1.1 Funções matemáticas
+  1.2 Funções na programação
 2. Como criar nossas próprias funções?
+3. Vantagens ao utilizamos funções
 
 ## 1- O que é uma função?
+
 Conforme nosso código cresce, vai ficando cada
 vez mais difícil identificarmos o que significa
 cada uma de suas partes.  
 Por exemplo, no código que desenhamos um ônibus
 no desafio da aula 2: quanto mais detalhes
 colocávamos no desenho, maior
-ficava o nosso "main".  
+ficava o nosso *main*.  
 Mas afinal, o que é esse *main*? Ela é uma **função**.  
 Na linguagem de programação *Elm*, quase tudo
 que fazemos são funcões! Isso por que ela é uma
@@ -25,8 +29,10 @@ linguagem que segue o paradigma **funcional**. Existem
 vários tipos de linguagens: Orientadas à Objetos,
 Imperativas, Lógicas e também as Funcionais.
 
+## 1.1- Funções matemáticas
+
 Provavelmente você já deve ter ouvindo falar em
-funções matemáticas na escola. Coisas como:  
+funções nas aulas de matemáticas na escola. Coisas como:  
 
 ```
 x = y + 2
@@ -67,15 +73,18 @@ z = 5 + 10
 
 Assim chegamos a conclusão que *z* é igual a 15.
 
+## 1.2 Funções na programação
+
 Em programação (em especial em linguagens funcionais,
-como *Elm*), o conceito de funcão é muito parecido.  
-A função matemática *z* dependendia de *y* e de *x*, certo?  
+como *Elm* ou <a href='https://www.haskell.org/' target='_blank'>*Haskell*</a>),
+o conceito de funcão é muito parecido.  
+A função matemática *z* depende de *y* e de *x*, certo?  
 Podemos fazer algo similar com nossa função *main*,
 tornando-a dependente de outras funções menores e
 mais simples. Isso tornará nosso código muito mais
 fácil de ler e alterar depois.
 
-Ficou confusa? Vai ficar mais fácil de entender com o
+Achou confuso? Vai ficar mais fácil de entender com o
 exemplo a seguir.
 
 ## 2- Como criar nossas próprias funções?
@@ -192,6 +201,8 @@ Neste último exemplo, a função *arvore* retorna
 uma lista de formas geométricas, contendo um
 tronco e uma folha.
 
+## 3- Vantagens ao utilizarmos funções
+
 Existem 2 grandes vantagens em dividirmos
 nossos códigos em várias funções.  
 A primeira é que torna mais fácil de
@@ -200,17 +211,18 @@ expressarmos nossas intenções. Observe a função
 a função *main* de nosso último código. Desta nova
 forma, fica muito mais explícito o que estamos
 tentando desenhar, certo?  
+
 Outra grande vantagem de programar assim é que
 agora o tronco e as folhas estão **desacopladas**.  
-Posso, por exemplo, re-utilizar a função *tronco*
+Posso, por exemplo, reutilizar a função *tronco*
 para desenhar outros tipos de árvores! Ou criar
-um novo tipo de tronco e re-aproveitar as folhas.
+um novo tipo de tronco e reaproveitar as folhas.
 Em programação, este é outro tema muito importante:
-Re-aproveitamento de códigos.
+Reaproveitamento de códigos.
 
 ## E agora?
 
 Agora chegou a hora de você colocar as mãos na massa
 e praticar um pouco!
 
-Siga para os [desafios da Aula 4](/aula_4_desafios.html) e bons estudos!
+Siga para os [desafios da Aula 4](/aula_4_desafios.html) e bons estudos.

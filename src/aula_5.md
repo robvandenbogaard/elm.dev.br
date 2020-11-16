@@ -3,6 +3,9 @@
 ## O que vamos aprender?
 
 1. Passagem de parâmetro.
+2. O que é uma biblioteca de software?
+3. Criando nossas próprias funções parametrizadas.
+4. Nomeando parâmetros.
 
 ## 1- Passagem de parâmetro.
 
@@ -15,7 +18,7 @@ Quando digitamos por exemplo:
 circle yellow 100
 ```
 
-No exemplo acima, *circle* é o nome de uma função, que tem
+*circle* é o nome de uma função, que tem
 dois **parâmetros**: a cor e um diâmetro.
 Por isso, sempre que vamos criar um
 círculo, precisamos passar estes 2
@@ -25,7 +28,7 @@ Esta função *circle* está definida
 dentro do *Playground*, que é uma
 biblioteca do *Elm*.  
 
-## O que é uma biblioteca de software?
+## 2- O que é uma biblioteca de software?
 
 Ao desenvolvermos um *software*, vamos nos deparar
 com vários problemas que já foram
@@ -44,7 +47,7 @@ uma biblioteca, chamada *Playground*,
 que contém funções que podemos utilizar
 para desenhar e animar coisas na tela.
 
-## Criando nossas próprias funções parametrizadas
+## 3- Criando nossas próprias funções parametrizadas
 
 As funções que definimos em nossos
 códigos também podem receber parâmetros.  
@@ -107,7 +110,7 @@ outra função na seguinte linha:
 move x y
 ```
 
-## Nomeando parâmetros
+## 4- Nomeando parâmetros
 
 Embora em nosso exemplo o nome dos
 parâmetros sejam apenas um caracter,
@@ -128,4 +131,4 @@ Dar bons nomes para nossas variáveis
 Agora chegou a hora de você colocar as mãos na massa
 e praticar mais um pouco!
 
-Siga para os [desafios da Aula 5](/aula_5_desafios.html) e bons estudos!
+Siga para os [desafios da Aula 5](/aula_5_desafios.html) e bons estudos.
