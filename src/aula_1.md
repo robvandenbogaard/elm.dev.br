@@ -5,11 +5,11 @@ Este site foi criado para ensinar programação.
 Você não precisa ter nenhum conhecimento prévio.
 Vamos desvendar os principais conceitos por trás desta
 área de forma gradual e divertida.  
-Ao longo do curso você aprenderá como desenhar figuras
+Ao longo do curso você aprenderá a desenhar figuras
 na tela, criar animações e vamos desenvolver, juntos,
 jogos simples que você poderá jogar no seu navegador!
 
-## O que é um programada de computador?
+## O que é um programa de computador?
 Um **programa** nada mais é do que um texto que
 segue determinadas regras. O computador irá
 processar essas instruções e executá-las.
