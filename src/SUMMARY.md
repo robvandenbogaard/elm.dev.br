@@ -13,3 +13,6 @@
 - [Aula 5 - Passagem de parâmetros](./aula_5.md)
   - [Desafios](./aula_5_desafios.md)
   - [Resposta dos desafios](./aula_5_desafios_respostas.md)
+- [Aula 6 - Nossa primeira animação](./aula_6.md)
+  - [Desafios](./aula_6_desafios.md)
+  - [Resposta dos esafios](./aula_6_desafios_respostas.md)
