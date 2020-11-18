@@ -1,4 +1,4 @@
-# Aula 4
+# Aula 4 - Criando funções.
 
 Esta aula será mais teórica, mas o que vamos
 aprender hoje é fundamental para entender todo

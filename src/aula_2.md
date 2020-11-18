@@ -1,4 +1,4 @@
-# Aula 2
+# Aula 2 - Desenhando na tela.
 
 ## O que vamos aprender?
 1. O que é um *import*?

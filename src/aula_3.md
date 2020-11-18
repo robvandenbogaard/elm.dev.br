@@ -1,4 +1,4 @@
-# Aula 3
+# Aula 3 - Posicionando elementos.
 
 ## O que vamos aprender?
 1. Como desenhar outras figuras geométricas.
