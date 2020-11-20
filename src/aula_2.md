@@ -1,11 +1,11 @@
 # Aula 2 - Desenhando na tela.
 
 ## O que vamos aprender?
-1. O que é um *import*?
-2. Desenhar uma esfera.
-3. O que é o *main*?
-4. O que é o *picture*?
-5. O que é o *circle*?
+1. O que é um *import*?  
+2. Desenhar uma esfera.  
+3. O que é o *main*?  
+4. O que é o *picture*?  
+5. O que é o *circle*?  
 
 ## 1- O que é um *import*?
 

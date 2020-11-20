@@ -1,10 +1,10 @@
 # Aula 3 - Posicionando elementos.
 
 ## O que vamos aprender?
-1. Como desenhar outras figuras geométricas.
+1. Como desenhar outras figuras geométricas.  
 2. Posicionar uma forma geométrica.  
   2.1 Movendo a forma geométrica.  
-  2.2 Rotacionando a forma geométrica.
+  2.2 Rotacionando a forma geométrica.  
 
 ## 1- Como desenhar outras figuras geométricas.
 

@@ -33,7 +33,7 @@ __DICAS__:
   - Lembre-se que a função *rotate* pode receber valores positivos
   ou negativos. Valores positivos fazem com que a figura seja rotacionado
   no sentido anti-horário e valore negativos no sentido horário.  
-  - Para girar no sentido anti-horário o resultado do valor (spin 8 time) 
+  - Para girar no sentido anti-horário o resultado do valor *(spin 8 time)*
   precisa ser negativo.
 
 ## E agora?

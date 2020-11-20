@@ -2,10 +2,10 @@
 
 ## O que vamos aprender?
 
-1. Passagem de parâmetro.
-2. O que é uma biblioteca de software?
-3. Criando nossas próprias funções parametrizadas.
-4. Nomeando parâmetros.
+1. Passagem de parâmetro.  
+2. O que é uma biblioteca de software?  
+3. Criando nossas próprias funções parametrizadas.  
+4. Nomeando parâmetros.  
 
 ## 1- Passagem de parâmetro.
 

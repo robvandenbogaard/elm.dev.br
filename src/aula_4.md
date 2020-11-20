@@ -7,11 +7,11 @@ o que é uma função??
 
 ## O que vamos aprender?
 
-1. O que é uma funcão?
-  1.1 Funções matemáticas
-  1.2 Funções na programação
-2. Como criar nossas próprias funções?
-3. Vantagens ao utilizamos funções
+1. O que é uma funcão?  
+  1.1 Funções matemáticas  
+  1.2 Funções na programação  
+2. Como criar nossas próprias funções?  
+3. Vantagens ao utilizamos funções  
 
 ## 1- O que é uma função?
 
