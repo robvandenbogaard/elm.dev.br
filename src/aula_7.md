@@ -60,7 +60,7 @@ valor mínimo e o tamanho máximo. Já os 2 últimos parâmetros estão
 relacionados com a velocidade que você quer que os valores sejam alterados.  
 No nosso exemplo, o valor 7 indica quantos segundos deve demorar o
 ciclo total e o *time* é a hora atual (que recebemos como parâmetro
-na função view e apenas repassamos o mesmo valor).
+na função *view* e apenas repassamos o mesmo valor).
 
 Agora releia o código anterior e tente entender melhor o que está
 acontecendo. Altere os valores 50, 100 e 7 para outros valores
