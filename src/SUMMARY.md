@@ -17,3 +17,5 @@
   - [Desafios](./aula_6_desafios.md)
   - [Resposta dos esafios](./aula_6_desafios_respostas.md)
 - [Aula 7 - Fazendo movimento de onda](./aula_7.md)
+  - [Desafios](./aula_7_desafios.md)
+  - [Resposta dos esafios](./aula_7_desafios_respostas.md)

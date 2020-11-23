@@ -1,4 +1,4 @@
-# Aula 7 - Fazendo movimento de onda.
+# Aula 7 - Fazendo movimentos de onda.
 
 ## O que vamos aprender?
 
@@ -69,10 +69,7 @@ tente imaginar como ficará a animação.
 
 ## E agora?
 
-Este curso ainda está sendo criado e por enquanto possui uma quantidade
-reduzida de aulas. Novas aulas vão ser publicadas ao longo das
-próximas semanas!
+Agora chegou a hora de você colocar as mãos na massa
+e praticar mais um pouco!
 
-Gostou da ideia deste projeto? Quer mandar alguma sugestão ou tirar
-alguma dúvida? Entre em contato com o autor enviando um e-mail para
-**marcio@segunda.tech**.
+Siga para os [desafios da Aula 7](/aula_7_desafios.html) e bons estudos.
