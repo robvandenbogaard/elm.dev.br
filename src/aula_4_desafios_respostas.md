@@ -5,6 +5,8 @@
 Escreva as três funções que estão faltando
 para desenhar o carro.
 
+### Resposta
+
 ```
 import Playground exposing (..)
 
@@ -31,6 +33,8 @@ rodaTraseira =
 ```
 
 ## DESAFIO 2 (fácil): Desenhe frutas na árvore.
+
+### Resposta
 
 ```
 import Playground exposing (..)

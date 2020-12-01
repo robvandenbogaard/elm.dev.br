@@ -7,6 +7,8 @@ e dois círculos para representar suas rodas.
 Utilize a instrução *move* para posicionar as
 rodas.
 
+### Resposta
+
 ```
 import Playground exposing (..)
 
@@ -22,6 +24,12 @@ main =
 
 ## DESAFIO 2 (fácil): Desenhe uma árvore.
 
+Utilize um retângulo marrom para representar
+o tronco e um círculo verde para representar
+as folhas.
+
+### Resposta
+
 ```
 import Playground exposing (..)
 
@@ -34,14 +42,12 @@ main =
     ]
 ```
 
-Utilize um retângulo marrom para representar
-o tronco e um círculo verde para representar
-as folhas.
-
 ## DESAFIO 3 (avançado): Desenhe uma estrela.
 
 Use triângulos para desenhar uma estrela
 de 6 pontas.
+
+### Resposta
 
 ```
 import Playground exposing (..)
@@ -59,6 +65,8 @@ main =
 Tente incluir janelas, a frente do ônibus
 e tudo mais que desejar! Não existe uma
 resposta errada. Use a imaginação!
+
+### Resposta
 
 ```
 import Playground exposing (..)

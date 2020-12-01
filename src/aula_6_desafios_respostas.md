@@ -17,6 +17,8 @@ view time =
 Altere o código definido acima para que o triângulo gire 2x mais rápido.  
 Em seguida altere-o para que gire 2x mais lento.
 
+### Resposta
+
 Para que o triângulo gire 2x mais rápido, basta dividir pela
 metade o primeiro parâmetro do método *spin*. Lembre-se: o primeiro
 parâmetro indica quantos segundos vai demorar para que a figura
@@ -65,6 +67,8 @@ ao que fizemos com o triângulo, mas passando um valor maior para a
 função *spin*, para que o intervalor de rotação seja maior.  
 Lembre-se que em uma lista, separamos os elementos através da vírgula.
 
+### Resposta
+
 Vamos quebrar a resposta em 2 partes. Primeiro vamos adicionar o
 quadrado (*square* em inglês) ao fundo da imagem sem animação:
 
@@ -110,6 +114,8 @@ __DICAS__:
   no sentido anti-horário e valore negativos no sentido horário.  
   - Para girar no sentido anti-horário o resultado do valor *(spin 8 time)* 
   precisa ser negativo.
+
+### Resposta
 
 Existem algumas formas de resolver este problema. Talvez a mais simples
 seja partirmos do valor 360 (graus) e subtraírmos deste valor o resultado

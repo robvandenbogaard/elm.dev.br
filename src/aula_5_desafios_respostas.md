@@ -2,6 +2,8 @@
 
 ## DESAFIO 1 (fácil): Crie mais frutas.
 
+### Resposta
+
 Para resolvermos este desafio, bastava chamarmos
 a função *fruta* mais algumas vezes.  
 
@@ -49,6 +51,8 @@ do círculo.
 __Dicas__: Se você passar um valor muito grande ou muito pequeno
 provavelmente sua árvore ficará estranha. Não se preocupe com
 esses cenários por enquanto.
+
+### Resposta
 
 Para resolver este desafio, criei um novo parâmetro na função *folhas*
 chamado diametro. Em seguida, repassei o valor desta variável
