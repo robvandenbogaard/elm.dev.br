@@ -19,3 +19,4 @@
 - [Aula 7 - Fazendo movimentos de onda](./aula_7.md)
   - [Desafios](./aula_7_desafios.md)
   - [Resposta dos esafios](./aula_7_desafios_respostas.md)
+- [Aula 8 - Fazendo movimentos de zigzag](./aula_8.md)
