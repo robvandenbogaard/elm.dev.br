@@ -5,7 +5,7 @@
 1. Como animar uma figura usando movimento ondular.  
 1.1 A função *wave*.  
 
-## 1- Animando figura com movimento ondular.
+## 1- Como animar uma figura usando movimento ondular.
 
 Antes, vamos relembrar como desenhamos um círculo na tela:
 
