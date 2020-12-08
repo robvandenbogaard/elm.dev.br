@@ -64,6 +64,19 @@ view time =
   ]
 ```
 
+## DESAFIO 3 (livre): Misture movimentos.
+
+Utilizando as funções *zigzag* e *wave*, desenhe figuras
+se movendo pela tela.  
+Você pode animar as rodas de um carro, os olhos de um animal,
+ou simplesmente desenhar várias figuras se movendo
+freneticamente pela tela! Use a imaginação.
+
+### Repostas
+
+Exercícios livres não possuem respostas certas ou erradas!
+O importante é praticar e se divertir.
+
 ## E agora?
 
 Este curso ainda está sendo criado e por enquanto possui uma quantidade

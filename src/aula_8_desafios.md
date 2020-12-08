@@ -26,13 +26,18 @@ Altere o código do exercício 1 para que o quadrado
 se mova na diagonal. O movimento deve começar no
 ponto -100, -100 e terminar em 100, 100.
 
+## DESAFIO 3 (livre): Misture movimentos.
+
+Utilizando as funções *zigzag* e *wave*, desenhe figuras
+se movendo pela tela.  
+Você pode animar as rodas de um carro, os olhos de um animal,
+ou simplesmente desenhar várias figuras se movendo
+freneticamente pela tela! Use a imaginação.
 
 ## E agora?
 
-Este curso ainda está sendo criado e por enquanto possui uma quantidade
-reduzida de aulas. Novas aulas vão ser publicadas ao longo das
-próximas semanas!
+Conseguiu fazer todos os exercícios? Teve dificuldade em algum?
 
-Gostou da ideia deste projeto? Quer mandar alguma sugestão ou tirar
-alguma dúvida? Entre em contato com o autor enviando um e-mail para
-**marcio@segunda.tech**.
+Siga para as [respostas dos desafios](/aula_6_desafios_respostas.html)
+para ver a solução.
+
