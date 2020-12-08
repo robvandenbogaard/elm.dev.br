@@ -1,4 +1,4 @@
-# Aula 7 - Fazendo movimentos de zigzag.
+# Aula 8 - Fazendo movimentos de zigzag.
 
 ## O que vamos aprender?
 
@@ -36,7 +36,7 @@ Para que, por exemplo, fazermos uma animação onde o círculo fique
 se movendo da esquerda para direita, precisaríamos variar sua posição na
 horizontal. Ou seja, substituirmos o valor -200 por um
 valor que se altere de forma linear ao longo do tempo. E a função zigzag cumpre 
-justamente este papel.
+justamente esta tarefa.
 
 ### 1.1 - A função *zigzag*.
 
@@ -76,10 +76,7 @@ jogos com essas funções?! :)
 
 ## E agora?
 
-Este curso ainda está sendo criado e por enquanto possui uma quantidade
-reduzida de aulas. Novas aulas vão ser publicadas ao longo das
-próximas semanas!
+Agora chegou a hora de você colocar as mãos na massa
+e praticar mais um pouco!
 
-Gostou da ideia deste projeto? Quer mandar alguma sugestão ou tirar
-alguma dúvida? Entre em contato com o autor enviando um e-mail para
-**marcio@segunda.tech**.
+Siga para os [desafios da Aula 8](/aula_8_desafios.html) e bons estudos.
