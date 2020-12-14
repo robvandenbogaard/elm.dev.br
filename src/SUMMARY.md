@@ -22,3 +22,4 @@
 - [Aula 8 - Fazendo movimentos de zigzag](./aula_8.md)
   - [Desafios](./aula_8_desafios.md)
   - [Resposta dos desafios](./aula_8_desafios_respostas.md)
+- [Aula 9 - Entendendo o que são records](./aula_9.md)
