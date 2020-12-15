@@ -14,7 +14,7 @@ através dos *Records*.
 
 ## 1- O que são os *Records*.  
 
-*Record* é uma forma de organizarmos nossos dados no linguagem
+*Record* é uma forma de organizarmos nossos dados na linguagem
 de programação *Elm*. 
 
 Com o que aprendemos até agora, se quisermos criar uma função que
