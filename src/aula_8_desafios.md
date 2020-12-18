@@ -38,6 +38,6 @@ freneticamente pela tela! Use a imaginação.
 
 Conseguiu fazer todos os exercícios? Teve dificuldade em algum?
 
-Siga para as [respostas dos desafios](/aula_6_desafios_respostas.html)
+Siga para as [respostas dos desafios](/aula_8_desafios_respostas.html)
 para ver a solução.
 
