@@ -79,10 +79,5 @@ O importante é praticar e se divertir.
 
 ## E agora?
 
-Este curso ainda está sendo criado e por enquanto possui uma quantidade
-reduzida de aulas. Novas aulas vão ser publicadas ao longo das
-próximas semanas!
+Siga para a [Aula 9](/aula_9.html) e bons estudos!
 
-Gostou da ideia deste projeto? Quer mandar alguma sugestão ou tirar
-alguma dúvida? Entre em contato com o autor enviando um e-mail para
-**marcio@segunda.tech**.

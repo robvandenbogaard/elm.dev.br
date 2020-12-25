@@ -177,10 +177,4 @@ certas ou erradas :)
 
 ## E agora?
 
-Este curso ainda está sendo criado e por enquanto possui uma quantidade
-reduzida de aulas. Novas aulas vão ser publicadas ao longo das
-próximas semanas!
-
-Gostou da ideia deste projeto? Quer mandar alguma sugestão ou tirar
-alguma dúvida? Entre em contato com o autor enviando um e-mail para
-**marcio@segunda.tech**.
+Siga para a [Aula 8](/aula_8.html) e bons estudos!
