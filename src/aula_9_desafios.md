@@ -105,6 +105,11 @@ olho posicao =
   ]
 ```
 
+## DESAFIO 3 (livre): desenhando o restante do rosto.
+
+Crie outras função para demais partes do rosto. Por exemplo: nariz, orelha,
+boca, sombrancelha... use a imaginação!
+
 ## E agora?
 
 Conseguiu fazer todos os exercícios? Teve dificuldade em algum?
