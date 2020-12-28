@@ -167,7 +167,35 @@ olho posicao =
 
 ### Resposta
 
-Em breve... =)
+Existem infinitas formas de resolver este exercício! O importante
+é praticar. Abaixo deixo como o exemplo a minha resposta. Nela, usei
+3 círculos para representar cada olho.  
+
+```
+import Playground exposing (..)
+
+type alias Posicao =
+  { x : Number
+  , y : Number
+  }
+
+olhoEsquerdo = 
+  olho (Posicao -100 20)
+
+olhoDireito =
+  olho (Posicao 100 20)
+main =
+  picture (olhoEsquerdo ++ olhoDireito)
+
+olho posicao =
+  [ circle gray 50 
+    |> move posicao.x posicao.y
+  , circle black 20
+    |> move (posicao.x - 10) (posicao.y - 5)
+  , circle white 5
+    |> move (posicao.x - 15) (posicao.y - 8)
+  ]
+```
 
 ## E agora?
 
