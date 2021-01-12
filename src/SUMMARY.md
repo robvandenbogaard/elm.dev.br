@@ -25,3 +25,6 @@
 - [Aula 9 - Entendendo o que são records](./aula_9.md)
   - [Desafios](./aula_9_desafios.md)
   - [Resposta dos desafios](./aula_9_desafios_respostas.md)
+- [Aula 10 - True, False e condicionais](./aula_10.md)
+  - [Desafios](./aula_10_desafios.md)
+  - [Resposta dos desafios](./aula_10_desafios_respostas.md)
