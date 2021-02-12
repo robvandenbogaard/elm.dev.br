@@ -18,11 +18,11 @@ Quando digitamos por exemplo:
 circle yellow 100
 ```
 
-*circle* é o nome de uma função, que tem
-dois **parâmetros**: a cor e um diâmetro.
+*circle* é o nome de uma função que tem
+dois **parâmetros**: uma cor e um diâmetro.
 Por isso, sempre que vamos criar um
-círculo, precisamos passar estes 2
-parâmetros (em ordem).
+círculo, precisamos passar 2
+argumentos (em ordem).
 
 Esta função *circle* está definida
 dentro do *Playground*, que é uma
@@ -30,13 +30,13 @@ biblioteca do *Elm*.
 
 ## 2- O que é uma biblioteca de software?
 
-Ao desenvolvermos um *software*, vamos nos deparar
+Ao desenvolvermos um *software* vamos nos deparar
 com vários problemas que já foram
 enfrentados e solucionados por outras pessoas.  
-Nestes casos, podemos reutilizar as soluções pré-existentes,
+Nestes casos podemos reutilizar as soluções pré-existentes,
 facilitando assim nosso trabalho.  
 Por exemplo: desenhar um elemento na tela é uma tarefa
-recorrente, necessária para vários programas diferentes.  
+recorrente e utilizada para vários programas diferentes.  
 Por isso, outra pessoa desenvolvedora já solucionou este
 problema e podemos nos aproveitar do trabalho dela para
 desenvolvermos o nosso programa.  
@@ -50,7 +50,7 @@ para desenhar e animar coisas na tela.
 ## 3- Criando nossas próprias funções parametrizadas
 
 As funções que definimos em nossos
-códigos também podem receber parâmetros.  
+códigos também podem ter parâmetros.  
 Observe o exemplo abaixo e tente
 entender o que está acontecendo:
 
@@ -82,17 +82,17 @@ fruta x y =
 
 O resultado final é o mesmo que tínhamos
 no desafio da aula passada: uma árvore
-com frutas. Mas agora o código está
-muito menor e mais simples.  
-Além disso, agora é muito mais fácil
-criar novas frutas em nossa árvore!
+com frutas. Mas o código está
+menor e mais simples.  
+Além disso, agora é mais fácil criar novas 
+frutas em nossa árvore!
 
 Na função *frutas* definida
 no código acima, temos dois parâmetros:
 *x* e *y*.  
 Isso significa que sempre que formos
 utilizar esta função, vamos ter que
-passar estes 2 parâmetros.
+passar 2 argumentos (valores).
 
 Em algumas linguagens de programação,
 precisamos especificar explicitamente

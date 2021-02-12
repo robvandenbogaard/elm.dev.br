@@ -51,7 +51,7 @@ z = x + y
 ```
 
 Para descobrirmos o valor de *z*, basta substituirmos
-os valores de *y* e em seguida o de *x*. Que seria:
+os valores de *y* e em seguida o de *x*.
 
 Função *z* original:
 
@@ -65,7 +65,7 @@ Substituindo o valor de *y*:
 z = x + 10
 ```
 
-Agora subtituimos o valor de *x*:
+Agora subtituímos o valor de *x*:
 
 ```
 z = 5 + 10
@@ -81,7 +81,7 @@ o conceito de funcão é muito parecido.
 A função matemática *z* depende de *y* e de *x*, certo?  
 Podemos fazer algo similar com nossa função *main*,
 tornando-a dependente de outras funções menores e
-mais simples. Isso tornará nosso código muito mais
+mais simples. Isso deixará nosso código muito mais
 fácil de ler e alterar depois.
 
 Achou confuso? Vai ficar mais fácil de entender com o
@@ -106,7 +106,7 @@ main =
     ]
 ```
 
-Vamos agora decompor nossa árvore, "arrancando"
+Podemos decompor nossa árvore, "arrancando"
 suas folhas e colocando-as em uma outra função
 separada:
 
@@ -127,23 +127,26 @@ folhas =
 
 Este novo código é equivalente ao anterior.
 
-Para criarmos uma nova função, basta darmos um
+Para definirmos uma nova função, basta darmos um
 nome para ela (uma palavra qualquer, neste caso,
 *folhas*) seguida do simbolo **=**, da mesma forma
 que na matemática.  
 Tudo que estiver depois do símbolo de igual
 fará parte da nossa nova função.  
-Mas isso apenas **define** a função. Para a utilizamos,
-digitarmos a mesma palavra em outros local.  
-No nosso exemplo, a função *folhas* é utilizada como
-parte da função *main*.
+Mas isso apenas **define** a função. Precisamos em
+seguida utilizar esta função em um ou mais lugares
+do código.
+
+Para utilizar uma função, assim como na matemática, 
+basta colocarmos seu nome. No nosso exemplo, 
+a função *folhas* é utilizada como parte da função *main*.
 
 É **muito** importante enteder este conceito!  
 Analise com calma o código acima para ter certeza
 que compreendeu.
 
 __Dica__: em *Elm*, a ordem em que as funções
-são definidas é irrelevante.  Você pode definir
+são definidas é irrelevante. Você pode definir
 primeiro a função main e depois a função folhas
 ou primeiro a função folha e depois a main.
 
@@ -197,7 +200,7 @@ folhas =
     |> move 0 50
 ```
 
-Neste último exemplo, a função *arvore* retorna
+Neste último exemplo a função *arvore* retorna
 uma lista de formas geométricas, contendo um
 tronco e uma folha.
 
@@ -209,14 +212,14 @@ A primeira é que torna mais fácil de
 expressarmos nossas intenções. Observe a função
 *main* que definimos inicialmente e a compare com
 a função *main* de nosso último código. Desta nova
-forma, fica muito mais explícito o que estamos
-tentando desenhar, certo?  
+forma fica muito mais explícito o que estamos
+tentando desenhar.  
 
 Outra grande vantagem de programar assim é que
 agora o tronco e as folhas estão **desacopladas**.  
 Posso, por exemplo, reutilizar a função *tronco*
 para desenhar outros tipos de árvores! Ou criar
-um novo tipo de tronco e reaproveitar as folhas.
+um novo tipo de tronco e reaproveitar as folhas.  
 Em programação, este é outro tema muito importante:
 Reaproveitamento de códigos.
 

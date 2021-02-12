@@ -9,14 +9,14 @@
 ## 1- Como desenhar outras figuras geométricas.
 
 Além de círculos, podemos desenhar:
-- Triâgulos (triangle)
-- Quadrados (square)
-- Retângulos (rectangle)
-- Ovais (oval)
-- Pentagonos (pentagon)
-- Hexagonos (hexagon)
-- Octagonos (octagon)
-- Polígonos (polygon)
+- Triâgulos (*triangle*)
+- Quadrados (*square*)
+- Retângulos (*rectangle*)
+- Ovais (*oval*)
+- Pentagonos (*pentagon*)
+- Hexagonos (*hexagon*)
+- Octagonos (*octagon*)
+- Polígonos (*polygon*)
 
 É possível desenhar também imagens estáticas e
 animadas, mas isso será abordado em outra aula ;)  
@@ -121,7 +121,7 @@ resultado.
 
 ### 2.2 Rotacionando a forma geométrica.
 
-Além de mover nos eixos x e y, podemos
+Além de mover nos eixos *x* e *y*, podemos
 também rotacionar as formas.  
 Podemos fazer com que o triângulo fique
 um pouco torto, por exemplo.

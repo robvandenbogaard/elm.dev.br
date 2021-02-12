@@ -5,6 +5,7 @@
 2. Desenhar uma esfera.  
 3. O que é o *main*?  
 4. O que é o *picture*?  
+   4.1 Mas o que é uma lista?  
 5. O que é o *circle*?  
 
 ## 1- O que é um *import*?
@@ -58,23 +59,55 @@ main =
 E todo o restante representa o que queremos que
 o computador faça pra gente.  
 __Dica__: não pode ter nenhum espaço antes da
-palavra *main*. Ela deve obrigatoriamente ser a
-primeira palavra da linha.
+palavra *main*. 
 
 ## 4- O que é o *picture*?
 
 A palavra *picture* em inglês significa desenho.
 É através dela que expressamos para o computador
 que queremos desenhar algo na tela.  
-Em seguida criamos uma LISTA (representada pelos
+Em seguida criamos uma **lista** (representada pelos
 símbolos **[** e **]**) de formas geométricas, que 
 vão formar nosso desenho (*picture*). Neste exemplo
 nosso desenho é formado por apenas uma forma
 geométrica: um círculo.
 
+### 4.1- Mas o que é uma lista?
+
+Quando vou ao supermercado, escrevo uma lista
+de produtos que quero comprar. Algo como:  
+- 5Kg de arroz  
+- 1Kg de feijão  
+- 3 batatas grandes  
+- 2 mangas  
+
+O conceito de lista na programação é muito similar: é
+apenas uma estrutura para organizar e relacionar um conjunto
+de dados.
+
+Para representarmos em *Elm*, por exemplo, o conjunto de
+números entre zero e dez, escrevemos:  
+[ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+E uma lista pode ser muito grande, pode ter apenas um
+elemento ou pode até mesmo ser vazia!
+
+#### Outros exemplos de listas:
+
+Uma lista vazia:  
+[]
+
+Uma lista com um único elemento:  
+[ 1 ]
+
+Uma lista com 3 elementos:  
+[ 1, 2, 3 ]
+
+Ao longo deste curso vamos criar muitas listas.
+
 ## 5- O que é o *circle*?
 
-A lista de formas geométricas pode ter círculos,
+Uma lista de formas geométricas pode ter círculos,
 retângulos, hexágonos entre muitas outras formas. 
 No nosso exemplo, utilizamos um círculo (*circle*
 em inglês). Para desenharmos um círculo precisamos
