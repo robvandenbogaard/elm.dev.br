@@ -19,7 +19,7 @@ Além de círculos, podemos desenhar:
 - Polígonos (*polygon*)
 
 É possível desenhar também imagens estáticas e
-animadas, mas isso será abordado em outra aula ;)  
+animadas, mas isso será abordado em outra aula. ;)  
 Hoje vamos aprender a desenhar triângulos,
 quadrados e retângulos.  
 Primeiro vamos fazer um programa que desenha
@@ -50,7 +50,7 @@ os lados de um quadrado tem sempre o mesmo
 tamanho, por isso precisamos passar apenas um
 número).
 
-No caso do triângulo, será desenhado um triângulo
+No caso do triângulo será desenhado um triângulo
 equilatero (todos os lados de tamanhos iguais).
 Mas o número do segundo parâmetro **não** é o tamanho
 dos lados, mas sim o raio, ou seja, a distância

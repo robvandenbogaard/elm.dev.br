@@ -31,8 +31,8 @@ biblioteca do *Elm*.
 ## 2- O que é uma biblioteca de software?
 
 Ao desenvolvermos um *software* vamos nos deparar
-com vários problemas que já foram
-enfrentados e solucionados por outras pessoas.  
+com vários problemas que outras pessoas já 
+enfrentaram e solucionaram.  
 Nestes casos podemos reutilizar as soluções pré-existentes,
 facilitando assim nosso trabalho.  
 Por exemplo: desenhar um elemento na tela é uma tarefa
@@ -40,12 +40,11 @@ recorrente e utilizada para vários programas diferentes.
 Por isso, outra pessoa desenvolvedora já solucionou este
 problema e podemos nos aproveitar do trabalho dela para
 desenvolvermos o nosso programa.  
-Este conjunto de código (no caso do *Elm*, um
-conjunto de **funções**) escritas por outras pessoas
+Este conjunto de código escrito por outras pessoas
 é o que chamamos de **bibliotecas**. Até agora utilizamos
-uma biblioteca, chamada *Playground*,
+uma biblioteca, a *Playground*,
 que contém funções que podemos utilizar
-para desenhar e animar coisas na tela.
+para desenhar e animar figuras na tela.
 
 ## 3- Criando nossas próprias funções parametrizadas
 
@@ -123,9 +122,11 @@ fruta posicaoX posicaoY =
    |> move posicaoX posicaoY
 ```
 
-Dar bons nomes para nossas variáveis
-é algo muito importante e uma das tarefas
-mais difíceis na programação.
+*Dica:* dar bons nomes para nossas variáveis e
+funções é uma das tarefas mais difíceis na programação! 
+Por isso, reflita bastante antes de escolher um nome e, 
+se necessário, troque por um mais descritivo sempre que
+achar que o código está ficando confuso.
 
 ## E agora?
 

@@ -1,6 +1,6 @@
 # Aula 6 - Nossa primeira animação.
 
-Esta aula será um pouco mais teórica, mas vamos aprender os
+Esta aula será um pouco mais teórica pois vamos aprender os
 fundamentos para que seja possível criarmos animações.
 
 ## O que vamos aprender?
@@ -14,7 +14,7 @@ fundamentos para que seja possível criarmos animações.
 ## 1- Nossa primeira animação.
 
 Até agora desenhamos apenas imagens estáticas, mas o
-*Elm Playground* permite também fazer animações.
+*Elm Playground* permite também apresentar animações.
 
 Então hoje vamos aprender a colocar movimentos nas
 nossas figuras! Isso será nosso próximo grande passo
@@ -52,17 +52,17 @@ na verdade é bastante simples.
 Em *Elm* (e também *JavaScript* e muitas outras linguagens
 de programação) isso é bastante comum: às vezes nossas
 funções vão receber valores como números ou textos
-e em outros casos receberá uma função como parâmetro.
+e em outros casos receberá uma função como argumento.
 
 No nosso exemplo a função *animation* está recebendo como
 argumento a função *view* (que significa **vista** ou **ver**
-em inglês). 
+em inglês).   
 Em *Elm* este costuma ser o nome padrão dado para a função
 onde iremos definir o que será exibido na tela.
 
-Perceba que a função *view* recebe um
-parâmetro chamado *time* (que significa **tempo** ou **hora** em inglês).
-Poderíamos dar qualquer outro nome, mas por convenção,
+Perceba que a função *view* recebe um parâmetro chamado *time* 
+(que significa **tempo** ou **hora** em inglês).  
+Poderíamos dar qualquer outro nome mas, por convenção,
 este é o nome que costumamos usar neste parâmetro.  
 
 Através de uma animação podemos alterar o nosso desenho
@@ -70,7 +70,17 @@ ao longo do tempo. Por isso, precisamos deste parâmetro
 para sabermos qual o valor atual do tempo e, assim,
 especificarmos como o desenho deve ser apresentado.
 
-Pense assim: a nossa função *view* será
+Pense assim: imagine que você chutou uma bola de futebol
+em linha reta. Conhecendo a direção que ela está indo
+e a intensidade do seu chute, como poderíamos saber qual
+a posição atual da bola? A resposta é: depende! Depende do
+*tempo*. Zero segundos após você chutar, ela ainda estará
+encostada em seu pé. Um segundo depois estará um pouco
+mais longe. Ou seja, para descobrirmos onde deveríamos 
+desenhar esta bola precisaríamos saber o tempo decorrido
+desde o momento do seu chute.
+
+Voltando para nosso código, a nossa função *view* será
 executada (automaticamente pelo computador) diversas vezes,
 e em cada execução o valor da variável *time* será diferente (contendo
 a hora atual no momento daquela execução).  
@@ -78,6 +88,10 @@ a hora atual no momento daquela execução).
 seja acionada nosso triângulo seja desenhado de uma forma
 e nas demais, conforme o valor da hora (*time*) muda, a
 forma como nosso triângulo é desenhado também.
+
+Todas as animações deste curso serão feitas seguindo esta
+lógica: nossas funções vão precisamos do tempo (*time*) 
+decorrido para saber qual o momento atual da animação.
 
 ## 4. Conhecendo a função *spin*.
 
@@ -97,14 +111,16 @@ não vai funcionar.
 Eles são importantes pois indicam para o computador
 que ele deve dar prioridade em resolver tudo que está dentro
 do parânteses para só em seguida pegar o resultado destas
-operações e usar este resultado como argumento da função
+operações e usar o valor deste resultado como argumento da função
 rotate.  
 Você pode fazer uma associação com a matemática:  
+
 ```
 x = 2 * 1 + 1  
 y = 2 * (1 + 1)  
 ```
-No exemplo acima, *x* é igual a 3 enquanto *y* é igual a 4.  
+
+No exemplo acima, *x* é igual a 3 e *y* é igual a 4.  
 Assim como na matemática, os parânteses são
 muito importantes na programação.
 
