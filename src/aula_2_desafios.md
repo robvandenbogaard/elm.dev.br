@@ -22,7 +22,7 @@ main =
 
 Agora tente alterar o código para atender os desafios
 propostos abaixo. E não tenha medo de errar! Experimente,
-teste, explore, erre. O máximo que vai acontecer é
+teste, explore, erre. O pior que pode acontecer é
 aparecer uma mensagem de erro.
 
 ## DESAFIO 1 (fácil): Mudando tamanho do círculo.
@@ -58,7 +58,7 @@ outra cor e um pouco menor que o primeiro.
 __Dicas__:
 - Lembre-se que os símbolos **[** e **]** indicam uma
 lista. Então o segundo círculo deve estar
-dentro desses símbolos.
+dentro destes símbolos.
 - Pense na lista como sendo algo similar à lista
 de compras no supermercado, mas ao invés de
 alimentos, nossa lista vai guardar formas

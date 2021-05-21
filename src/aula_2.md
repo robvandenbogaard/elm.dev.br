@@ -17,9 +17,8 @@ escrever neste curso será:
 
 A palavra *import* (importar em inglês), serve
 para importar os códigos do *Playground*.  
-Mas o que isso significa? Por enquanto não se preocupe
-com isso, mas ela é necessária pois
-vai permitir que a gente desenhe na tela :)  
+Por enquanto não se preocupe com isso, mas ela é necessária pois
+vai permitir que a gente desenhe na tela.  
 Todos os nossos programas neste curso vão começar
 com esta linha.
 
@@ -110,11 +109,11 @@ Ao longo deste curso vamos criar muitas listas.
 Uma lista de formas geométricas pode ter círculos,
 retângulos, hexágonos entre muitas outras formas. 
 No nosso exemplo, utilizamos um círculo (*circle*
-em inglês). Para desenharmos um círculo precisamos
+em inglês). Para desenharmos nosso círculo precisamos
 informar 2 **parâmetros**:  
 O primeiro parâmetro representa sua cor. No nosso
 exemplo, usamos a cor verde (*green*).  
-O segundo parâmetro indica o tamanho do círculo.
+O segundo parâmetro indica o diâmetro do círculo.
 Neste caso, 100.
 
 ## E agora?

@@ -94,15 +94,15 @@ Isso significa que sempre que formos
 utilizar esta função, vamos ter que
 passar 2 argumentos (valores).
 
-Em algumas linguagens de programação,
+Em algumas linguagens de programação
 precisamos especificar explicitamente
 qual o tipo de cada variável.  
-Em *Elm*, isso não é necessário. A
+Em *Elm* isso não é necessário. A
 linguagem é esperta o suficiente para
 descobrir que *x* e *y*, neste caso, são
 números.
 
-Note que dentro da função *fruta*
+Observe também que dentro da função *fruta*
 repassamos os valores de *x* e *y* para 
 outra função na seguinte linha: 
 
@@ -124,7 +124,8 @@ fruta posicaoX posicaoY =
 ```
 
 Dar bons nomes para nossas variáveis
-é algo muito importante na programação.
+é algo muito importante e uma das tarefas
+mais difíceis na programação.
 
 ## E agora?
 

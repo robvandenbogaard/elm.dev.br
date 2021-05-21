@@ -66,7 +66,7 @@ outra cor e um pouco menor que o primeiro.
 __Dicas__:
 - Lembre-se que os símbolos **[** e **]** indicam uma
 lista. Então o segundo círculo deve estar
-dentro desses símbolos.
+dentro destes símbolos.
 - Pense na lista como sendo algo similar à lista
 de compras no supermercado, mas ao invés de
 alimentos, nossa lista vai guardar formas
@@ -112,7 +112,8 @@ tamanhos e cores diferentes.
 
 Caso tenha tido dificuldades nos exercícios 3 e 4,
 agora que já viu a resposta do 3, que tal tentar
-fazer o 4 antes de ver sua resposta?
+fazer o 4 antes de ver a resposta? Em seguida veja
+a resposta abaixo.
 
 Antes de executar o código abaixo, você é capaz
 de imaginar o que ele irá desenhar na tela?

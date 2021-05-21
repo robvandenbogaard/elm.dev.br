@@ -19,14 +19,14 @@ Conforme nosso código cresce, vai ficando cada
 vez mais difícil identificarmos o que significa
 cada uma de suas partes.  
 Por exemplo, no código que desenhamos um ônibus
-no desafio da aula 2: quanto mais detalhes
+no desafio da aula 2. Quanto mais detalhes
 colocávamos no desenho, maior
-ficava o nosso *main*.  
+ficava o *main*.  
 Mas afinal, o que é esse *main*? Ela é uma **função**.  
 Na linguagem de programação *Elm*, quase tudo
-que fazemos são funcões! Isso por que ela é uma
-linguagem que segue o paradigma **funcional**. Existem
-vários tipos de linguagens: Orientadas à Objetos,
+que escrevemos são funcões! Isso por que ela é uma
+linguagem que segue o **paradigma funcional**. Existem
+vários tipos (paradigmas) de linguagens: Orientadas à Objetos,
 Imperativas, Lógicas e também as Funcionais.
 
 ## 1.1- Funções matemáticas
@@ -50,8 +50,8 @@ y = 10
 z = x + y
 ```
 
-Para descobrirmos o valor de *z*, basta substituirmos
-os valores de *y* e em seguida o de *x*.
+Para descobrirmos o valor de *z*, substituímos
+o valor de *y* e em seguida o de *x*.
 
 Função *z* original:
 
@@ -65,7 +65,7 @@ Substituindo o valor de *y*:
 z = x + 10
 ```
 
-Agora subtituímos o valor de *x*:
+Substituindo o valor de *x*:
 
 ```
 z = 5 + 10
@@ -106,9 +106,8 @@ main =
     ]
 ```
 
-Podemos decompor nossa árvore, "arrancando"
-suas folhas e colocando-as em uma outra função
-separada:
+Podemos decompor nossa árvore, colocando a definição
+de suas folhas em uma outra função:
 
 ```
 import Playground exposing (..)
@@ -134,7 +133,7 @@ que na matemática.
 Tudo que estiver depois do símbolo de igual
 fará parte da nossa nova função.  
 Mas isso apenas **define** a função. Precisamos em
-seguida utilizar esta função em um ou mais lugares
+seguida utilizá-la um ou mais lugares
 do código.
 
 Para utilizar uma função, assim como na matemática, 

@@ -33,8 +33,8 @@ chamada *<a href='https://elm-lang.org/' target='_blank'>Elm</a>*.
 Este curso é dividido em várias aulas, mas todas
 seguem o mesmo formato:  
 No início da aula introduzo algum tema novo,
-mostro exemplos para explicar melhor o tema
-e em seguida proponho alguns desafios para você.
+mostro exemplos para explicar melhor o assunto
+e em seguida proponho alguns desafios.
 É **muito** importante que você faça os desafios!
 É a parte mais importante (e divertida!) de toda
 aula.  
@@ -62,7 +62,7 @@ Abra uma nova aba em seu navegador e acesse o seguinte site:
 <a href=https://elm-lang.org/try target='_blank'>https://elm-lang.org/try</a>.  
 Em seguida, copie todo o código acima e cole na parte da esquerda do site.
 
-Pressione *Compile* e você deve ver o resultado da execução
+Pressione *Compile* (Compilar em inglês) e você deve ver o resultado da execução
 na direita de sua tela, conforme imagem abaixo:
 
 ![Nosso primeiro código](/resources/elm-lang-try-ola-mundo.png)
