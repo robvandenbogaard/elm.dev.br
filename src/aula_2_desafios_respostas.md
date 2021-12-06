@@ -4,7 +4,7 @@ Abra o seguinte endereço em uma outra aba em seu navegador:
 <a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>.  
 
 Copie a resposta de cada exercício abaixo e
-tente entendê-las antes de pressionar *Compile*.  
+tente entendê-las antes de pressionar *Rebuild*.  
 
 ## DESAFIO 1 (fácil): Mudando tamanho do círculo.
 
@@ -12,7 +12,7 @@ Altere o valor do tamanho do círculo para um
 número que quiser.  
 Pode ser um valor pequeno como 1 ou 2, ou um número
 bem grande como 9999999.  
-Em seguida clique em *Compile* e veja o resultado!
+Em seguida clique em *Rebuild* e veja o resultado!
 
 ### Resposta
 

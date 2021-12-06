@@ -62,8 +62,8 @@ Abra uma nova aba em seu navegador e acesse o seguinte site:
 <a href=https://elm-lang.org/try target='_blank'>https://elm-lang.org/try</a>.  
 Em seguida, copie todo o código acima e cole na parte da esquerda do site.
 
-Pressione *Compile* (Compilar em inglês) e você deve ver o resultado da execução
-na direita de sua tela, conforme imagem abaixo:
+Pressione *Rebuild* (Refazer em inglês) na parte inferior no centro da tela e 
+você deve ver o resultado da execução na direita de sua tela, conforme imagem abaixo:
 
 ![Nosso primeiro código](/resources/elm-lang-try-ola-mundo.png)
 

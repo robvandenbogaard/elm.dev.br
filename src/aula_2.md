@@ -39,7 +39,7 @@ main =
     [ circle green 100 ]
 ```
 
-Em seguida pressione *Compile* e veja o resultado da execução conforme imagem abaixo.  
+Em seguida pressione *Rebuild* e veja o resultado da execução conforme imagem abaixo.  
 
 ![Desenhando um circulo](/resources/elm-lang-try-circulo.png)
 

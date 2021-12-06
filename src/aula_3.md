@@ -29,7 +29,7 @@ retângulo.
 
 Mais uma vez, abra uma aba em seu navegador o site
 <a href='https://elm-lang.org/try' target='_blank'>https://elm-lang.org/try</a>,
-cole o código abaixo e pressione *Compile* para ver o resultado.
+cole o código abaixo e pressione *Rebuild* para ver o resultado.
 
 ```haskell
 import Playground exposing (..)
@@ -101,7 +101,7 @@ No exemplo abaixo, desenhamos dois círculos,
 um ao lado do outro. Veja com atenção o
 código e tente entendê-lo. Em seguida,
 copie o código para a outra aba de seu
-navegador e clique em *Compile* para ver o
+navegador e clique em *Rebuild* para ver o
 resultado.
 
 ```haskell
@@ -143,7 +143,7 @@ Você consegue ler o código abaixo
 e tentar imaginar o que será desenhado?
 
 Copie o código para a outra aba de seu
-navegador e clique em *Compile* para ver o
+navegador e clique em *Rebuild* para ver o
 resultado.
 
 ```haskell

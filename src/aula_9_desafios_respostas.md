@@ -35,7 +35,7 @@ desenharmos árvores parecidas com as que fizemos na
 <a href="./aula_3_desafios_respostas.html">aula 3</a>e 
 <a href="./aula_4.html">aula 4</a> deste curso.
 
-Como deve ter observado, a função desenharArvore está incompleta e
+Como deve ter observado, a função _desenharArvore_ está incompleta e
 estamos desenhando apenas a copa/folhas de nossa árvore.
 
 Antes de continuar, abra o seguinte endereço em uma
@@ -43,7 +43,7 @@ outra aba em seu navegador:
 <a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>
 e execute o código definido mais acima.
 
-Agora altere a função desenharArvore para que ela desenhe também
+Agora altere a função _desenharArvore_ para que ela desenhe também
 o tronco de nossa árvore.
 
 ### Resposta
@@ -81,8 +81,8 @@ na borda do círculo.
 
 Aqui, você poderia ter adotado diferentes estratégias. Eu optei por
 calcular o ponto exato onde termina o círculo para mover meu
-tronco até este local. Para isso, preciso somar 2 valores: o raio do
-círculo mais metade da altura do tronco. Desta forma, o tronco
+tronco até este local. Para isso preciso somar 2 valores: o raio do
+círculo mais metade da altura do tronco. Desta forma o tronco
 ficará posicionado exatamente no final das folhas:
 
 ```haskell
@@ -108,27 +108,26 @@ desenharArvore arvore =
 
 ## DESAFIO 2 (difícil): desenhando olhos.
 
-Vamos criar formas de desenhar olhos na tela de forma parametrizada.  
+Vamos criar uma maneira de desenhar olhos na tela de forma parametrizada.  
 
-Você deve criar uma funcao chamada *olho* que irá receber como
-parâmetro um *record* chamado *posicao*. Este record deve ser
-definido através de um *type alias* chamado *Posicao* e de deve
-conter os campos *x* e *y*, ambos do tipo *Number*.  
+Você deve criar uma função chamada *olho* que irá receber como
+parâmetro um *Record*. Para isso, crie um *type alias* chamado *Posicao* 
+contendo os campos *x* e *y*, ambos do tipo *Number*.  
 
-A função *olho* deve retornar uma lista de circulos, que representam
+A função *olho* deve retornar uma lista de círculos que representará
 um olho na tela. Nosso olho será composto por pelo menos 2 círculos,
 um dentro do outro. Use sua imaginação para desenha-lo!
 
-Em seguida, crie 2 outras funções chamadas *olhoEsquerdo* e *olhoDireito*.
+Em seguida crie 2 outras funções chamadas *olhoEsquerdo* e *olhoDireito*.
 Estas funções devem acionar a função *olho* passando a posição dos
-olhos. O olho esquerdo deve ser desenhado a partir do ponto (-100, 20) e o
-olho direito a partir do ponto (100, 20).
+olhos. O olho esquerdo deve ser desenhado a partir do ponto _(-100, 20)_ e o
+olho direito a partir do ponto _(100, 20)_.
 
-Por último, a sua função *main* deve acionar as função *olhoEsquerdo* e
+Por último a sua função *main* deve acionar as funções *olhoEsquerdo* e
 *olhoDireito* para desenhar as figuras na tela.
 
 **Dica**: ambas as funções *olhoEsquerdo* e *olhoDireito* retornam uma
-lista de figuras. Será necessário juntas estas duas listas em uma só
+lista de figuras. Será necessário juntar estas duas listas em uma só
 antes de acionar a função *main* (que espera uma única lista de figuras).
 Para fazer isso você pode usar o simbolo **++**. Exemplo: 
 
@@ -140,8 +139,8 @@ listaDeNumeros = numerosPequenos ++ numerosGrandes
 ```
 No código acima, *listaDeNumeros* irá conter a seguinte lista: [1,2,3,100,101,102]
 
-Agora tente resolver o exercício. Caso tenha muita dificuldade, você pode seguir
-a estrutura criada abaixo. Mas antes de olhar o código, tente resolver sozinha! ;)
+Teste resolver o exercício. Caso tenha muita dificuldade você pode seguir
+a estrutura criada abaixo:
 
 ```haskell
 import Playground exposing (..)
