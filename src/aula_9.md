@@ -21,7 +21,7 @@ Com o que aprendemos até agora, se quisermos criar uma função que
 receba como parâmetro um ponto no espaço, estávamos passando dois
 argumentos numéricos separados: *x* e *y*, como no exemplo abaixo:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -47,7 +47,7 @@ essa informação representa.
 Então *record* é uma **estrutura de dados** com rotulos. Abaixo temos um exemplo
 de um *record*.
 
-```
+```haskell
 { x = 10, y = 15 }
 ```
 
@@ -58,7 +58,7 @@ Na linguagem *Elm*, tudo que estiver entre **{** e **}** é um *record*.
 Podemos agora alterar o código anterior para que nossa função
 *circuloVerde* receba um *record*:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -74,7 +74,7 @@ circuloverde {x, y} =
 Se preferirmos, podemos também armazenar estes valores em uma variável,
 como no exemplo abaixo:
 
-```
+```haskell
 import Playground exposing (..)
 
 posicao = {x = 10, y = 20}
@@ -98,7 +98,7 @@ esta estrutura.
 No código abaixo definimos o que é um Ponto2D. Poderíamos dar um qualquer nome,
 mas ele deve começar **obrigatóriamente** com uma letra maiúscula.  
 
-```
+```haskell
 type alias Ponto2D =
   { x : Number 
   , y : Number
@@ -120,7 +120,7 @@ uma nova função chamada Ponto2D (esperando os respectivos parâmetros definido
 que chamamos de **construtor** (ou *Type Constructor* - Construtor de Tipos em inglês).
 Acionando esta função podemos construir um novo ponto:
 
-```
+```haskell
 import Playground exposing (..)
 
 type alias Ponto2D =
@@ -144,7 +144,7 @@ Neste exemplo a função *circuloVerde* continua recebendo o *record*
 de forma mais simples, usando as chaves. Mas podemos dar um passo
 além: podemos dar mome para este parâmetro:
 
-```
+```haskell
 import Playground exposing (..)
 
 type alias Ponto2D =

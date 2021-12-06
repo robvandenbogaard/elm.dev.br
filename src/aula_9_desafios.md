@@ -4,7 +4,7 @@
 
 Observe o código abaixo e tente entender o que está acontecendo.
 
-```
+```haskell
 import Playground exposing (..)
 
 type alias Arvore =
@@ -72,7 +72,7 @@ lista de figuras. Será necessário juntas estas duas listas em uma só
 antes de acionar a função *main* (que espera uma única lista de figuras).
 Para fazer isso você pode usar o simbolo **++**. Exemplo: 
 
-``` 
+```haskell
 numerosPequenos = [1,2,3]
 numerosGrandes = [100,101,102]
 listaDeNumeros = numerosPequenos ++ numerosGrandes
@@ -83,7 +83,7 @@ No código acima, *listaDeNumeros* irá conter a seguinte lista: [1,2,3,100,101,
 Teste resolver o exercício, mas caso tenha dificuldades, você pode seguir
 a estrutura criada abaixo:
 
-```
+```haskell
 import Playground exposing (..)
 
 type alias Posicao =

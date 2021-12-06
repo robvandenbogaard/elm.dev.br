@@ -47,7 +47,7 @@ deva continuar, exibiremos um círculo vermelho.
 
 Vamos começar desenhando um círculo vermelho no centro da tela:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -60,7 +60,7 @@ Por enquanto desenhamos sempre um círculo vermelho. Precisamos agora
 adicionar uma **condição**. Mas antes, vamos criar uma variável
 onde iremos definir qual a quantidade de vidas da jogadora:
 
-```
+```haskell
 import Playground exposing (..)
 
 quantidadeDeVidas = 1
@@ -75,7 +75,7 @@ Pronto! Agora temos tudo que precisamos para criar nossa condicional.
 Caso a *quantidadeDeVidas* contenha um valor maior que 1, desenhamos
 um cículo verde. Caso contrário, um cículo vermelho.
 
-```
+```haskell
 import Playground exposing (..)
 
 quantidadeDeVidas = 1
@@ -106,7 +106,7 @@ execute o programa novamente.
 No nosso exemplo talvez seja fácil uma outra pessoa olhar
 a seguinte linha de código e entender nossa intenção:
 
-```
+```haskell
 if quantidadeDeVidas > 0 then
 ```
 
@@ -118,7 +118,7 @@ Nestes cenários é recomendado **extrairmos** esta parte do código
 para uma função. Assim, podemos deixar mais explicito qual
 a real intenção daquela condição, como no exemplo abaixo.
 
-```
+```haskell
 import Playground exposing (..)
 
 quantidadeDeVidas = 1

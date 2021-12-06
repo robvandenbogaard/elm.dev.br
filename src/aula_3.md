@@ -31,7 +31,7 @@ Mais uma vez, abra uma aba em seu navegador o site
 <a href='https://elm-lang.org/try' target='_blank'>https://elm-lang.org/try</a>,
 cole o código abaixo e pressione *Compile* para ver o resultado.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -104,7 +104,7 @@ copie o código para a outra aba de seu
 navegador e clique em *Compile* para ver o
 resultado.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -146,7 +146,7 @@ Copie o código para a outra aba de seu
 navegador e clique em *Compile* para ver o
 resultado.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

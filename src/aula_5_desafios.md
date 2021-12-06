@@ -2,7 +2,7 @@
 
 ## DESAFIO 1 (fácil): Crie mais frutas.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

@@ -4,7 +4,7 @@
 
 Observe o código abaixo e tente entender o que está acontecendo.
 
-```
+```haskell
 import Playground exposing (..)
 
 type alias Arvore =
@@ -55,7 +55,7 @@ Precisamos definir onde será desenhado o retângulo que representa o tronco
 de nossa árvore e, dessa vez, este valor é parametrizado. Desenhar o
 retângulo é a parte fácil:
 
-```
+```haskell
 import Playground exposing (..)
 
 type alias Arvore =
@@ -85,7 +85,7 @@ tronco até este local. Para isso, preciso somar 2 valores: o raio do
 círculo mais metade da altura do tronco. Desta forma, o tronco
 ficará posicionado exatamente no final das folhas:
 
-```
+```haskell
 import Playground exposing (..)
 
 type alias Arvore =
@@ -132,7 +132,7 @@ lista de figuras. Será necessário juntas estas duas listas em uma só
 antes de acionar a função *main* (que espera uma única lista de figuras).
 Para fazer isso você pode usar o simbolo **++**. Exemplo: 
 
-``` 
+```haskell
 numerosPequenos = [1,2,3]
 numerosGrandes = [100,101,102]
 listaDeNumeros = numerosPequenos ++ numerosGrandes
@@ -143,7 +143,7 @@ No código acima, *listaDeNumeros* irá conter a seguinte lista: [1,2,3,100,101,
 Agora tente resolver o exercício. Caso tenha muita dificuldade, você pode seguir
 a estrutura criada abaixo. Mas antes de olhar o código, tente resolver sozinha! ;)
 
-```
+```haskell
 import Playground exposing (..)
 
 type alias Posicao =
@@ -171,7 +171,7 @@ Existem infinitas formas de resolver este exercício! O importante
 é praticar. Abaixo deixo como o exemplo a minha resposta. Nela, usei
 3 círculos para representar cada olho.  
 
-```
+```haskell
 import Playground exposing (..)
 
 type alias Posicao =

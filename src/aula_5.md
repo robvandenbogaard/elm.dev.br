@@ -14,7 +14,7 @@ em *Elm* são **funções**. Isso inclui as palavras
 *circle*, *triangle*, *square*, entre outras.  
 Quando digitamos por exemplo:
 
-```
+```haskell
 circle yellow 100
 ```
 
@@ -53,7 +53,7 @@ códigos também podem ter parâmetros.
 Observe o exemplo abaixo e tente
 entender o que está acontecendo:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -105,7 +105,7 @@ Observe também que dentro da função *fruta*
 repassamos os valores de *x* e *y* para 
 outra função na seguinte linha: 
 
-```
+```haskell
 move x y
 ```
 
@@ -116,7 +116,7 @@ parâmetros sejam apenas um caracter,
 eles podem ser grandes e mais
 expressivos. Poderia ser, por exemplo:
 
-```
+```haskell
 fruta posicaoX posicaoY =
  circle red 20
    |> move posicaoX posicaoY

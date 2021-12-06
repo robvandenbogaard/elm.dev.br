@@ -13,7 +13,9 @@
 A primeira linha de todos os programas que vamos
 escrever neste curso será:  
 
-`import Playground exposing (..)`
+```haskell
+import Playground exposing (..)
+```
 
 A palavra *import* (importar em inglês), serve
 para importar os códigos do *Playground*.  
@@ -29,7 +31,7 @@ Vamos desenhar um círculo na tela?
 Abra novamente o site <a href='https://elm-lang.org/try' target='_blank'>https://elm-lang.org/try</a>
 em uma outra aba de seu navegador e cole o código abaixo.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -51,7 +53,7 @@ onde começa nosso programa.
 Portanto, todos os nossos programas vão precisar
 ter essa linha:
 
-```
+```haskell
 main =
 ```
 

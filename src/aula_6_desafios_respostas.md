@@ -2,7 +2,7 @@
 
 ## DESAFIO 1 (fácil): alterando a velocidade.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -27,7 +27,7 @@ será a velocidade de rotação da figura.
 
 Código com rotação 2x mais rápida:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -41,7 +41,7 @@ view time =
 
 Código com rotação 2x mais devagar:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -72,7 +72,7 @@ Lembre-se que em uma lista, separamos os elementos através da vírgula.
 Vamos quebrar a resposta em 2 partes. Primeiro vamos adicionar o
 quadrado (*square* em inglês) ao fundo da imagem sem animação:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -87,7 +87,7 @@ view time =
 
 Agora vamos completar o desafio, rotacionando nosso quadrado:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -127,7 +127,7 @@ Quando for 180, transformaremos em -180, e assim por diante.
 Lembre-se de colocar um novo parênteses para que o valor seja calculado primeiro,
 caso contrário irá receber uma mensagem de erro.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

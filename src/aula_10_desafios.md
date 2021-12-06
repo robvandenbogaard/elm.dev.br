@@ -6,7 +6,7 @@ O código abaixo desenha um balão verde na tela.
 
 Execute o código para ver seu resultado.
 
-```
+```haskell
 import Playground exposing (..)
 
 tamanhoDoFioDoBalao = 50
@@ -36,7 +36,7 @@ Eu admito, meu balão não se parece muito um balão, mas... tente
 usar sua imaginação! ;)
 
 A parte mais difícil deste código provavelmente é a seguinte linha:
-```
+```haskell
 |> move 0 (-raio - (tamanhoDoFioDoBalao / 2))
 ```
 

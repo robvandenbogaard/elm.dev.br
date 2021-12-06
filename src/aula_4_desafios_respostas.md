@@ -7,7 +7,7 @@ para desenhar o carro.
 
 ### Resposta
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -36,7 +36,7 @@ rodaTraseira =
 
 ### Resposta
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

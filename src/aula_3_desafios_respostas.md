@@ -9,7 +9,7 @@ rodas.
 
 ### Resposta
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -30,7 +30,7 @@ as folhas.
 
 ### Resposta
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -49,7 +49,7 @@ de 6 pontas.
 
 ### Resposta
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -68,7 +68,7 @@ resposta errada. Use a imaginação!
 
 ### Resposta
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

@@ -5,7 +5,7 @@
 Leia o código abaixo e tente imaginar o que irá aparecer na tela. 
 E o que significam os valores 10, 100 e 12?
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -21,7 +21,7 @@ Em seguida, altere-o para que pulse 4 vezes mais lento que o código original.
 
 ## DESAFIO 2 (fácil): Adicione um círculo dentro do outro.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -38,7 +38,7 @@ igual a 200.
 
 ## DESAFIO 2 (Intermediário): Crie 2 círculos pulsando.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

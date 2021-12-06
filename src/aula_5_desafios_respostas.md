@@ -7,7 +7,7 @@
 Para resolvermos este desafio, bastava chamarmos
 a função *fruta* mais algumas vezes.  
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -58,7 +58,7 @@ Para resolver este desafio, criei um novo parâmetro na função *folhas*
 chamado diametro. Em seguida, repassei o valor desta variável
 ao acionar a função *circle*.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

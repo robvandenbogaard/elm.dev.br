@@ -8,7 +8,7 @@ sua posição no eixo *y* entre -100 e 100.
 A animação deve demorar 2 segundos para completar
 o ciclo.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

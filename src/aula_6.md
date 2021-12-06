@@ -23,7 +23,7 @@ em direção a fazer nossos próprios jogos.
 Nesta aula vamos aprender a desenhar um triângulo
 girando na tela e este é o código que vamos analisar:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -101,7 +101,7 @@ recebe um parâmetro com o ângulo que queremos rotacionar
 (um número entre -360 e 360). No nosso exemplo o valor
 passado como parâmetro é este:
 
-```
+```haskell
 rotate (spin 8 time)
 ```
 
@@ -115,7 +115,7 @@ operações e usar o valor deste resultado como argumento da função
 rotate.  
 Você pode fazer uma associação com a matemática:  
 
-```
+```haskell
 x = 2 * 1 + 1  
 y = 2 * (1 + 1)  
 ```
@@ -151,7 +151,7 @@ O computador! Ou mais tecnicamente falando, a *runtime* do *Elm*.
 
 Neste nosso exemplo, a função *main* foi definida da seguinte forma:
 
-```
+```haskell
 main =
   animation view
 ```
@@ -160,7 +160,7 @@ A função *animation* em algum momento irá acionar a função *view*
 e, como já víamos antes, a função *view* recebe um parâmetro
 indicando o tempo (no nosso exemplo, o parâmetro *time*):
 
-```
+```haskell
 view time =
 ```
 

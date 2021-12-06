@@ -6,7 +6,7 @@ O código abaixo desenha um balão verde na tela.
 
 Execute o código para ver seu resultado.
 
-```
+```haskell
 import Playground exposing (..)
 
 tamanhoDoFioDoBalao = 50
@@ -36,7 +36,7 @@ Eu admito, meu balão não se parece muito um balão, mas... tente
 usar sua imaginação! ;)
 
 A parte mais difícil deste código provavelmente é a seguinte linha:
-```
+```haskell
 |> move 0 (-raio - (tamanhoDoFioDoBalao / 2))
 ```
 
@@ -55,7 +55,7 @@ o valor do **raio** como parâmetro. Assim, fica fácil altermos
 esta função para que ela retorne *gren* caso este valor seja
 inferior a 50 e *red* caso seja igual ou superior a este número.
 
-```
+```haskell
 import Playground exposing (..)
 
 tamanhoDoFioDoBalao = 50
@@ -84,7 +84,7 @@ balao raio =
 
 Uma parte do código que talvez você tenha tido
 dificuldades para entender é esta aqui:
-```
+```haskell
 circle (corDoBalao raio) raio
 ```
 
@@ -138,7 +138,7 @@ utilizar a cor vermelha.
 Ou, em outra palavras, precisamos fazer um *if* dentro
 do nosso *if*:
 
-```
+```haskell
 import Playground exposing (..)
 
 tamanhoDoFioDoBalao = 50

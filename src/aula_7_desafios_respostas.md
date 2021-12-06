@@ -5,7 +5,7 @@
 Leia o código abaixo e tente imaginar o que irá aparecer na tela. 
 E o que significam os valores 10, 100 e 12?
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -30,7 +30,7 @@ da animação, mais rápida ela irá ser exibida.
 Para que a animação ocorra 4 vezes mais rápido, basta dividirmos 
 o valor *12 time* por 4:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -44,7 +44,7 @@ view time =
 Para que seja 4 vezes mais devagar, multiplicamos o valor original
 por 4:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -68,7 +68,7 @@ igual a 200.
 
 Desta vez bastava adicionarmos um círculo vermelho na lista de figuras:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -82,7 +82,7 @@ view time =
 
 ## DESAFIO 2 (Intermediário): Crie 2 círculos pulsando.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -104,7 +104,7 @@ isso como sendo a animação de dois olhos piscando?
 
 ### Resposta
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -139,7 +139,7 @@ Use sua imaginação :)
 
 ### Resposta
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

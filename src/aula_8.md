@@ -10,7 +10,7 @@
 Vamos partir do desenho de um círculo na tela,
 deslocando-o um pouco para esquerda.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -53,7 +53,7 @@ imaginar como seria o código para que nosso círculo fique se movendo
 da esquerda para direita entre a posição -200 e 200 em um intervalo
 de 5 segundos?
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

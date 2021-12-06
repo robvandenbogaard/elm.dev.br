@@ -34,7 +34,7 @@ Imperativas, Lógicas e também as Funcionais.
 Provavelmente você já deve ter ouvindo falar em
 funções nas aulas de matemáticas na escola. Coisas como:  
 
-```
+```haskell
 x = y + 2
 ```
 
@@ -44,7 +44,7 @@ simbolo *x*, podemos substitui-lo por *y + 2*,
 e vice versa. Por exemplo, se tivermos o seguinte
 conjunto equações:
 
-```
+```haskell
 x = 5
 y = 10
 z = x + y
@@ -55,19 +55,19 @@ o valor de *y* e em seguida o de *x*.
 
 Função *z* original:
 
-```
+```haskell
 z = x + y
 ```
 
 Substituindo o valor de *y*:
 
-```
+```haskell
 z = x + 10
 ```
 
 Substituindo o valor de *x*:
 
-```
+```haskell
 z = 5 + 10
 ```
 
@@ -94,7 +94,7 @@ então decompô-la em várias funções.
 
 Função main original:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -109,7 +109,7 @@ main =
 Podemos decompor nossa árvore, colocando a definição
 de suas folhas em uma outra função:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -152,7 +152,7 @@ ou primeiro a função folha e depois a main.
 Agora vamos separar o tronco de nossa árvore em
 uma outra função:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -178,7 +178,7 @@ para a palavra *tronco*.
 Podemos dar um passo além, se quisermos, e
 criarmos a função *arvore*:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

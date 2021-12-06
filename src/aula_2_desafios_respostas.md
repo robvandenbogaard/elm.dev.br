@@ -19,7 +19,7 @@ Em seguida clique em *Compile* e veja o resultado!
 Este desafio era muito fácil né?! Bastava alterar
 o valor do tamanho do círculo.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -49,7 +49,7 @@ Este também era bem fácil. Bastava mudar o
 primeiro parâmetro do círculo (*circle*) para outra
 cor.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -85,7 +85,7 @@ Lembre-se que os símbolos **[** e **]** indicam uma lista.
 
 ### Resposta
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -118,7 +118,7 @@ a resposta abaixo.
 Antes de executar o código abaixo, você é capaz
 de imaginar o que ele irá desenhar na tela?
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

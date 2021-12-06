@@ -9,7 +9,7 @@
 
 Antes, vamos relembrar como desenhamos um círculo na tela:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -36,7 +36,7 @@ copie e execute o código a seguir.
 Por enquanto não se preocupe em interpretar todo o código, apenas
 veja o resultado para entender melhor qual nosso objetivo.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

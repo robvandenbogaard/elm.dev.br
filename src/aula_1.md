@@ -49,7 +49,7 @@ aparecer uma mensagem de erro :)
 Abaixo temos nosso primeiro exemplo! O Famoso _"Olá Mundo!"_, que
 apenas exibe este texto na tela.
 
-```
+```haskell
 import Html exposing (text)
 
 main =

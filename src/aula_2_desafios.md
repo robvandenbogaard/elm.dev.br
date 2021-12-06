@@ -12,7 +12,7 @@ outra aba em seu navegador:
 
 Copie e compile/execute o mesmo código que vimos durante a aula 2:
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

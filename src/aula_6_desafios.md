@@ -2,7 +2,7 @@
 
 ## DESAFIO 1 (fácil): alterando a velocidade.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

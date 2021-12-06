@@ -7,7 +7,7 @@ código para desenhar um carro.
 Escreva as três funções que estão faltando
 para desenhar o carro.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -25,7 +25,7 @@ carro =
 
 O código abaixo representa uma árvore sem frutas.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =

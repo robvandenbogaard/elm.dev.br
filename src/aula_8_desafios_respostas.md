@@ -8,7 +8,7 @@ sua posição no eixo *y* entre -100 e 100.
 A animação deve demorar 2 segundos para completar
 o ciclo.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -25,7 +25,7 @@ view time =
 Basta fixarmos o eixo *x* sempre no valor 0 e deixamos
 o eixo *y* variando entre -100 e 100 usando a função *zigzag*.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
@@ -52,7 +52,7 @@ para o eixo *x*. Assim, movemos os 2 eixos
 sempre da mesma forma, tendo como resultado o
 movimento na diagonal.
 
-```
+```haskell
 import Playground exposing (..)
 
 main =
