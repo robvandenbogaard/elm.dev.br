@@ -3,7 +3,7 @@
 Esta aula será mais teórica, mas o que vamos
 aprender hoje é fundamental para entender todo
 o resto que está por vir. Então, bora entender
-o que é uma função??
+o que é uma função?
 
 ## O que vamos aprender?
 
@@ -11,19 +11,19 @@ o que é uma função??
   1.1 Funções matemáticas  
   1.2 Funções na programação  
 2. Como criar nossas próprias funções?  
-3. Vantagens ao utilizamos funções  
+3. Vantagens de criar funções  
 
 ## 1- O que é uma função?
 
 Conforme nosso código cresce, vai ficando cada
 vez mais difícil identificarmos o que significa
 cada uma de suas partes.  
-Por exemplo, no código que desenhamos um ônibus
-no desafio da aula 2. Quanto mais detalhes
+Por exemplo: no código que desenhamos um ônibus
+no desafio da aula 2, quanto mais detalhes
 colocávamos no desenho, maior
 ficava o *main*.  
-Mas afinal, o que é esse *main*? Ela é uma **função**.  
-Na linguagem de programação *Elm*, quase tudo
+Mas afinal, o que é esse _main_? Ela é uma **função**.  
+Na linguagem de programação _Elm_, quase tudo
 que escrevemos são funcões! Isso por que ela é uma
 linguagem que segue o **paradigma funcional**. Existem
 vários tipos (paradigmas) de linguagens: Orientadas à Objetos,
@@ -38,11 +38,11 @@ funções nas aulas de matemáticas na escola. Coisas como:
 x = y + 2
 ```
 
-Mas o que significa *x = y + 2*? Essencialmente
+Mas o que significa _x = y + 2_? Essencialmente
 significa que em qualquer lugar que tiver o
-simbolo *x*, podemos substitui-lo por *y + 2*,
+simbolo _x_, podemos substitui-lo por _y + 2_,
 e vice versa. Por exemplo, se tivermos o seguinte
-conjunto equações:
+conjunto de equações:
 
 ```haskell
 x = 5
@@ -50,36 +50,36 @@ y = 10
 z = x + y
 ```
 
-Para descobrirmos o valor de *z*, substituímos
-o valor de *y* e em seguida o de *x*.
+Para descobrirmos o valor de _z_, substituímos
+o valor de _y_ e em seguida o de _x_.
 
-Função *z* original:
+Sendo a função _z_ original:
 
 ```haskell
 z = x + y
 ```
 
-Substituindo o valor de *y*:
+Podemos primeiro substituir o valor de _y_:
 
 ```haskell
 z = x + 10
 ```
 
-Substituindo o valor de *x*:
+E em seguida o valor de _x_:
 
 ```haskell
 z = 5 + 10
 ```
 
-Assim chegamos a conclusão que *z* é igual a 15.
+Assim chegamos a conclusão que _z_ é igual a **15**.
 
 ## 1.2 Funções na programação
 
 Em programação (em especial em linguagens funcionais,
 como *Elm* ou <a href='https://www.haskell.org/' target='_blank'>*Haskell*</a>),
 o conceito de funcão é muito parecido.  
-A função matemática *z* depende de *y* e de *x*, certo?  
-Podemos fazer algo similar com nossa função *main*,
+A função matemática _z_ depende de _y_ e de _x_, certo?  
+Podemos fazer algo similar com nossa função _main_,
 tornando-a dependente de outras funções menores e
 mais simples. Isso deixará nosso código muito mais
 fácil de ler e alterar depois.
@@ -92,7 +92,7 @@ exemplo a seguir.
 Vamos partir inicialmente da nossa árvore para
 então decompô-la em várias funções.
 
-Função main original:
+Função _main_ original:
 
 ```haskell
 import Playground exposing (..)
@@ -106,7 +106,7 @@ main =
     ]
 ```
 
-Podemos decompor nossa árvore, colocando a definição
+Podemos decompor nossa árvore colocando a definição
 de suas folhas em uma outra função:
 
 ```haskell
@@ -114,7 +114,7 @@ import Playground exposing (..)
 
 main =
   picture
-    [ rectangle darkBrown 60 250
+      [ rectangle darkBrown 60 250
         |> move 0 -150
     , folhas
     ]
@@ -126,28 +126,28 @@ folhas =
 
 Este novo código é equivalente ao anterior.
 
-Para definirmos uma nova função, basta darmos um
+Para **definirmos uma nova função**, basta darmos um
 nome para ela (uma palavra qualquer, neste caso,
-*folhas*) seguida do simbolo **=**, da mesma forma
+_folhas_) seguida do simbolo **=**, da mesma forma
 que na matemática.  
 Tudo que estiver depois do símbolo de igual
 fará parte da nossa nova função.  
 Mas isso apenas **define** a função. Precisamos em
-seguida utilizá-la um ou mais lugares
+seguida utilizá-la em um ou mais lugares
 do código.
 
 Para utilizar uma função, assim como na matemática, 
-basta colocarmos seu nome. No nosso exemplo, 
-a função *folhas* é utilizada como parte da função *main*.
+basta colocarmos seu nome. No nosso exemplo 
+a função _folhas_ é utilizada como parte da função _main_.
 
 É **muito** importante enteder este conceito!  
 Analise com calma o código acima para ter certeza
 que compreendeu.
 
-__Dica__: em *Elm*, a ordem em que as funções
+**Dica**: em _Elm_, a ordem em que as funções
 são definidas é irrelevante. Você pode definir
-primeiro a função main e depois a função folhas
-ou primeiro a função folha e depois a main.
+primeiro a função _main_ e depois a função _folhas_
+ou primeiro a função _folhas_ e depois a _main_.
 
 Agora vamos separar o tronco de nossa árvore em
 uma outra função:
@@ -170,13 +170,13 @@ folhas =
     |> move 0 50
 ```
 
-Tente imaginar que a palavra *folhas*, dentro
-da função *main*, será substituida pelo conteúdo
-definido logo abaixo na função folhas. E o mesmo
-para a palavra *tronco*.
+Tente imaginar que a palavra _folhas_, dentro
+da função _main_, será substituida pelo conteúdo
+definido logo abaixo na função _folhas_. E o mesmo
+para a palavra _tronco_.
 
-Podemos dar um passo além, se quisermos, e
-criarmos a função *arvore*:
+E podemos dar um passo além, se quisermos, e
+criar a função _arvore_:
 
 ```haskell
 import Playground exposing (..)
@@ -199,28 +199,28 @@ folhas =
     |> move 0 50
 ```
 
-Neste último exemplo a função *arvore* retorna
-uma lista de formas geométricas, contendo um
+Neste último exemplo a função _arvore_ retorna
+uma lista de formas geométricas contendo um
 tronco e uma folha.
 
-## 3- Vantagens ao utilizarmos funções
+## 3- Vantagens de criar funções
 
-Existem 2 grandes vantagens em dividirmos
+Existem duas grandes vantagens em dividirmos
 nossos códigos em várias funções.  
 A primeira é que torna mais fácil de
 expressarmos nossas intenções. Observe a função
-*main* que definimos inicialmente e a compare com
-a função *main* de nosso último código. Desta nova
-forma fica muito mais explícito o que estamos
+_main_ que definimos inicialmente e a compare com
+a função _main_ de nosso último código. Desta última 
+forma ficou muito mais explícito o que estamos
 tentando desenhar.  
 
 Outra grande vantagem de programar assim é que
-agora o tronco e as folhas estão **desacopladas**.  
-Posso, por exemplo, reutilizar a função *tronco*
-para desenhar outros tipos de árvores! Ou criar
-um novo tipo de tronco e reaproveitar as folhas.  
-Em programação, este é outro tema muito importante:
-Reaproveitamento de códigos.
+agora o _tronco_ e _folhas_ estão **desacoplados**.  
+Posso, por exemplo, reutilizar a função _tronco_
+para desenhar outros tipos de árvores ou criar
+um novo tipo de _tronco_ e reaproveitar as _folhas_.  
+Em programação este é outro conceito muito importante:
+**Reaproveitamento de códigos**.
 
 ## E agora?
 

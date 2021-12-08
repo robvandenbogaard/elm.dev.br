@@ -1,7 +1,7 @@
 # Aula 6 - Nossa primeira animação.
 
 Esta aula será um pouco mais teórica pois vamos aprender os
-fundamentos para que seja possível criarmos animações.
+fundamentos para que seja possível criar animações.
 
 ## O que vamos aprender?
 

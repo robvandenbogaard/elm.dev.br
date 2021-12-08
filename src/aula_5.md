@@ -122,7 +122,7 @@ fruta posicaoX posicaoY =
    |> move posicaoX posicaoY
 ```
 
-*Dica:* dar bons nomes para nossas variáveis e
+**Dica**: dar bons nomes para nossas variáveis e
 funções é uma das tarefas mais difíceis na programação! 
 Por isso, reflita bastante antes de escolher um nome e, 
 se necessário, troque por um mais descritivo sempre que

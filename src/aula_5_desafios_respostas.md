@@ -55,7 +55,7 @@ esses cenários por enquanto.
 ### Resposta
 
 Para resolver este desafio, criei um novo parâmetro na função *folhas*
-chamado diametro. Em seguida, repassei o valor desta variável
+chamado **diametro**. Em seguida, repassei o valor desta variável
 ao acionar a função *circle*.
 
 ```haskell

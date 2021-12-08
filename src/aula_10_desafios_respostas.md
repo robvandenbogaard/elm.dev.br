@@ -52,7 +52,7 @@ vermelha caso seu raio supere este valor.
 
 Precisamos alterar a função *corDoBalao* para que ela receba
 o valor do **raio** como parâmetro. Assim, fica fácil altermos
-esta função para que ela retorne *gren* caso este valor seja
+esta função para que ela retorne *green* caso este valor seja
 inferior a 50 e *red* caso seja igual ou superior a este número.
 
 ```haskell
@@ -95,9 +95,9 @@ Na primeira estamos apenas passando o seu valor para a
 função *corDoBalao*, que agora precisa desta informação
 para decidir qual será a cor do nosso balão. O retorno da
 execução de *(corDoBalao raio)* será uma cor: ou *green* ou
-*red*. Este retorno será usado como sendo o primeiro
-argumento da função *circle*.  
-Já o *raio* que aparece no final da linha é o segundo 
+*red*. Este retorno será usado como sendo o **primeiro**
+argumento da função *circle*.   
+Já o *raio* que aparece no final da linha é o **segundo** 
 argumento que também será passado para a função *circle*.
 
 Experimente alterar o valor da variável *raioDoMeuBalao*
@@ -123,16 +123,14 @@ vermelho.
 
 Para resolver este exerício precisamos criar uma condição
 dentro da outra. Primeiro verificamos se o valor é
-inferior a 50. Se for, já sabemos que a cor é verde.  
-
-Mas caso contrário, precisamos fazer uma segunda
+**inferior a 50**. Se for, já sabemos que a cor é verde.  
+Caso contrário, é necessário fazer uma segunda
 verificação: precisamos saber se é inferior a 65.  
 Se neste momento o valor for inferior a 65, sabemos que
-ele é um número entre 50 e 65, afinal, já havíamos feito
+ele **é um número entre 50 e 65**, afinal, já havíamos feito
 a primeira validação (se era inferior a 50) antes.  
-
 E se esta segunda validação também for falsa, sabemos que
-trata-se de um valor acima de 65 e, portanto, devemos
+trata-se de **um valor acima de 65** e, portanto, devemos
 utilizar a cor vermelha.
 
 Ou, em outra palavras, precisamos fazer um *if* dentro
@@ -167,9 +165,16 @@ balao raio =
     |> move 0 (-raio - (tamanhoDoFioDoBalao / 2))
   ]
 ```
+
+Repare na indentação dos _ifs_. O segundo está um pouco mais a direita
+e se necessário poderíamos adicionar outros _ifs_ aninhados. Mas precisamos
+tomar cuidado pois isso pode tornar nossos códigos muito
+difíceis de entender.
   
 ## E agora?
 
 Este curso ainda está sendo criado e por enquanto possui uma quantidade reduzida de aulas. Novas aulas vão ser publicadas ao longo das próximas semanas!
 
-Gostou da ideia deste projeto? Quer mandar alguma sugestão ou tirar alguma dúvida? Entre em contato com o autor enviando um e-mail para **marcio@segunda.tech**.
+Gostou da ideia deste projeto? Quer mandar alguma sugestão ou tirar alguma dúvida?
+Entre em contato comigo enviando um e-mail para **marcio@segunda.tech** ou me procure
+no twitter: [@marciofrayze](https://twitter.com)

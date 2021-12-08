@@ -88,22 +88,27 @@ de dados.
 
 Para representarmos em *Elm*, por exemplo, o conjunto de
 números entre zero e dez, escrevemos:  
+```haskell
 [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
-
+```
 E uma lista pode ser muito grande, pode ter apenas um
 elemento ou pode até mesmo ser vazia!
 
 #### Outros exemplos de listas:
 
 Uma lista vazia:  
+```haskell
 []
-
+```
 Uma lista com um único elemento:  
+```haskell
 [ 1 ]
+```
 
 Uma lista com 3 elementos:  
+```haskell
 [ 1, 2, 3 ]
-
+```
 Ao longo deste curso vamos criar muitas listas.
 
 ## 5- O que é o *circle*?
