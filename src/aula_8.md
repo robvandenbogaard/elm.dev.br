@@ -32,9 +32,9 @@ Para atingir nosso objetivo, precisamos fazer com que este valor
 seja variável e mude de acordo com o tempo (aquela variável
 *time* que vimos na aula passada).
 
-Para que, por exemplo, fazermos uma animação onde o círculo fique
-se movendo da esquerda para direita, precisaríamos variar sua posição na
-horizontal. Ou seja, substituirmos o valor -200 por um
+Para, por exemplo, criar uma animação onde o círculo fique
+se movendo da esquerda para direita, precisamos variar sua posição na
+horizontal. Ou seja, substituir o valor -200 por um
 valor que se altere de forma linear ao longo do tempo. E a função zigzag cumpre 
 justamente esta tarefa.
 
@@ -48,7 +48,7 @@ para completar (ou seja, o intervalo de tempo que
 deve transcorrer para que o valor varie entre o valor mínimo e o máximo
 e volte até o valor mínimo novamente).
 
-Agora que você já conhece a função *zigzag* e sua finalidade, consegue
+Agora que você já conhece a função *zigzag* e sua finalidade, você consegue
 imaginar como seria o código para que nosso círculo fique se movendo
 da esquerda para direita entre a posição -200 e 200 em um intervalo
 de 5 segundos?
@@ -65,14 +65,14 @@ view time =
   ]
 ```
 
-Bem fácil né. Mais uma vez, não podemos esquecer os parênteses, já que
+Mais uma vez, não podemos esquecer os parênteses, já que
 queremos que o primeiro parâmetro da função *move* seja o resultado
-da função *zigzag*. Para isso, precisamos indicar par o computador
+da função *zigzag*. Para isso, precisamos indicar para o computador
 (através do uso dos parênteses) que ele deve primeiro processar e calcular
 o valor da função *zigzag* para em seguida processar a função *move*.
 
-E aí? Já está começando a imaginar as possibilidades para criarmos
-jogos com essas funções?! :)
+E aí? Já está começando a imaginar as possibilidades para criar
+jogos com essas funções? 😃
 
 ## E agora?
 

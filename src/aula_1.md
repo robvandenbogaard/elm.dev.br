@@ -42,11 +42,11 @@ Alguns desafios são fáceis, outros mais
 difíceis. É normal ter um pouco de dificuldade e faz parte
 do aprendizado. Explore, experimente e não tenha
 medo de errar. O máximo que pode acontecer é
-aparecer uma mensagem de erro :)
+aparecer uma mensagem de erro. 😆
 
 ## Mas afinal, como é escrito um código?
 
-Abaixo temos nosso primeiro exemplo! O Famoso _"Olá Mundo!"_, que
+Abaixo temos nosso primeiro exemplo, o famoso _"Olá Mundo!"_, que
 apenas exibe este texto na tela.
 
 ```haskell

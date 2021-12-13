@@ -22,7 +22,7 @@ view time =
 
 ### Resposta
 
-Basta fixarmos o eixo *x* sempre no valor 0 e deixamos
+Basta fixar o eixo *x* sempre no valor 0 e deixar
 o eixo *y* variando entre -100 e 100 usando a função *zigzag*.
 
 ```haskell

@@ -28,8 +28,8 @@ atingir nosso objetivo, precisamos fazer com que este valor
 seja variável e mude de acordo com o tempo (aquela variável
 *time* que vimos na aula passada).
 
-Uma das formas de fazermos isso é utilizando uma função chamada
-*wave* (que significa onda em inglês).
+Uma das formas de implementar isso é utilizando uma função chamada
+_wave_ (que significa onda em inglês).
 
 Abra mais uma vez o site <a href="https://elm-lang.org/try">https://elm-lang.org/try</a>,
 copie e execute o código a seguir.  

@@ -16,7 +16,7 @@ o que é uma função?
 ## 1- O que é uma função?
 
 Conforme nosso código cresce, vai ficando cada
-vez mais difícil identificarmos o que significa
+vez mais difícil identificar o que significa
 cada uma de suas partes.  
 Por exemplo: no código que desenhamos um ônibus
 no desafio da aula 2, quanto mais detalhes
@@ -137,12 +137,11 @@ seguida utilizá-la em um ou mais lugares
 do código.
 
 Para utilizar uma função, assim como na matemática, 
-basta colocarmos seu nome. No nosso exemplo 
+basta escrever seu nome. No nosso exemplo 
 a função _folhas_ é utilizada como parte da função _main_.
 
-É **muito** importante enteder este conceito!  
-Analise com calma o código acima para ter certeza
-que compreendeu.
+É **muito** importante enteder este conceito. Analise com 
+calma o código acima para ter certeza que compreendeu.
 
 **Dica**: em _Elm_, a ordem em que as funções
 são definidas é irrelevante. Você pode definir
