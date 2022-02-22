@@ -15,12 +15,12 @@ o da imagem abaixo.
 
 As regras de um jogo vão impor certas condições. Por exemplo:
 
-**Se** a jogadora encostar em uma moeda, **então**  
-a moeda deve desaparecer e  
-a quantidade de moedas que a jogadora possui deve ser incrementado em 1.  
-**Senão**    
-a moeda deve continuar aparecendo e  
-a quantidade de moedas deve permanecer a mesma.
+**Se** a jogadora encostar em uma moeda, **então:**  
+&nbsp;&nbsp;&nbsp;&nbsp;a moeda deve desaparecer **e**  
+&nbsp;&nbsp;&nbsp;&nbsp;a quantidade de moedas que a jogadora possui deve ser incrementado em 1.  
+**Senão:**    
+&nbsp;&nbsp;&nbsp;&nbsp;a moeda deve continuar aparecendo **e**  
+&nbsp;&nbsp;&nbsp;&nbsp;a quantidade de moedas deve permanecer a mesma.
 
 Podemos separar o exemplo acima em 3 partes:  
 - A **condição**, que pode ser Verdadeira (*true* em inglês) ou Falsa (*false* em inglês); 
