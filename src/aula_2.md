@@ -1,6 +1,7 @@
 # Aula 2 - Desenhando na tela.
 
 ## O que vamos aprender?
+
 1. O que é um *import*?  
 2. Desenhar uma esfera.  
 3. O que é o *main*?  
@@ -17,12 +18,11 @@ escrever neste curso será:
 import Playground exposing (..)
 ```
 
-A palavra *import* (importar em inglês), serve
-para importar os códigos do *Playground*.  
-Por enquanto não se preocupe com isso, mas ela é necessária pois
-vai permitir que a gente desenhe na tela.  
-Todos os nossos programas neste curso vão começar
-com esta linha.
+A palavra *import* significa importar em inglês. Esta linha é
+necessária pois permite que a gente tenha acesso aos códigos 
+que estão definidos no *Playground*. Na Aula 5 explicarei mais 
+em detalhes mas, sem ela, não seriamos capazes de desenhar na tela. 
+Por isso, todos nossos programas neste curso vão começar com esta linha.
 
 ## 2- Desenhar uma esfera.
 
@@ -43,7 +43,7 @@ Em seguida pressione *Rebuild* e veja o resultado da execução conforme imagem 
 
 ![Desenhando um circulo](/resources/elm-lang-try-circulo.png)
 
-Fácil né? Mas o que está acontecendo?!
+Mas o que está acontecendo?!
 
 ## 3- O que é o *main*?
 
@@ -107,8 +107,14 @@ Uma lista com um único elemento:
 
 Uma lista com 3 elementos:  
 ```haskell
-[ 1, 2, 3 ]
+[ 8, 13, 311839 ]
 ```
+
+Outra lista com 3 elementos:  
+```haskell
+[ "Batata", "Cenoura", "Abóbora" ]
+```
+
 Ao longo deste curso vamos criar muitas listas.
 
 ## 5- O que é o *circle*?
@@ -120,8 +126,7 @@ em inglês). Para desenharmos nosso círculo precisamos
 informar 2 **parâmetros**:  
 O primeiro parâmetro representa sua cor. No nosso
 exemplo, usamos a cor verde (*green*).  
-O segundo parâmetro indica o diâmetro do círculo.
-Neste caso, 100.
+O segundo indica o diâmetro do círculo. Neste caso, 100.
 
 ## E agora?
 
