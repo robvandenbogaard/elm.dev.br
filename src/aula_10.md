@@ -1,6 +1,6 @@
 # Aula 10 - True, False e condicionais.
 
-## O que vamos aprender?
+## O que você irá aprender nesta aula?
 
 1. Pra que servem as condicionais?
 2. Usando condicionais.

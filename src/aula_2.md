@@ -1,6 +1,6 @@
 # Aula 2 - Desenhando na tela.
 
-## O que vamos aprender?
+## O que você irá aprender nesta aula?
 
 1. O que é um *import*?  
 2. Desenhar uma esfera.  

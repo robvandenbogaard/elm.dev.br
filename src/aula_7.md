@@ -1,6 +1,6 @@
 # Aula 7 - Fazendo movimentos de onda.
 
-## O que vamos aprender?
+## O que você irá aprender nesta aula?
 
 1. Como animar uma figura usando movimento ondular.  
 1.1 A função *wave*.  

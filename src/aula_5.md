@@ -1,13 +1,13 @@
 # Aula 5 - Passagem de parâmetros.
 
-## O que vamos aprender?
+## O que você irá aprender nesta aula?
 
 1. Passagem de parâmetro.  
-2. O que é uma biblioteca de software?  
-3. Criando nossas próprias funções parametrizadas.  
-4. Nomeando parâmetros.  
+2. Bibliotecas de software.  
+3. Como criar suas próprias funções parametrizadas.  
+4. Parâmetros nomeados.  
 
-## 1- Passagem de parâmetro.
+## 1- Passagem de parâmetro
 
 Como já disse em outras aulas, quase tudo 
 em *Elm* são **funções**. Isso inclui as palavras
@@ -28,7 +28,7 @@ Esta função *circle* está definida
 dentro do *Playground*, que é uma
 biblioteca do *Elm*.  
 
-## 2- O que é uma biblioteca de software?
+## 2- Bibliotecas de software
 
 Ao desenvolvermos um *software* vamos nos deparar
 com vários problemas que outras pessoas já 
@@ -46,7 +46,7 @@ uma biblioteca, a *Playground*,
 que contém funções que podemos utilizar
 para desenhar e animar figuras na tela.
 
-## 3- Criando nossas próprias funções parametrizadas
+## 3- Como criar suas próprias funções parametrizadas
 
 As funções que definimos em nossos
 códigos também podem ter parâmetros.  
@@ -109,7 +109,7 @@ outra função na seguinte linha:
 move x y
 ```
 
-## 4- Nomeando parâmetros
+## 4- Parâmetros nomeados
 
 Embora em nosso exemplo o nome dos
 parâmetros sejam apenas um caracter,

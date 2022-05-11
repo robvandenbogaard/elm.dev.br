@@ -1,6 +1,6 @@
-# Programação para Iniciantes
+# Programação para iniciantes
 
-## Introdução.
+## Introdução
 
 Este site foi criado para ensinar programação.  
 Você não precisa ter nenhum conhecimento prévio.

@@ -1,6 +1,6 @@
 # Aula 8 - Fazendo movimentos de zigzag.
 
-## O que vamos aprender?
+## O que você irá aprender nesta aula?
 
 1. Como animar uma figura usando movimento de zigzag.  
 1.1 A função *zigzag*.  

@@ -11,7 +11,7 @@ Esta aula será bastante teórica e um pouco difícil. Mas
 você precisa entender alguns conceitos importantes para
 conseguir dar continuidade aos seus estudos.
 
-## O que vamos aprender?
+## O que você irá aprender nesta aula?
 
 1. O que são os *Records*.  
 2. Criando uma função que recebe um *Record*.

@@ -1,27 +1,18 @@
-# Aula 6 - Nossa primeira animação.
+# Aula 6 - Sua primeira animação.
 
-Esta aula será um pouco mais teórica pois vamos aprender os
-fundamentos para que seja possível criar animações.
+Esta aula será um pouco mais teórica pois você irá aprender os
+fundamentos para conseguir criar animações.
 
-## O que vamos aprender?
+## O que você irá aprender nesta aula?
 
-1. Nossa primeira animação.  
-2. Conhecendo a função *animation*.  
-3. Rotacionando uma figura de acordo com o tempo.  
-4. Conhecendo a função *spin*.  
-4.1 Entendendo melhor o controle do tempo.  
+1. Como criar uma animação.  
+2. O que é a função *animation*.  
+3. Como rotacionar uma figura de acordo com o tempo.  
+3.1 Entendendo melhor o controle do tempo.  
 
-## 1- Nossa primeira animação.
+## 1- Como criar uma animação.
 
-Até agora desenhamos apenas imagens estáticas, mas o
-*Elm Playground* permite também apresentar animações.
-
-Então hoje vamos aprender a colocar movimentos nas
-nossas figuras! Isso será nosso próximo grande passo
-em direção a fazer nossos próprios jogos.
-
-Nesta aula vamos aprender a desenhar um triângulo
-girando na tela e este é o código que vamos analisar:
+Ao final desta aula, você será capaz de entender este código:
 
 ```haskell
 import Playground exposing (..)
@@ -35,24 +26,22 @@ view time =
     ]
 ```
 
-## 2. Conhecendo a função *animation*.
+## 2. O que é a função *animation*.
 
 *animation* (animação em inglês) é o nome da função que
-precisamos acionar para permitir que o nosso programa
-entenda que queremos criar uma imagem animada.
+você deve acionar para que o computador entenda 
+que o desenho que quer criar é uma imagem animada.
 
 A função *animation* recebe um parâmetro
-diferente do que aprendemos nas aulas anteriores: ela
-espera que passemos como argumento uma função. Ou seja,
-é uma função que recebe como parâmetro uma outra função!
+diferente do que aprendeu nas aulas anteriores: ela
+espera que seja passado como argumento uma função. Ou seja,
+é uma função que recebe como parâmetro uma outra função.
 
-Isso é algo que costuma gerar dúvidas mas
-na verdade é bastante simples.
-
-Em *Elm* (e também *JavaScript* e muitas outras linguagens
-de programação) isso é bastante comum: às vezes nossas
-funções vão receber valores como números ou textos
-e em outros casos receberá uma função como argumento.
+Isso é algo que costuma gerar dúvidas. Em *Elm* (e também
+*JavaScript* e muitas outras linguagens de programação) 
+isso é bastante comum: às vezes nossas funções vão receber
+valores como números ou textos, mas em outros casos receberá
+uma função como argumento.
 
 No nosso exemplo a função *animation* está recebendo como
 argumento a função *view* (que significa **vista** ou **ver**
@@ -93,7 +82,7 @@ Todas as animações deste curso serão feitas seguindo esta
 lógica: nossas funções vão precisamos do tempo (*time*) 
 decorrido para saber qual o momento atual da animação.
 
-## 4. Conhecendo a função *spin*.
+## 3. Como rotacionar uma figura de acordo com o tempo.  
 
 Já havíamos utilizado a função *rotate* antes, para
 rotacionarmos as imagens. Como você deve lembrar, ela
@@ -136,15 +125,15 @@ Mais uma vez, como quase tudo em *Elm*, *spin* é uma função.
 E como você deve ter observado, ela recebe dois parâmetros.
 O primeiro é o período, indicando quantos segundos deve
 demorar cada rotação da imagem. Quanto menor o valor, mais rápida
-será a velocidade de rotação. No nosso exemplo, este valor é
-8. Isso significa que nosso triângulo irá rodar por completo 1
+será a velocidade de rotação. No nosso exemplo, este valor é 8. 
+Isso significa que nosso triângulo irá rodar por completo 1
 vez a cada 8 segundos.  
 O segundo parâmetro é o tempo decorrido. Em geral vamos apenas
 repassar o valor que já recebemos como argumento da nossa função.
 Quem controla o tempo é o computador e ele repassa esta informação
 pra gente.
 
-## 4.1 Entendendo melhor o controle do tempo.
+## 3.1 Entendendo melhor o controle do tempo.
 
 Nosso programa começa na função *main*. Mas quem aciona esta função?
 O computador! Ou mais tecnicamente falando, a *runtime* do *Elm*.
