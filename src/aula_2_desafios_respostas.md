@@ -99,7 +99,7 @@ Você deve ser capaz de ler o código acima e interpreta-lo da
 seguinte maneira:  
 A nosso programa (*main*) é definido com sendo um
 desenho (*picture*) que contêm uma lista (indicada
-pelo símbolo **[**) de duas figuras que, neste caso,
+pelos símbolos **[** e **]**) de duas figuras que, neste caso,
 são dois círculos.
 
 ## DESAFIO 4 (avançado): Crie 4 círculos, um dentro do outro.

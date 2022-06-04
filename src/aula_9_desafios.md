@@ -24,7 +24,7 @@ desenharArvore arvore =
   ]
 ```
 
-Você consegue imaginar o que vai acontecer se executarmos este código?
+Você consegue imaginar o que vai acontecer ao executar este código?
 
 Utilizando um *type alias* estamos primeiro explicando para o
 computador o que é uma árvore. Neste caso uma árvore é formada

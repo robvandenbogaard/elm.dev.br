@@ -1,20 +1,20 @@
-# Aula 9 - Entendendo o que são os *Records*.
+# Aula 9 - Entendendo o que são os _Records_.
 
-Quando temos muitas informações em nossos programas, precisamos
-começar a nos preocupar em como organiza-las.
+Quando você tem muitas informações em seus programas, 
+precisa começar a se preocupar em como organiza-las.
 
-Já aprendemos a criar listas usando os símbolos **[** e
-**]**. Esta é uma das formas de organizarmos. Outra é
-através dos *Records*.
+Você já aprendeu a criar listas usando os símbolos **[** e
+**]**. Esta é uma das formas de organizar. Outra é
+através dos _Records_.
 
-Esta aula será bastante teórica e um pouco difícil. Mas
-você precisa entender alguns conceitos importantes para
-conseguir dar continuidade aos seus estudos.
+Esta aula será bastante teórica, mas você precisa entender 
+alguns conceitos importantes para conseguir dar continuidade
+aos estudos.
 
 ## O que você irá aprender nesta aula?
 
 1. O que são os *Records*.  
-2. Criando uma função que recebe um *Record*.
+2. Como criar uma função que recebe um *Record* como parâmetro.
 
 ## 1- O que são os *Records*.  
 
@@ -60,7 +60,7 @@ de um *Record*.
 
 Na linguagem _Elm_, tudo que estiver entre **{** e **}** é um *record*.
 
-## 2. Criando uma função que recebe um _Record_.
+## 2. Como criar uma função que recebe um *Record* como parâmetro.
 
 Podemos agora alterar o código anterior para que nossa função
 _circuloVerde_ receba um _Record_:
