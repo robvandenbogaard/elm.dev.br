@@ -4,7 +4,7 @@
 
 1. Passagem de parâmetro.  
 2. Bibliotecas de software.  
-3. Como criar suas próprias funções parametrizadas.  
+3. Como criar suas próprias funções parametrizadas?  
 4. Parâmetros nomeados.  
 
 ## 1- Passagem de parâmetro
@@ -30,28 +30,29 @@ biblioteca do *Elm*.
 
 ## 2- Bibliotecas de software
 
-Ao desenvolvermos um *software* vamos nos deparar
+Ao desenvolver um *software* você irá se deparar
 com vários problemas que outras pessoas já 
 enfrentaram e solucionaram.  
-Nestes casos podemos reutilizar as soluções pré-existentes,
-facilitando assim nosso trabalho.  
+Nestes casos você pode reutilizar as soluções pré-existentes,
+facilitando assim seu trabalho.  
 Por exemplo: desenhar um elemento na tela é uma tarefa
 recorrente e utilizada para vários programas diferentes.  
 Por isso, outra pessoa desenvolvedora já solucionou este
-problema e podemos nos aproveitar do trabalho dela para
-desenvolvermos o nosso programa.  
+problema e você pode reaproveitar o trabalho dela para
+desenvolvermos o seus programas.  
 Este conjunto de código escrito por outras pessoas
 é o que chamamos de **bibliotecas**. Até agora utilizamos
 uma biblioteca, a *Playground*,
 que contém funções que podemos utilizar
 para desenhar e animar figuras na tela.
 
-## 3- Como criar suas próprias funções parametrizadas
+## 3- Como criar suas próprias funções parametrizadas?
 
-As funções que definimos em nossos
+As funções que definir em seus
 códigos também podem ter parâmetros.  
 Observe o exemplo abaixo e tente
-entender o que está acontecendo:
+entender o que está acontecendo. Preste especial
+atenção na definição da função _fruta_.
 
 ```haskell
 import Playground exposing (..)
@@ -79,41 +80,44 @@ fruta x y =
     |> move x y
 ```
 
-O resultado final é o mesmo que tínhamos
-no desafio da aula passada: uma árvore
+O resultado final é o mesmo
+do desafio da aula passada: uma árvore
 com frutas. Mas o código está
 menor e mais simples.  
 Além disso, agora é mais fácil criar novas 
-frutas em nossa árvore!
+frutas em sua árvore!
 
-Na função *frutas* definida
-no código acima, temos dois parâmetros:
-*x* e *y*.  
-Isso significa que sempre que formos
-utilizar esta função, vamos ter que
+A função *frutas* definida
+no código acima agora depende de dois parâmetros:
+_**x**_ e _**y**_.  
+Isso significa que sempre que for
+utilizar esta função, será necessário
 passar 2 argumentos (valores).
 
-Em algumas linguagens de programação
+👩‍🏫 **Dica**: Em algumas linguagens de programação
 precisamos especificar explicitamente
-qual o tipo de cada variável.  
-Em *Elm* isso não é necessário. A
+qual o tipo de cada variável. Em *Elm* isso não é necessário. A
 linguagem é esperta o suficiente para
-descobrir que *x* e *y*, neste caso, são
+descobrir que _**x**_ e _**y**_, neste caso, são
 números.
 
 Observe também que dentro da função *fruta*
-repassamos os valores de *x* e *y* para 
+repassamos os valores de _**x**_ e _**y**_ para 
 outra função na seguinte linha: 
 
 ```haskell
 move x y
 ```
 
+Ou seja, *move* também é uma função parametrizada.
+Na verdade, a maioria das funções em _Elm_ 
+esperam pelo menos 1 parâmetro.
+
 ## 4- Parâmetros nomeados
 
-Embora em nosso exemplo o nome dos
-parâmetros sejam apenas um caracter,
-eles podem ser grandes e mais
+Embora no exemplo anterior o nome dos
+parâmetros sejam apenas um caracter (_**x**_ e _**y**_),
+você pode escolher nomes maiores e mais
 expressivos. Poderia ser, por exemplo:
 
 ```haskell
@@ -121,6 +125,8 @@ fruta posicaoX posicaoY =
  circle red 20
    |> move posicaoX posicaoY
 ```
+
+Mas neste caso específico, talvez os nome anteriores (_**x**_ e _**y**_) já fossem claros o suficiente.
 
 🚨 **Importante**: dar bons nomes para nossas variáveis e
 funções é uma das tarefas mais difíceis na programação! 

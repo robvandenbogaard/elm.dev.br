@@ -6,7 +6,7 @@
 2. Desenhar uma esfera.  
 3. O que é o *main*?  
 4. O que é o *picture*?  
-   4.1 Mas o que é uma lista?  
+  4.1 Mas o que é uma lista?  
 5. O que é o *circle*?  
 
 ## 1- O que é um *import*?
