@@ -63,7 +63,7 @@ Nosso desenho (*picture*) atualmente tem apenas um
 círculo. Tente adicionar um segundo círculo de
 outra cor e um pouco menor que o primeiro.
 
-__Dicas__:
+👩‍🏫 __Dicas__:
 - Lembre-se que os símbolos **[** e **]** indicam uma
 lista. Então o segundo círculo deve estar
 dentro destes símbolos.

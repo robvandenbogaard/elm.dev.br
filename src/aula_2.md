@@ -19,10 +19,10 @@ import Playground exposing (..)
 ```
 
 A palavra *import* significa importar em inglês. Esta linha é
-necessária pois permite que a gente tenha acesso aos códigos 
+necessária pois permite que você tenha acesso aos códigos 
 que estão definidos no *Playground*. Na Aula 5 explicarei mais 
-em detalhes mas, sem ela, não seriamos capazes de desenhar na tela. 
-Por isso, todos nossos programas neste curso vão começar com esta linha.
+em detalhes mas, sem ela, não seria possível desenhar na tela. 
+Por isso, todos os programas neste curso vão começar com esta linha.
 
 ## 2- Desenhar uma esfera.
 
@@ -48,30 +48,30 @@ Mas o que está acontecendo?!
 ## 3- O que é o *main*?
 
 A palavra *main* em inglês significa principal.
-É através dela que indicamos para o computador
-onde começa nosso programa.  
-Portanto, todos os nossos programas vão precisar
+É através dela que você indica para o computador
+onde começa o seu programa.  
+Portanto, todos os seus programas vão precisar
 ter essa linha:
 
 ```haskell
 main =
 ```
 
-E todo o restante representa o que queremos que
-o computador faça pra gente.  
-__Dica__: não pode ter nenhum espaço antes da
+E todo o restante representa o que quer que
+o computador faça para você.  
+
+🚨 __Atenção__: não pode ter nenhum espaço antes da
 palavra *main*. 
 
 ## 4- O que é o *picture*?
 
 A palavra *picture* em inglês significa desenho.
-É através dela que expressamos para o computador
-que queremos desenhar algo na tela.  
-Em seguida criamos uma **lista** (representada pelos
+É através dela que você indica para o computador
+que quer desenhar algo na tela.  
+Em seguida é criada uma **lista** (representada pelos
 símbolos **[** e **]**) de formas geométricas, que 
-vão formar nosso desenho (*picture*). Neste exemplo
-nosso desenho é formado por apenas uma forma
-geométrica: um círculo.
+vão formar o desenho (*picture*). Neste exemplo, o desenho 
+é formado por apenas uma forma geométrica: um círculo.
 
 ### 4.1- Mas o que é uma lista?
 
@@ -86,7 +86,7 @@ O conceito de lista na programação é muito similar: é
 apenas uma estrutura para organizar e relacionar um conjunto
 de dados.
 
-Para representarmos em *Elm*, por exemplo, o conjunto de
+Para representar em *Elm*, por exemplo, o conjunto de
 números entre zero e dez, escrevemos:  
 ```haskell
 [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
@@ -115,17 +115,17 @@ Outra lista com 3 elementos:
 [ "Batata", "Cenoura", "Abóbora" ]
 ```
 
-Ao longo deste curso vamos criar muitas listas.
+Ao longo deste curso vamos criar muitas listas!
 
 ## 5- O que é o *circle*?
 
 Uma lista de formas geométricas pode ter círculos,
 retângulos, hexágonos entre muitas outras formas. 
-No nosso exemplo, utilizamos um círculo (*circle*
-em inglês). Para desenharmos nosso círculo precisamos
+No exemplo anterior, foi utilizado um círculo (*circle*
+em inglês). Para desenhar um círculo é preciso
 informar 2 **parâmetros**:  
-O primeiro parâmetro representa sua cor. No nosso
-exemplo, usamos a cor verde (*green*).  
+O primeiro parâmetro representa sua cor. No
+exemplo, foi utilizada a cor verde (*green*).  
 O segundo indica o diâmetro do círculo. Neste caso, 100.
 
 ## E agora?

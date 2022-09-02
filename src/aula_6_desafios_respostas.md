@@ -108,7 +108,7 @@ Até agora nossas animações estão girando no sentido anti-horário
 gire no sentido horário (para direita) e o quadrado continue
 girando no sentido anti-horário.
 
-__DICAS__: 
+👩‍🏫 __Dicas__: 
   - Lembre-se que a função *rotate* pode receber valores positivos
   ou negativos. Valores positivos fazem com que a figura seja rotacionado
   no sentido anti-horário e valore negativos no sentido horário.  

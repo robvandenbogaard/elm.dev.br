@@ -1,33 +1,35 @@
 # Aula 4 - Criando funções.
 
-Esta aula será mais teórica, mas o que vamos
+Esta aula será mais teórica, mas o que irá
 aprender hoje é fundamental para entender todo
 o resto que está por vir. Então, bora entender
-o que é uma função?
+o que é uma função?!
 
 ## O que você irá aprender nesta aula?
 
 1. O que é uma funcão?  
   1.1 Funções matemáticas  
   1.2 Funções na programação  
-2. Como criar nossas próprias funções?  
+2. Como criar suas próprias funções?  
 3. Vantagens de criar funções  
 
 ## 1- O que é uma função?
 
-Conforme nosso código cresce, vai ficando cada
+Conforme seu código cresce, vai ficando cada
 vez mais difícil identificar o que significa
 cada uma de suas partes.  
-Por exemplo: no código que desenhamos um ônibus
+Por exemplo: no código que desenhou um ônibus
 no desafio da aula 2, quanto mais detalhes
-colocávamos no desenho, maior
+colocava no desenho, maior
 ficava o *main*.  
 Mas afinal, o que é esse _main_? Ela é uma **função**.  
 Na linguagem de programação _Elm_, quase tudo
 que escrevemos são funcões! Isso por que ela é uma
 linguagem que segue o **paradigma funcional**. Existem
 vários tipos (paradigmas) de linguagens: Orientadas à Objetos,
-Imperativas, Lógicas e também as Funcionais.
+Imperativas, Lógicas e também as Funcionais. Cada
+paradigma tem suas vantagens e desvantagens. Neste curso,
+você aprenderá o **paradigma funcional**.
 
 ## 1.1- Funções matemáticas
 
@@ -71,23 +73,23 @@ E em seguida o valor de _x_:
 z = 5 + 10
 ```
 
-Assim chegamos a conclusão que **15** é o único valor possíve de _z_.
+Assim chegamos a conclusão que **15** é o único valor possíve para _z_.
 
 ## 1.2 Funções na programação
 
 Em programação (em especial em linguagens funcionais,
 como *Elm* ou <a href='https://www.haskell.org/' target='_blank'>*Haskell*</a>),
-o conceito de funcão é muito parecido.  
+o conceito de função é muito parecido.  
 No nosso exemplo anterior, o valor de _z_ dependia de _y_ e de _x_.  
 Podemos fazer algo similar com nossa função _main_,
 tornando-a dependente de outras funções menores e
 mais simples. Isso deixa o código muito mais
 fácil de compreender e alterar.
 
-Achou confuso? Vai ficar mais fácil de entender com o
+Achou muito confuso? Não se preocupe, vai ficar mais fácil de entender com o
 exemplo a seguir.
 
-## 2- Como criar nossas próprias funções?
+## 2- Como criar suas próprias funções?
 
 Vamos partir de uma função que desenha uma árvore para
 então decompô-la em várias funções menores.
@@ -127,15 +129,14 @@ folhas =
 Este novo código é equivalente ao anterior. Apenas extraí parte dela
 para outra funcão.
 
-Para **definirmos uma nova função**, basta darmos um
+Para **definir uma nova função**, basta dar um
 nome para ela (uma palavra qualquer, neste caso,
-_folhas_) seguida do simbolo **=**, da mesma forma
+_folhas_) e em seguida colocar o simbolo **=**, da mesma forma
 que na matemática.  
 Tudo que estiver depois do símbolo de igual
 fará parte da nossa nova função.  
-Mas isso apenas **define** a função. Precisamos em
-seguida utilizá-la em um ou mais lugares
-do código.
+
+Uma vez definida, você pode utilizá-la em um ou mais lugares do código.
 
 Para utilizar uma função, assim como na matemática, 
 basta escrever seu nome. No exemplo anterior 
@@ -144,12 +145,12 @@ a função _folhas_ é utilizada como parte da função _main_.
 É **muito** importante enteder este conceito. Analise com 
 calma o código acima para ter certeza que compreendeu.
 
-**Dica**: em _Elm_, a ordem em que as funções
+🚨 **Atenção**: em _Elm_, a ordem em que as funções
 são definidas é irrelevante. Você pode definir
 primeiro a função _main_ e depois a função _folhas_
 ou primeiro a função _folhas_ e depois a _main_.
 
-Agora vamos separar o tronco da árvore em uma outra função:
+Agora você pode separar também o tronco da árvore em uma outra função:
 
 ```haskell
 import Playground exposing (..)
@@ -171,10 +172,10 @@ folhas =
 
 Tente imaginar que a palavra _folhas_, dentro
 da função _main_, será substituida pelo conteúdo
-definido logo abaixo na função _folhas_. E o mesmo
+definido na função _folhas_. E o mesmo
 para a palavra _tronco_.
 
-E podemos dar um passo além, se quisermos, e
+E você pode dar um passo além, se quiser, e
 criar a função _arvore_:
 
 ```haskell
@@ -207,17 +208,18 @@ tronco e uma folha.
 Existem duas grandes vantagens em dividir
 os códigos em várias funções.  
 A primeira é que torna mais fácil de
-expressar nossas intenções. Observe e compare a função
+expressar suas intenções. Observe e compare a função
 _main_ definida no primeiro e últimos exemplos. 
-Desta última forma ficou muito mais explícito o que estamos
+Desta última forma ficou muito mais explícito o que está
 tentando desenhar.  
 
 Outra grande vantagem de programar assim é que
 agora o _tronco_ e _folhas_ estão **desacoplados**.  
-Posso, por exemplo, reutilizar a função _tronco_
+Você pode, por exemplo, reutilizar a função _tronco_
 para desenhar outros tipos de árvores ou criar
 um novo tipo de _tronco_ e reaproveitar as _folhas_.  
-Em programação este é outro conceito muito importante:
+
+👩‍🏫 **Dica**: Em programação este é outro conceito muito importante:
 **reaproveitamento de códigos**.
 
 ## E agora?

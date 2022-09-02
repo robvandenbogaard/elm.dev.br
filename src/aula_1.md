@@ -8,8 +8,10 @@ Vamos desvendar os principais conceitos por trás desta
 área de forma gradual e divertida.  
 Ao longo do curso você aprenderá a desenhar figuras
 na tela, criar animações e até desenvolver
-jogos simples que poderá jogar no seu navegador!
+jogos simples que poderá jogar em seu navegador! 🕹
 
+Mas antes, você precisa entender alguns fundamentos. Então, vai encarar este desafio?? 
+  
 ## O que é um programa de computador?
 
 Um **programa** nada mais é do que um texto que
@@ -56,10 +58,10 @@ main =
 ```
 
 Mas como fazemos para **executar** este código?  
-Para facilitar, vamos fazer isso através do navegador! 😄  
-Abra uma nova aba em seu navegador e acesse o seguinte site:
-<a href=https://elm-lang.org/try target='_blank'>https://elm-lang.org/try</a>.  
-Em seguida, copie todo o código acima e cole na parte da esquerda do site.
+Neste curso, você fará isso através do navegador! 😄  
+Abra uma nova aba e acesse o seguinte *site*:
+<a href=https://elm-lang.org/try target='_blank'>https://elm-lang.org/try</a>. Guarde este endereço, pois você o usará ao longo de todo este curso.  
+Em seguida, copie todo o código acima e cole na parte da esquerda do *site*.
 
 Pressione *Rebuild* (Refazer em inglês) na parte inferior no centro da tela e 
 você deve ver o resultado da execução na direita de sua tela, conforme imagem abaixo:
