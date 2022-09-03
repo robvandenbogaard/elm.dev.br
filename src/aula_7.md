@@ -7,7 +7,7 @@
 
 ## 1- Como animar uma figura usando movimento ondular.
 
-Antes, vamos relembrar como desenhamos um círculo na tela:
+Antes, vamos relembrar como desenhar um círculo na tela:
 
 ```haskell
 import Playground exposing (..)
@@ -26,7 +26,7 @@ seu diâmetro ao longo do tempo).
 No exemplo acima o diâmetro do círculo está fixo em 100. Para
 atingir seu objetivo, é preciso fazer com que este valor
 seja variável e mude de acordo com o tempo (aquela variável
-*time* que vimos na aula passada).
+_time_ que vimos na aula passada).
 
 Uma das formas de implementar isso é utilizando uma função chamada
 _wave_ (que significa onda em inglês).
@@ -53,13 +53,13 @@ Como você deve ter observado, agora é acionada a função _wave_ e
 o resultado desta chamada irá definir o tamanho do diâmetro do círculo.  
 
 A função _wave_ recebe 4 parâmetros. Os 2 primeiros correspondem ao
-valor mínimo e o tamanho máximo da onda. Já os 2 últimos parâmetros estão
-relacionados com a velocidade que os valores devem ser alterados.  
+valor mínimo e o tamanho máximo do diâmetro. Já os 2 últimos parâmetros estão
+relacionados com a velocidade que o este valor deve ser alterado.  
 Neste exemplo, o valor 7 indica quantos segundos deve demorar o
-ciclo total da anição (ou seja, o intervalo de tempo que
-deve transcorrer para que o valor varie entre o valor mínimo e o máximo
-e volte até o valor mínimo novamente). E e o _time_ é a hora atual (que 
-recebemos como parâmetro na função _view_ e apenas repassamos o mesmo valor).
+ciclo total da animação (ou seja, o intervalo de tempo que
+deve transcorrer para que o valor varie entre o mínimo e o máximo
+e volte até o valor mínimo novamente). Já o _time_ é apenas a hora atual (que 
+recebemos como parâmetro na função _view_ e repassamos o mesmo valor).
 
 O valor de _time_ será atualizado automaticamente e a função 
 _view_ será acionada muitas e muitas vezes, cada vez com um valor diferente
