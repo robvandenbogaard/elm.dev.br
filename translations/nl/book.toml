@@ -1,0 +1,6 @@
+[book]
+authors = ["Marcio Frayze David"]
+language = "nl-nl"
+multilingual = false
+src = "src"
+title = "elm dev br (nederlandse versie)"
