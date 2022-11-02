@@ -1,23 +1,20 @@
-# Aula 2: Resposta dos desafios
+# Les 2: Antwoorden van de opdrachten
 
-Abra o seguinte endereço em uma outra aba em seu navegador:
-<a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>.  
+Open het volgende adres in een ander tabblad in uw browser:
+<a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>.
 
-Copie a resposta de cada exercício abaixo e
-tente entendê-las antes de pressionar *Rebuild*.  
+Kopieer hieronder het antwoord op elke oefening en
+probeer de code te begrijpen voordat je op *Rebuild* drukt.  
 
-## DESAFIO 1 (fácil): Mudando tamanho do círculo.
+## Opdracht 1 (eenvoudig): De grootte van een cirkel veranderen.
 
-Altere o valor do tamanho do círculo para um
-número que quiser.  
-Pode ser um valor pequeno como 1 ou 2, ou um número
-bem grande como 9999999.  
-Em seguida clique em *Rebuild* e veja o resultado!
+Verander de waarde van de cirkelgrootte in een willekeurig getal.  
+Het kan een kleine waarde zijn zoals 1 of 2, of een grote waarde zoals 999999999.  
+Klik dan op *Rebuild* en zie het resultaat!
 
-### Resposta
+### Antwoord
 
-Este desafio era muito fácil né?! Bastava alterar
-o valor do tamanho do círculo.
+Deze opdracht was best gemakkelijk, nietwaar?! Het enige dat je moest doen, was de waarde van de grootte van de cirkel veranderen.
 
 ```haskell
 import Playground exposing (..)
@@ -27,27 +24,23 @@ main =
     [ circle green 5 ]
 ```
 
-## DESAFIO 2 (fácil): Mudando a cor do círculo.
+## Opdracht 2 (eenvoudig): De kleur van de cirkel veranderen.
 
-Altere o valor da cor do círculo para sua cor
-preferida. Lembre-se que o nome das cores deve ser
-em inglês. Se tiver dificuldades com inglês, consulte a lista
-de cores disponíveis abaixo.
+Verander de kleurwaarde van de cirkel in de kleur van jouw voorkeur.  
+Vergeet niet dat je de naam van de kleuren in het Engels moet schrijven. Als je moeite hebt met Engels, kijk dan hieronder op de lijst met beschikbare kleuren.
 
-### Lista de cores:
+### Lijst met kleuren:
 red, orange, yellow, green, blue, purple, brown,
 lightRed, lightOrange, lightYellow, lightGreen,
 lightBlue, lightPurple, lightBrown, darkRed,
 darkOrange, darkYellow, darkGreen, darkBlue,
 darkPurple, darkBrown, white, lightGrey, grey,
 darkGrey, lightCharcoal, charcoal, darkCharcoal,
-black, lightGray, gray e darkGray.
+black, lightGray, gray and darkGray.
 
-### Resposta
+### Antwoord
 
-Este também era bem fácil. Bastava mudar o
-primeiro parâmetro do círculo (*circle*) para outra
-cor.
+Deze was ook vrij gemakkelijk. Je hoefde alleen maar de eerste parameter van de cirkel (*circle*) naar een andere kleur te wijzigen.
 
 ```haskell
 import Playground exposing (..)
@@ -57,33 +50,26 @@ main =
     [ circle red 5 ]
 ```
 
-## DESAFIO 3 (avançado): Crie 2 círculos, um dentro do outro.
+## Opdracht 3 (uitdagend): Maak 2 cirkels, de één binnen de ander.
 
-Nosso desenho (*picture*) atualmente tem apenas um
-círculo. Tente adicionar um segundo círculo de
-outra cor e um pouco menor que o primeiro.
+Onze tekening (*picture*) heeft momenteel slechts één
+cirkel. Probeer een tweede cirkel van
+een andere kleur en een beetje kleiner dan de eerste toe te voegen.
 
-👩‍🏫 __Dicas__:
-- Lembre-se que os símbolos **[** e **]** indicam uma
-lista. Então o segundo círculo deve estar
-dentro destes símbolos.
-- Pense na lista como sendo algo similar à lista
-de compras no supermercado, mas ao invés de
-alimentos, nossa lista vai guardar formas
-geométricas.
-- Utilize uma vírgula para indicar que quer
-criar um segundo círculo dentro da lista de
-formas geométricas.
-- Cuidado com a ordem! Se o círculo menor ficar
-antes do maior na lista, ele ficará atrás do
-maior e não será possível visualiza-lo.
-Para desenhar mais de uma figura geométrica,
-separamos cada figura com uma vírgula. No exemplo
-abaixo temos um círculo vermelho dentro de um
-verde.  
-Lembre-se que os símbolos **[** e **]** indicam uma lista.  
+👩‍🏫 __Tips__:  
+- Vergeet niet dat de symbolen **[** en **]** een
+lijst aangeven. Dus de tweede cirkel moet
+binnen deze symbolen vallen.  
+- Zie de lijst als vergelijkbaar met een boodschappenlijstje. Maar in plaats van
+voedsel, bevat onze lijst geometrische vormen.  
+- Gebruik een komma om aan te geven dat je een tweede cirkel maakt binnen de lijst van
+geometrische vormen.  
+- Let op de volgorde! Als de kleinste cirkel
+voor de grootste in de lijst staat, komt hij achter de grootste te staan en kun je hem niet zien. Als je meer dan één geometrische figuur wilt tekenen,
+scheidt dan elk figuur met een komma. In het voorbeeld hieronder hebben we een rode cirkel binnen een groene cirkel geplaatst.    
+Vergeet niet dat de symbolen **[** en **]** een lijst aangeven.  
 
-### Resposta
+### Antwoord
 
 ```haskell
 import Playground exposing (..)
@@ -95,28 +81,22 @@ main =
     ]
 ```
 
-Você deve ser capaz de ler o código acima e interpreta-lo da
-seguinte maneira:  
-A nosso programa (*main*) é definido com sendo um
-desenho (*picture*) que contêm uma lista (indicada
-pelos símbolos **[** e **]**) de duas figuras que, neste caso,
-são dois círculos.
+Je moet bovenstaande code kunnen lezen en als volgt interpreteren:  
+Ons programma (*main*) is gedefinieerd als een
+tekening (*picture*) met een lijst (aangegeven
+door de symbolen **[** en **]**) van twee figuren die in dit geval twee cirkels zijn.
 
-## DESAFIO 4 (avançado): Crie 4 círculos, um dentro do outro.
+## Opdracht 4 (uitdagend): Maak 4 cirkels, de één binnen de ander.
 
-Bastante similar ao desafio anterior, mas desta vez
-devem ser 4 círculos, um dentro do outro, com
-tamanhos e cores diferentes.
+Vergelijkbaar met de vorige opdracht, maar deze keer moeten er 4 cirkels zijn: de ene binnen de andere, met verschillende maten en kleuren.
 
-### Resposta
+### Antwoord
 
-Caso tenha tido dificuldades nos exercícios 3 e 4,
-agora que já viu a resposta do 3, que tal tentar
-fazer o 4 antes de ver a resposta? Em seguida veja
-a resposta abaixo.
+Als je moeite had met oefeningen 3 en 4,
+waarom probeer je dan nu niet oefening 4 te doen voordat je het antwoord ziet, en nu je het antwoord op oefening 3 hebt gezien?  
+Zie het antwoord hieronder.
 
-Antes de executar o código abaixo, você é capaz
-de imaginar o que ele irá desenhar na tela?
+Voordat je de onderstaande code uitvoert, kun je je voorstellen wat het op het scherm zal tekenen?
 
 ```haskell
 import Playground exposing (..)
@@ -130,6 +110,6 @@ main =
     ]
 ```
 
-## E agora?
+## En nu?
 
-Siga para a [Aula 3](/aula_3.html) e bons estudos!
+Ga nu door met [Les 3](/les_3.html), veel succes!

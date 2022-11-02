@@ -1,16 +1,13 @@
-# Aula 2: Desafios
+# Les 2: Opdrachten
 
-Para fixar o conhecimento é preciso praticar.
+Om dat wat je leert te onthouden, moet je oefenen.
 
-Nesta seção são propostos alguns desafios para você
-tentar fazer sozinho. É **muuuito** importante que você tente
-resolve-los antes de ver as respostas!
+In dit gedeelte bieden wij jouw enkele opdrachten aan om zelf te proberen. Het is **zeer** belangrijk dat je ze probeert op te lossen voordat je de antwoorden ziet!
 
-Antes de mais nada, abra o seguinte endereço em uma
-outra aba em seu navegador:
+Open eerst het volgende adres in een ander tabblad in jouw browser:
 <a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>.  
 
-Copie e execute o mesmo código que vimos durante a aula 2:
+Kopieer en voer dezelfde code uit die we in les 2 zagen:
 
 ```haskell
 import Playground exposing (..)
@@ -20,65 +17,55 @@ main =
     [ circle green 100 ]
 ```
 
-Agora tente alterar o código para atender os desafios
-propostos abaixo. E não tenha medo de errar! Experimente,
-teste, explore, erre. O pior que pode acontecer é
-aparecer uma mensagem de erro.
+Probeer nu de code te veranderen om onderstaande opdrachten te kunnen maken. En, wees niet bang om een fout te maken!  
+Probeer het eens, testen, onderzoeken, fouten maken. Het ergste dat kan gebeuren is dat je een foutmelding krijgt
 
-## DESAFIO 1 (fácil): Mudando tamanho do círculo.
 
-Altere o valor do tamanho do círculo para um
-número que quiser.  
-Pode ser um valor pequeno como 1 ou 2, ou um número
-bem grande como 9999999.  
-Em seguida clique em *Rebuild* e veja o resultado!
+## Opdracht 1 (eenvoudig): De grootte van een cirkel veranderen.
 
-## DESAFIO 2 (fácil): Mudando a cor do círculo.
+Verander de waarde van de cirkelgrootte in een willekeurig getal.  
+Het kan een kleine waarde zijn zoals 1 of 2, of een grote waarde zoals 999999999.  
+Klik dan op *Rebuild* en zie het resultaat!
 
-Altere o valor da cor do círculo para sua cor
-preferida. Lembre-se que o nome das cores deve ser
-em inglês. Se tiver dificuldades com inglês, consulte a lista
-de cores disponíveis abaixo.
+## Opdracht 2 (eenvoudig): De kleur van de cirkel veranderen.
 
-### Lista de cores:
+Verander de kleurwaarde van de cirkel in de kleur van jouw voorkeur.  
+Vergeet niet dat je de naam van de kleuren in het Engels moet schrijven. Als je moeite hebt met Engels, kijk dan hieronder op de lijst met beschikbare kleuren.
+
+### Lijst met kleuren:
 red, orange, yellow, green, blue, purple, brown,
 lightRed, lightOrange, lightYellow, lightGreen,
 lightBlue, lightPurple, lightBrown, darkRed,
 darkOrange, darkYellow, darkGreen, darkBlue,
 darkPurple, darkBrown, white, lightGrey, grey,
 darkGrey, lightCharcoal, charcoal, darkCharcoal,
-black, lightGray, gray e darkGray.
+black, lightGray, gray and darkGray.
 
-## DESAFIO 3 (avançado): Crie 2 círculos, um dentro do outro.
+## Opdracht 3 (uitdagend): Maak 2 cirkels, de één binnen de ander.
 
-Nosso desenho (*picture*) atualmente tem apenas um
-círculo. Tente adicionar um segundo círculo de
-outra cor e um pouco menor que o primeiro.
+Onze tekening (*picture*) heeft momenteel slechts één
+cirkel. Probeer een tweede cirkel van
+een andere kleur en een beetje kleiner dan de eerste toe te voegen.
 
-👩‍🏫 __Dicas__:
-- Lembre-se que os símbolos **[** e **]** indicam uma
-lista. Então o segundo círculo deve estar
-dentro destes símbolos.
-- Pense na lista como sendo algo similar à lista
-de compras no supermercado, mas ao invés de
-alimentos, nossa lista vai guardar formas
-geométricas.
-- Utilize uma vírgula para indicar que quer
-criar um segundo círculo dentro da lista de
-formas geométricas.
-- Cuidado com a ordem! Se o círculo menor ficar
-antes do maior na lista, ele ficará atrás do
-maior e não será possível visualiza-lo.
+👩‍🏫  __Tips__:  
+- Vergeet niet dat de symbolen **[** en **]** een
+lijst aangeven. Dus de tweede cirkel moet
+binnen deze symbolen vallen.  
+- Zie de lijst als vergelijkbaar met een boodschappenlijstje. Maar in plaats van
+voedsel, bevat onze lijst geometrische vormen.  
+- Gebruik een komma om aan te geven dat je een tweede cirkel maakt binnen de lijst van
+geometrische vormen.  
+- Let op de volgorde! Als de kleinste cirkel
+voor de grootste in de lijst staat, komt hij achter de grootste te staan en kun je hem niet zien.
 
-## DESAFIO 4 (avançado): Crie 4 círculos, um dentro do outro.
 
-Bastante similar ao desafio anterior, mas desta vez
-devem ser 4 círculos, um dentro do outro, com
-tamanhos e cores diferentes.
+## Opdracht 4 (uitdagend): Maak 4 cirkels, de één binnen de ander.
 
-## E agora?
+Vergelijkbaar met de vorige opdracht, maar deze keer moeten er 4 cirkels zijn: de ene binnen de andere, met verschillende maten en kleuren.
 
-Conseguiu fazer todos os exercícios? Teve dificuldade em algum?
+## En nu?
 
-Siga para as [respostas dos desafios](/aula_2_desafios_respostas.html)
-para ver a solução.
+Heb je alle oefeningen kunnen doen? Had je moeite met een van hen?
+
+Ga naar [opdrachten_antwoorden](/Les_2_opdrachten_antwoorden.html)
+om de oplossing te zien.

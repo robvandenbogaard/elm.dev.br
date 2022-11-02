@@ -1,35 +1,32 @@
-# Aula 2 - Desenhando na tela.
+# Les 2 - Tekenen op het scherm.
 
-## O que você irá aprender nesta aula?
+## Wat leer je in deze les?
 
-1. O que é um *import*?  
-2. Desenhar uma esfera.  
-3. O que é o *main*?  
-4. O que é o *picture*?  
-  4.1 Mas o que é uma lista?  
-5. O que é o *circle*?  
+1. Wat is een *import*?  
+2. Teken een bol.  
+3. Wat is *main*?  
+4. Wat is *picture*?  
+  4.1 Maar wat is een lijst?  
+5. Wat is *circle*?  
 
-## 1- O que é um *import*?
+## 1- Wat is een *import*?
 
-A primeira linha de todos os programas que vamos
-escrever neste curso será:  
+De eerste regel van alle computerprogramma's die we in deze cursus zullen
+schrijven, zal zijn:  
 
 ```haskell
 import Playground exposing (..)
 ```
 
-A palavra *import* significa importar em inglês. Esta linha é
-necessária pois permite que você tenha acesso aos códigos 
-que estão definidos no *Playground*. Na Aula 5 explicarei mais 
-em detalhes mas, sem ela, não seria possível desenhar na tela. 
-Por isso, todos os programas neste curso vão começar com esta linha.
+Het woord *import* betekent importeren (binnenbrengen) in het Engels. Deze regel is nodig omdat het je toegang geeft tot de codes die zijn gedefinieerd in *Playground*. In les 5 wordt dit meer in detail uitgelegd, maar zonder dat zou het niet mogelijk zijn om op het scherm te tekenen.
+Daarom beginnen alle computerprogramma's in deze cursus met deze regel.
 
-## 2- Desenhar uma esfera.
+## 2- Teken een rondje.
 
-Hora de programar!  
-Vamos desenhar um círculo na tela?  
-Abra novamente o site <a href='https://elm-lang.org/try' target='_blank'>https://elm-lang.org/try</a>
-em uma outra aba de seu navegador e cole o código abaixo.
+Tijd om te programmeren!  
+Zullen we een cirkel op het scherm tekenen?  
+Open de website opnieuw <a href='https://elm-lang.org/try' target='_blank'>https://elm-lang.org/try</a>
+in een ander tabblad van jouw browser en plak de onderstaande code in het linkerscherm.
 
 ```haskell
 import Playground exposing (..)
@@ -39,98 +36,87 @@ main =
     [ circle green 100 ]
 ```
 
-Em seguida pressione *Rebuild* e veja o resultado da execução conforme imagem abaixo.  
+Druk vervolgens op *Rebuild* en bekijk het resultaat. Lijkt het op onderstaande afbeelding?
 
-![Desenhando um circulo](/resources/elm-lang-try-circulo.png)
+![Een cirkel tekenen](/resources/elm-lang-try-circulo.png)
 
-Mas o que está acontecendo?!
+Maar wat gebeurt er eigenlijk?!
 
-## 3- O que é o *main*?
+## 3- Wat is *main*?
 
-A palavra *main* em inglês significa principal.
-É através dela que você indica para o computador
-onde começa o seu programa.  
-Portanto, todos os seus programas vão precisar
-ter essa linha:
+Het woord *main* betekent voornaamst, of hoofdzaak in het Engels.
+Hiermee vertel je de computer waar je programma begint.  
+Dus al jouw programma's moeten deze regel hebben:
 
 ```haskell
 main =
 ```
 
-E todo o restante representa o que quer que
-o computador faça para você.  
+En al het andere staat voor wat je wilt dat de
+de computer voor jou doet.  
 
-🚨 __Atenção__: não pode ter nenhum espaço antes da
-palavra *main*. 
+🚨 __Let op__: er mag géén spatie staan vóór het woord *main*. 
 
-## 4- O que é o *picture*?
+## 4- Wat is *picture*?
 
-A palavra *picture* em inglês significa desenho.
-É através dela que você indica para o computador
-que quer desenhar algo na tela.  
-Em seguida é criada uma **lista** (representada pelos
-símbolos **[** e **]**) de formas geométricas, que 
-vão formar o desenho (*picture*). Neste exemplo, o desenho 
-é formado por apenas uma forma geométrica: um círculo.
+Het woord *picture* betekent tekening in het Engels.
+Daarmee geef je de computer aan dat je iets op het scherm wilt tekenen.  
+Een **lijst** (weergegeven door de symbolen **[** en **]**) van geometrische vormen, vormt de tekening (*picture*). In dit voorbeeld bestaat de tekening 
+uit slechts één geometrische vorm: een cirkel.
 
-### 4.1- Mas o que é uma lista?
+### 4.1- Maar wat is een lijst?
 
-Quando vou ao supermercado, escrevo uma lista
-de produtos que quero comprar. Algo como:  
-- 5Kg de arroz  
-- 1Kg de feijão  
-- 3 batatas grandes  
-- 2 mangas  
+Als ik naar de supermarkt ga, schrijf ik een lijst op van producten die ik wil kopen. Zoiets als:  
+- 5Kg rijst  
+- 1Kg bonen  
+- 3 grote aardappelen  
+- 2 mango's  
 
-O conceito de lista na programação é muito similar: é
-apenas uma estrutura para organizar e relacionar um conjunto
-de dados.
+Het begrip 'lijst' in programmeren lijkt er sterk op: het is
+gewoon een structuur om een reeks van gegevens te ordenen en met elkaar in verband te brengen.
 
-Para representar em *Elm*, por exemplo, o conjunto de
-números entre zero e dez, escrevemos:  
+Om in *Elm* bijvoorbeeld de verzameling van
+getallen tussen nul en tien weer te geven, schrijven we  
 ```haskell
 [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 ```
-E uma lista pode ser muito grande, pode ter apenas um
-elemento ou pode até mesmo ser vazia!
+Een lijst kan heel lang zijn. Hij kan ook maar één
+element bevatten of het kan zelfs leeg zijn!
 
-#### Outros exemplos de listas:
+#### Andere voorbeelden van lijsten:
 
-Uma lista vazia:  
+Een lege lijst: 
 ```haskell
 []
 ```
-Uma lista com um único elemento:  
+
+Een lijst met één element:  
 ```haskell
 [ 1 ]
 ```
 
-Uma lista com 3 elementos:  
+Een lijst met 3 elementen:  
 ```haskell
 [ 8, 13, 311839 ]
 ```
 
-Outra lista com 3 elementos:  
+Nog een lijst met 3 elementen:  
 ```haskell
-[ "Batata", "Cenoura", "Abóbora" ]
+["Aardappel", "Wortel", "Pompoen"... ]
 ```
 
-Ao longo deste curso vamos criar muitas listas!
+Tijdens deze cursus zullen we veel lijsten maken!
 
-## 5- O que é o *circle*?
+## 5- Wat is *circle*?
 
-Uma lista de formas geométricas pode ter círculos,
-retângulos, hexágonos entre muitas outras formas. 
-No exemplo anterior, foi utilizado um círculo (*circle*
-em inglês). Para desenhar um círculo é preciso
-informar 2 **parâmetros**:  
-O primeiro parâmetro representa sua cor. No
-exemplo, foi utilizada a cor verde (*green*).  
-O segundo indica o diâmetro do círculo. Neste caso, 100.
+Een lijst van geometrische vormen kan cirkels,
+rechthoeken, zeshoeken en vele andere vormen hebben. 
+In het vorige voorbeeld werd een cirkel (*circle* in het Engels) gebruikt. Om een cirkel te tekenen moet je 2 **parameters** invoeren:  
+De eerste parameter staat voor de kleur. In het voorbeeld werd de kleur groen (*green*) gebruikt.  
+De tweede parameter geeft de diameter van de cirkel aan. In dit geval is het 100.
 
-## E agora?
+## En nu?
 
-Agora chegou a hora de você colocar as mãos na massa
-e praticar um pouco!
+Nu is het tijd om aan de slag te gaan en een beetje te oefenen!
 
-Siga para os [desafios da Aula 2](/aula_2_desafios.html) e bons estudos!
+Ga naar [Les 2 opdrachten](/les_2_opdrachten.html) en veel succes met oefenen!
