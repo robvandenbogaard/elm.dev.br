@@ -1,5 +1,7 @@
 # Programmeren voor beginners
 
+*..en voor wie een nieuwe programmeer-superkracht wil ontdekken.*
+
 ## Introductie
 
 Op deze site kun je leren programmeren.  
@@ -45,6 +47,7 @@ hele les.
 Sommige opdrachten zijn makkelijk, andere uitdagender.
 Het is normaal er wat moeite mee te hebben; dat is onderdeel
 van het leerproces.
+
 Exploreer, experimenteer en wees niet bang fouten te maken.
 Het ergste dat kan gebeuren is dat je een foutmelding krijgt. 😆
 
@@ -71,7 +74,7 @@ Kopieer daarna de hele code hierboven en plak het in het linkerdeel van de *site
 
 Druk op *Rebuild* ("Opnieuw bouwen" in het engels) midden onderin het scherm en je zult het resultaat van het uitvoeren aan de rechterkant op je scherm zien, zoals in het plaatje hieronder:
 
-![Ons eerste stuk code](/resources/elm-lang-try-ola-mundo.png)
+![Ons eerste stuk code](resources/elm-lang-try-ola-mundo.png)
 
 Gefeliciteerd! Je hebt je eerste programma gemaakt in de programmeertaal *Elm*! 🎉
 
@@ -81,4 +84,4 @@ In de volgende lessen leer je figuren te tekenen op het scherm
 en leer je een aantal fundamenten van het programmeren kennen.
 Je leert wat functies zijn, parameters en nog veel meer!
 
-Ga nu door met [Les 2](/les_2.html), veel succes!
+Ga nu door met [Les 2](les_2.html), veel succes!

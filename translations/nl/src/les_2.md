@@ -38,7 +38,7 @@ main =
 
 Druk vervolgens op *Rebuild* en bekijk het resultaat. Lijkt het op onderstaande afbeelding?
 
-![Een cirkel tekenen](/resources/elm-lang-try-circulo.png)
+![Een cirkel tekenen](resources/elm-lang-try-circulo.png)
 
 Maar wat gebeurt er eigenlijk?!
 
@@ -119,4 +119,4 @@ De tweede parameter geeft de diameter van de cirkel aan. In dit geval is het 100
 
 Nu is het tijd om aan de slag te gaan en een beetje te oefenen!
 
-Ga naar [Les 2 opdrachten](/les_2_opdrachten.html) en veel succes met oefenen!
+Ga naar [Les 2 opdrachten](les_2_opdrachten.html) en veel succes met oefenen!
