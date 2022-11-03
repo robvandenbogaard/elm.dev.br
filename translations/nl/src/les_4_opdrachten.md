@@ -1,62 +1,59 @@
-s## Aula 4: Desafios
+# Les 4: Opdrachten
 
-## DESAFIO 1 (fácil): Termine de desenhar o carro.
+## OPDRACHT 1 (eenvoudig): Maak de tekening van de auto af.
 
-Abaixo temos um trecho incompleto de um
-código para desenhar um carro.  
-Escreva as três funções que estão faltando
-para desenhar o carro.
+Hieronder staat een onvolledig stuk code voor het tekenen van een auto.  
+Schrijf de drie ontbrekende functies
+om de auto te tekenen.
 
 ```haskell
 import Playground exposing (..)
 
 main =
   picture
-    carro
+    auto
 
-carro =
-  [ carroceria
-  , rodaFrontal
-  , rodaTraseira
+auto =
+  [ carrosserie
+  , voorwiel
+  , achterwiel
   ]
 ```
 
-## DESAFIO 2 (fácil): Desenhe frutas na árvore.
+## OPDRACHT 2 (eenvoudig): Teken fruit aan de boom.
 
-O código abaixo representa uma árvore sem frutas.
+De onderstaande code stelt een boom zonder fruit voor.
 
 ```haskell
 import Playground exposing (..)
 
 main =
   picture
-    arvore
+    boom
 
-arvore =
-  [ tronco
-  , folhas
+boom =
+  [ stam
+  , bladeren
   ]
 
-tronco =
+stam =
   rectangle darkBrown 60 250
     |> move 0 -150
 
-folhas =
+bladeren =
   circle green 150
     |> move 0 50
 ```
 
-Adione mais algumas funções para representar
-4 frutas na árvore. As frutas podem ser simples
-esferas vermelhas.  
+Voeg wat meer functies toe om 4 vruchten aan de boom weer te geven. De vruchten kunnen eenvoudige rode bollen zijn. 
 
-👩‍🏫 __Dica__: A forma mais fácil é criar 4 novas
-funções: fruta1, fruta2, fruta3 e fruta4. Na próxima aula vamos ver uma forma melhor
-para resolver este tipo de problema.  
+👩‍🏫 __Tip__: De gemakkelijkste manier is om 4 nieuwe
+functies te maken: fruit1, fruit2, fruit3 en fruit4. In de volgende les zullen we een betere manier zien
+om dit soort problemen op te lossen. 
 
-## E agora?
+## En nu?
 
-Conseguiu fazer todos os exercícios? Teve dificuldade em algum?
+Is het je gelukt om alle oefeningen te doen? Had je moeite met een van hen?
 
-Siga para as [respostas dos desafios](/aula_4_desafios_respostas.html)
-para ver a solução.
+Ga naar [antwoorden van de opdrachten](/les_4_antwoorden.html)
+om de oplossing te zien.

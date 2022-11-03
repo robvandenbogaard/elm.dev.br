@@ -1,13 +1,12 @@
-# Aula 3: Resposta dos desafios
+# Les 3: Antwoorden van de opdrachten
 
-## DESAFIO 1 (fácil): Desenhe um carro.
+## OPDRACHT 1 (eenvoudig): Teken een auto.
 
-Utilize um retângulo para representar o carro
-e dois círculos para representar suas rodas.  
-Utilize a instrução *move* para posicionar as
-rodas.
+Gebruik een rechthoek die de auto moet voorstellen
+en twee cirkels die zijn wielen moeten voorstellen.  
+Gebruik de *move* instructie om de wielen te plaatsen.
 
-### Resposta
+### Antwoord
 
 ```haskell
 import Playground exposing (..)
@@ -22,13 +21,12 @@ main =
     ]
 ```
 
-## DESAFIO 2 (fácil): Desenhe uma árvore.
+## OPDRACHT 2 (eenvoudig): Teken een boom.
 
-Utilize um retângulo marrom para representar
-o tronco e um círculo verde para representar
-as folhas.
+Gebruik een bruine rechthoek die de stam moet voorstellen 
+en een groene cirkel die de bladeren moeten voorstellen.
 
-### Resposta
+### Antwoord
 
 ```haskell
 import Playground exposing (..)
@@ -42,12 +40,11 @@ main =
     ]
 ```
 
-## DESAFIO 3 (avançado): Desenhe uma estrela.
+## OPDRACHT 3 (uitdagend): Teken een ster.
 
-Use triângulos para desenhar uma estrela
-de 6 pontas.
+Gebruik driehoeken om een 6-puntige ster te tekenen.
 
-### Resposta
+### Antwoord
 
 ```haskell
 import Playground exposing (..)
@@ -60,13 +57,13 @@ main =
      ]
 ```
 
-## DESAFIO 4 (avançado): Desenhe um ônibus.
+## OPDRACHT 4 (uitdagend): Teken een bus.
 
-Tente incluir janelas, a frente do ônibus
-e tudo mais que desejar! Não existe uma
-resposta errada. Use a imaginação!
+Probeer ramen te plaatsen, de voorkant van de bus
+en al het andere dat je maar wilt! Er is geen
+fout antwoord. Gebruik je fantasie!
 
-### Resposta
+### Antwoord
 
 ```haskell
 import Playground exposing (..)
@@ -109,6 +106,6 @@ main =
      ]
 ```
 
-## E agora?
+## En nu?
 
-Siga para a [Aula 4](/aula_4.html) e bons estudos!
+Ga nu door met [Les 4](/les_4.html), veel succes!

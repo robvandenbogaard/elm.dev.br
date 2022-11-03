@@ -6,7 +6,7 @@ Open het volgende adres in een ander tabblad in uw browser:
 Kopieer hieronder het antwoord op elke oefening en
 probeer de code te begrijpen voordat je op *Rebuild* drukt.  
 
-## Opdracht 1 (eenvoudig): De grootte van een cirkel veranderen.
+## OPDRACHT 1 (eenvoudig): De grootte van een cirkel veranderen.
 
 Verander de waarde van de cirkelgrootte in een willekeurig getal.  
 Het kan een kleine waarde zijn zoals 1 of 2, of een grote waarde zoals 999999999.  
@@ -24,7 +24,7 @@ main =
     [ circle green 5 ]
 ```
 
-## Opdracht 2 (eenvoudig): De kleur van de cirkel veranderen.
+## OPDRACHT 2 (eenvoudig): De kleur van de cirkel veranderen.
 
 Verander de kleurwaarde van de cirkel in de kleur van jouw voorkeur.  
 Vergeet niet dat je de naam van de kleuren in het Engels moet schrijven. Als je moeite hebt met Engels, kijk dan hieronder op de lijst met beschikbare kleuren.
@@ -50,7 +50,7 @@ main =
     [ circle red 5 ]
 ```
 
-## Opdracht 3 (uitdagend): Maak 2 cirkels, de één binnen de ander.
+## OPDRACHT 3 (uitdagend): Maak 2 cirkels, de één binnen de ander.
 
 Onze tekening (*picture*) heeft momenteel slechts één
 cirkel. Probeer een tweede cirkel van
@@ -86,7 +86,7 @@ Ons programma (*main*) is gedefinieerd als een
 tekening (*picture*) met een lijst (aangegeven
 door de symbolen **[** en **]**) van twee figuren die in dit geval twee cirkels zijn.
 
-## Opdracht 4 (uitdagend): Maak 4 cirkels, de één binnen de ander.
+## OPDRACHT 4 (uitdagend): Maak 4 cirkels, de één binnen de ander.
 
 Vergelijkbaar met de vorige opdracht, maar deze keer moeten er 4 cirkels zijn: de ene binnen de andere, met verschillende maten en kleuren.
 

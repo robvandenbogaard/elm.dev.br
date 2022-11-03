@@ -1,93 +1,88 @@
-# Aula 4: Resposta dos desafios
+# Les 4: Antwoorden van de opdrachten
 
-## DESAFIO 1 (fácil): Termine de desenhar o carro.
+## OPDRACHT 1 (eenvoudig): Maak de tekening van de auto af.
 
-Escreva as três funções que estão faltando
-para desenhar o carro.
+Schrijf de drie ontbrekende functies
+om de auto te tekenen.
 
-### Resposta
+### Antwoord
 
 ```haskell
 import Playground exposing (..)
 
 main =
   picture
-    carro
+    auto
 
-carro =
-  [ carroceria
-  , rodaFrontal
-  , rodaTraseira
+auto =
+  [ carrosserie
+  , voorwiel
+  , achterwiel
   ]
 
-carroceria =
+carrosserie =
   rectangle darkGreen 450 150
 
-rodaFrontal =
+voorwiel =
   circle darkRed 60
     |> move -100 -100
 
-rodaTraseira =
+achterwiel =
   circle darkRed 60
      |> move 100 -100
 ```
 
-## DESAFIO 2 (fácil): Desenhe frutas na árvore.
+## OPDRACHT 2 (eenvoudig): Teken fruit aan de boom.
 
-### Resposta
+### Antwoord
 
 ```haskell
 import Playground exposing (..)
 
 main =
   picture
-    [ tronco
-    , folhas
-    , fruta1
-    , fruta2
-    , fruta3
-    , fruta4
+    [ stam
+    , bladeren
+    , fruit1
+    , fruit2
+    , fruit3
+    , fruit4
     ]
 
-tronco =
+stam =
   rectangle darkBrown 60 250
     |> move 0 -150
 
-folhas =
+bladeren =
   circle green 150
     |> move 0 50
 
-fruta1 =
+fruit1 =
   circle red 20
     |> move 50 50
 
-fruta2 =
+fruit2 =
   circle red 20
     |> move -40 20
 
-fruta3 =
+fruit3 =
   circle red 20
     |> move -50 100
 
-fruta4 =
+fruit4 =
   circle red 20
     |> move 40 130
 ```
 
-Fácil né? Mas talvez você esteja se perguntando:
-Quando devemos criar uma nova função?  
-Perceber quando é uma boa ideia "quebrar" uma
-função em diversas pequenas funções é algo que
-aprendemos com a experiência.  
-Em geral, é uma boa ideia "quebrar" uma função
-em outras menores quando o código começa a
-ficar confuso e torna-se difícil distinguir
-qual parte do código faz o que.
+Makkelijk, niet? Maar misschien vraag je je af:
+Wanneer moeten we een nieuwe functie creëren?
+Begrijpen wanneer het een goed idee is om een
+functie in verschillende kleine functies te "breken", is iets wat
+we leren door ervaring.  
+Over het algemeen is het een goed idee om een ​​functie in kleinere functies te "breken" wanneer de code verwarrend wordt en het moeilijk wordt om te onderscheiden welk deel van de code wat doet.
 
-Em breve vamos aprender a resolver este mesmo
-tipo de problema de formas mais elegantes,
-reaproveitando melhor o código.
+Binnenkort zullen we leren hoe we ditzelfde soort probleem op een elegantere manier kunnen oplossen: het is beter om de code opnieuw te gebruiken.
 
-## E agora?
+## En nu?
 
-Siga para a [Aula 5](/aula_5.html) e bons estudos!
+Ga nu door met [Les 5](/les_5.html), veel succes!

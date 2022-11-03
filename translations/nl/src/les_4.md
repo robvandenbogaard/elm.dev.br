@@ -1,50 +1,46 @@
-# Aula 4 - Criando funções.
+# Les 4 - Functies aanmaken.
 
-Esta aula será mais teórica, mas o que irá
-aprender hoje é fundamental para entender todo
-o resto que está por vir. Então, bora entender
-o que é uma função?!
+Deze les is meer theoretisch. Maar, wat je vandaag zult leren is essentieel om alles te kunnen begrijpen van de rest van de lessen. Dus, laten we beginnen met begrijpen wat een functie eigenlijk is?!
 
-## O que você irá aprender nesta aula?
+## Wat leer je in deze les?
 
-1. O que é uma funcão?  
-  1.1 Funções matemáticas  
-  1.2 Funções na programação  
-2. Como criar suas próprias funções?  
-3. Vantagens de criar funções  
+1. Wat is een functie?  
+  1.1 Wiskundige functies  
+  1.2 Functies bij het programmeren  
+2. Hoe maak je je eigen functies?  
+3. Voordelen van het maken van functies  
 
-## 1- O que é uma função?
+## 1 - Wat is een functie?
 
-Conforme seu código cresce, vai ficando cada
-vez mais difícil identificar o que significa
-cada uma de suas partes.  
-Por exemplo: no código que desenhou um ônibus
-no desafio da aula 2, quanto mais detalhes
-colocava no desenho, maior
-ficava o *main*.  
-Mas afinal, o que é esse _main_? Ela é uma **função**.  
-Na linguagem de programação _Elm_, quase tudo
-que escrevemos são funcões! Isso por que ela é uma
-linguagem que segue o **paradigma funcional**. Existem
-vários tipos (paradigmas) de linguagens: Orientadas à Objetos,
-Imperativas, Lógicas e também as Funcionais. Cada
-paradigma tem suas vantagens e desvantagens. Neste curso,
-você aprenderá o **paradigma funcional**.
+Naarmate je code groeit, wordt het steeds moeilijker en
+lastiger om te (over)zien wat alle code-onderdelen 
+betekenen.  
+Neem als voorbeeld de code waarmee een bus getekend werd
+in de opdracht in les 2. Hoe meer details je in de tekening stopte, 
+hoe groter *main* werd.  
+Maar wat is dat _main_ eigenlijk? Het is een **functie**.  
+In de programmeertaal _Elm_ geldt voor bijna alles
+wat we schrijven dat het functies zijn! Dat komt omdat het een
+taal is die het **functionele paradigma** volgt. Er zijn
+verschillende soorten talen (paradigma's): Object-georiënteerd,
+Imperatief, Logisch en ook Functioneel. Elke
+paradigma heeft zijn voor- en nadelen. In deze cursus,
+leer je het **functionele paradigma**.
 
-## 1.1- Funções matemáticas
+## 1.1 - Wiskundige functies
 
-Provavelmente você já deve ter ouvindo falar em
-funções nas aulas de matemáticas na escola. Coisas como:  
+Je hebt waarschijnlijk al gehoord over
+functies in de wiskundelessen op school. Dingen zoals: 
 
 ```haskell
 x = y + 2
 ```
 
-Mas o que significa _x = y + 2_? Essencialmente
-significa que em qualquer lugar que tiver o
-simbolo _x_, podemos substitui-lo por _y + 2_,
-e vice versa. Por exemplo, se tivermos o seguinte
-conjunto de equações:
+Maar wat betekent _x = y + 2_? Eigenlijk betekent 
+het dat overal waar je het
+symbool _x_ hebt, we dit kunnen vervangen door _y + 2_,
+en vice versa. Als we bijvoorbeeld de volgende
+reeks vergelijkingen hebben:
 
 ```haskell
 x = 5
@@ -52,49 +48,47 @@ y = 10
 z = x + y
 ```
 
-Para descobrirmos o valor de _z_, substituímos
-o valor de _y_ e em seguida o de _x_.
+Om de waarde van _z_ te vinden, vervangen we
+de waarde van _y_ en dan die van _x_.
 
-Sendo a função _z_ original:
+De oorspronkelijke _z_-functie is:
 
 ```haskell
 z = x + y
 ```
 
-Podemos primeiro substituir o valor de _y_:
+We kunnen eerst de waarde van _y_ vervangen:
 
 ```haskell
 z = x + 10
 ```
 
-E em seguida o valor de _x_:
+En dan de waarde van _x_:
 
 ```haskell
 z = 5 + 10
 ```
 
-Assim chegamos a conclusão que **15** é o único valor possíve para _z_.
+We komen dan tot de conclusie dat **15** de enige mogelijke waarde is voor _z_.
 
-## 1.2 Funções na programação
+## 1.2 Functies bij het programmeren
 
-Em programação (em especial em linguagens funcionais,
-como *Elm* ou <a href='https://www.haskell.org/' target='_blank'>*Haskell*</a>),
-o conceito de função é muito parecido.  
-No nosso exemplo anterior, o valor de _z_ dependia de _y_ e de _x_.  
-Podemos fazer algo similar com nossa função _main_,
-tornando-a dependente de outras funções menores e
-mais simples. Isso deixa o código muito mais
-fácil de compreender e alterar.
+Bij programmeren (vooral in functionele talen,
+zoals *Elm* of <a href='https://www.haskell.org/' target='_blank'>*Haskell*</a>),
+is het begrip 'functie' zeer vergelijkbaar.  
+In ons vorige voorbeeld hing de waarde van _z_ af van _y_ en _x_.  
+We kunnen iets soortgelijks doen met onze functie _main_,
+waardoor het afhankelijk wordt van andere, kleinere en eenvoudigere
+functies. Dit zorgt ervoor dat de code veel gemakkelijker te begrijpen en te veranderen is.
 
-Achou muito confuso? Não se preocupe, vai ficar mais fácil de entender com o
-exemplo a seguir.
+Vond je het erg verwarrend? Maak je geen zorgen, het zal gemakkelijker te begrijpen zijn met het voorbeeld hieronder.
 
-## 2- Como criar suas próprias funções?
+## 2 - Hoe maak je je eigen functies?
 
-Vamos partir de uma função que desenha uma árvore para
-então decompô-la em várias funções menores.
+Laten we beginnen met een functie die een boom tekent en
+splits het dan op in verschillende kleinere functies.
 
-Função _main_ original:
+Originele _main_ functie:
 
 ```haskell
 import Playground exposing (..)
@@ -108,8 +102,8 @@ main =
     ]
 ```
 
-Podemos decompor nossa árvore colocando a definição
-de suas folhas em uma outra função:
+We kunnen onze boom opsplitsen door de definitie
+van zijn bladeren in een andere functie te plaatsen:
 
 ```haskell
 import Playground exposing (..)
@@ -118,113 +112,103 @@ main =
   picture
       [ rectangle darkBrown 60 250
         |> move 0 -150
-    , folhas
+    , bladeren
     ]
 
-folhas =
+bladeren =
   circle green 150
     |> move 0 50
 ```
 
-Este novo código é equivalente ao anterior. Apenas extraí parte dela
-para outra funcão.
+Deze nieuwe code is gelijk aan de vorige. We hebben er alleen net een deel uit gehaald voor een andere functie.
 
-Para **definir uma nova função**, basta dar um
-nome para ela (uma palavra qualquer, neste caso,
-_folhas_) e em seguida colocar o simbolo **=**, da mesma forma
-que na matemática.  
-Tudo que estiver depois do símbolo de igual
-fará parte da nossa nova função.  
+Om **een nieuwe functie** te definiëren, geef je deze gewoon een
+naam (elk woord kan, in dit geval _bladeren_) en dan zet je het symbool **=**, op dezelfde manier als bij wiskunde.  
+Alles na het gelijkheidsteken zal deel uitmaken van onze nieuwe functie.  
 
-Uma vez definida, você pode utilizá-la em um ou mais lugares do código.
+Is de functie eenmaal gedefinieerd, dan kun je het op een of meer plaatsen in de code gebruiken.
 
-Para utilizar uma função, assim como na matemática, 
-basta escrever seu nome. No exemplo anterior 
-a função _folhas_ é utilizada como parte da função _main_.
+Om een functie te gebruiken, schrijf je gewoon zijn naam, net als in wiskunde. In het vorige voorbeeld wordt de functie _bladeren_ gebruikt als onderdeel van de functie _main_.
 
-É **muito** importante enteder este conceito. Analise com 
-calma o código acima para ter certeza que compreendeu.
+Het is **zeer** belangrijk om dit concept te begrijpen. Neem een moment om rustig de code hierboven te bekijken om er zeker van te zijn dat je het begrijpt.
 
-🚨 **Atenção**: em _Elm_, a ordem em que as funções
-são definidas é irrelevante. Você pode definir
-primeiro a função _main_ e depois a função _folhas_
-ou primeiro a função _folhas_ e depois a _main_.
+🚨 **Let op**: in _Elm_ is de volgorde waarin de functies
+worden gedefinieerd niet relevant. Je kunt
+de _main_ functie eerst instellen en dan de _bladeren_ functie
+of eerst de functie _bladeren_ en dan _main_.
 
-Agora você pode separar também o tronco da árvore em uma outra função:
+Nu kun je ook de stam van de boom scheiden in een andere functie:  
 
 ```haskell
 import Playground exposing (..)
 
 main =
   picture
-    [ tronco
-    , folhas
+    [ stam
+    , bladeren
     ]
 
-tronco =
+stam =
   rectangle darkBrown 60 250
     |> move 0 -150
 
-folhas =
+bladeren =
   circle green 150
     |> move 0 50
 ```
 
-Tente imaginar que a palavra _folhas_, dentro
-da função _main_, será substituida pelo conteúdo
-definido na função _folhas_. E o mesmo
-para a palavra _tronco_.
+Probeer je voor te stellen dat het woord _bladeren_, in de 
+functie _main_, wordt vervangen door de inhoud die
+gedefinieerd is in de functie _bladeren_. En hetzelfde
+voor het woord _stam_.
 
-E você pode dar um passo além, se quiser, e
-criar a função _arvore_:
+En je kunt een stap verder gaan, als je wilt, en
+een _boom_ functie maken:
 
 ```haskell
 import Playground exposing (..)
 
 main =
   picture
-    arvore
+    boom
 
-arvore =
-  [ tronco
-  , folhas
+boom =
+  [ stam
+  , bladeren
   ]
 
-tronco =
+stam =
   rectangle darkBrown 60 250
     |> move 0 -150
 
-folhas =
+bladeren =
   circle green 150
     |> move 0 50
 ```
 
-Neste último exemplo a função _arvore_ retorna
-uma lista de formas geométricas contendo um
-tronco e uma folha.
+In dit laatste voorbeeld geeft de functie _boom_ 
+een lijst weer met geometrische vormen die een
+stam en een blad bevatten.
 
-## 3- Vantagens de criar funções
+## 3 - Voordelen van het maken van functies
 
-Existem duas grandes vantagens em dividir
-os códigos em várias funções.  
-A primeira é que torna mais fácil de
-expressar suas intenções. Observe e compare a função
-_main_ definida no primeiro e últimos exemplos. 
-Desta última forma ficou muito mais explícito o que está
-tentando desenhar.  
+Er zitten twee grote voordelen aan het splitsen van de
+codes in verschillende functies.  
+Het eerste voordeel is dat het gemakkelijker wordt om
+je intenties uit te drukken. Kijk en vergelijk hoe de functie
+_main_ omschreven is in het eerste en laatste voorbeeld. 
+Deze laatste manier geeft veel duidelijker aan wat je
+probeert te tekenen. 
 
-Outra grande vantagem de programar assim é que
-agora o _tronco_ e _folhas_ estão **desacoplados**.  
-Você pode, por exemplo, reutilizar a função _tronco_
-para desenhar outros tipos de árvores ou criar
-um novo tipo de _tronco_ e reaproveitar as _folhas_.  
+Een ander groot voordeel van op deze manier programmeren, is dat
+de _stam_ en _bladeren_ nu **ontkoppeld** zijn.  
+Je kunt bijvoorbeeld de functie _stam_ opnieuw gebruiken
+om andere soorten bomen te tekenen. Of je kunt een nieuw _stam_ type maken en de _bladeren_ opnieuw gebruiken.  
 
-👩‍🏫 **Dica**: Em programação este é outro conceito muito importante:
-**reaproveitamento de códigos**.
+👩🏫 **Hint**: Bij programmeren is dit een ander zeer belangrijk begrip: **hergebruik van code**.
 
-## E agora?
+## En nu?
 
-Agora chegou a hora de você colocar as mãos na massa
-e praticar um pouco!
+Nu is het tijd om aan de slag te gaan en nog meer te oefenen!
 
-Siga para os [desafios da Aula 4](/aula_4_desafios.html) e bons estudos.
+Ga naar [Les 4 opdrachten](/les_4_opdrachten.html) en veel succes met oefenen!
