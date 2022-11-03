@@ -2,10 +2,10 @@
 
 ## Introductie
 
-Op deze site kun je leren programmeren.  
+Op deze site kun je leren programmeren.
 Je hebt geen voorkennis nodig.
 We zullen de benodigde fundamenten (basis concepten)
-geleidelijk en spelenderwijs uitleggen.  
+geleidelijk en spelenderwijs uitleggen.
 In de cursus leer je tekeningen en animaties maken
 op het scherm, en eenvoudige spelletjes die je
 in je internetbrowser kunt spelen! 🕹

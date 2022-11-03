@@ -5,7 +5,7 @@ Om dat wat je leert te onthouden, moet je oefenen.
 In dit gedeelte bieden wij jou enkele opdrachten aan om zelf te proberen. Het is **zeer** belangrijk dat je ze probeert op te lossen voordat je de antwoorden ziet!
 
 Open eerst het volgende adres in een ander tabblad in jouw browser:
-<a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>.  
+<a href='https://elm-lang.org/try' target='_blank'>https://elm-lang.org/try</a>.
 
 Kopieer en voer dezelfde code uit die we in les 2 zagen:
 
@@ -17,19 +17,19 @@ main =
     [ circle green 100 ]
 ```
 
-Probeer nu de code te veranderen om onderstaande opdrachten te kunnen maken. En, wees niet bang om een fout te maken!  
+Probeer nu de code te veranderen om onderstaande opdrachten te kunnen maken. En, wees niet bang om een fout te maken!
 Probeer het eens, testen, onderzoeken, fouten maken. Het ergste dat kan gebeuren is dat je een foutmelding krijgt
 
 
 ## OPDRACHT 1 (eenvoudig): De grootte van een cirkel veranderen.
 
-Verander de waarde van de cirkelgrootte in een willekeurig getal.  
-Het kan een kleine waarde zijn zoals 1 of 2, of een grote waarde zoals 999999999.  
+Verander de waarde van de cirkelgrootte in een willekeurig getal.
+Het kan een kleine waarde zijn zoals 1 of 2, of een grote waarde zoals 999999999.
 Klik dan op *Rebuild* en zie het resultaat!
 
 ## OPDRACHT 2 (eenvoudig): De kleur van de cirkel veranderen.
 
-Verander de kleurwaarde van de cirkel in de kleur van jouw voorkeur.  
+Verander de kleurwaarde van de cirkel in de kleur van jouw voorkeur.
 Vergeet niet dat je de naam van de kleuren in het Engels moet schrijven. Als je moeite hebt met Engels, kijk dan hieronder op de lijst met beschikbare kleuren.
 
 ### Lijst met kleuren:
@@ -47,14 +47,14 @@ Onze tekening (*picture*) heeft momenteel slechts één
 cirkel. Probeer een tweede cirkel van
 een andere kleur en een beetje kleiner dan de eerste toe te voegen.
 
-👩‍🏫  __Tips__:  
+👩‍🏫  __Tips__:
 - Vergeet niet dat de symbolen **[** en **]** een
 lijst aangeven. Dus de tweede cirkel moet
-binnen deze symbolen vallen.  
+binnen deze symbolen vallen.
 - Zie de lijst als vergelijkbaar met een boodschappenlijstje. Maar in plaats van
-voedsel, bevat onze lijst geometrische vormen.  
+voedsel, bevat onze lijst geometrische vormen.
 - Gebruik een komma om aan te geven dat je een tweede cirkel maakt binnen de lijst van
-geometrische vormen.  
+geometrische vormen.
 - Let op de volgorde! Als de kleinste cirkel
 voor de grootste in de lijst staat, komt hij achter de grootste te staan en kun je hem niet zien.
 
