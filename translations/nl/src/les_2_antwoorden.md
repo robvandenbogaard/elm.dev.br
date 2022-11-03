@@ -112,4 +112,4 @@ main =
 
 ## En nu?
 
-Ga nu door met [Les 3](/les_3.html), veel succes!
+Ga nu door met [Les 3](les_3.html), veel succes!
