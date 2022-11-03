@@ -1,42 +1,36 @@
-# Aula 3: Desafios
+# Les 3: Opdrachten
 
-Para fixar o conhecimento é preciso praticar.
+Om dat wat je leert te onthouden, moet je oefenen.
 
-Nesta seção são propostos alguns desafios para você
-tentar fazer sozinho. É **muuuito** importante que você tente
-resolve-los antes de ver as respostas!
+In dit gedeelte bieden wij jou enkele opdrachten aan om zelf te proberen. Het is **zeer** belangrijk dat je ze probeert op te lossen voordat je de antwoorden ziet!
 
-Antes de mais nada, abra o seguinte endereço em uma
-outra aba em seu navegador:
-<a href='https://elm-lang.org/try'>htts://elm-lang.org/try</a>.  
+Open eerst het volgende adres in een ander tabblad in jouw browser:
+<a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>.   
 
-## DESAFIO 1 (fácil): Desenhe um carro.
+## OPDRACHT 1 (eenvoudig): Teken een auto.
 
-Utilize um retângulo para representar o carro
-e dois círculos para representar suas rodas.  
-Utilize a instrução *move* para posicionar as
-rodas.
+Gebruik een rechthoek die de auto moet voorstellen
+en twee cirkels die zijn wielen moeten voorstellen.  
+Gebruik de *move* instructie om de wielen te plaatsen.
 
-## DESAFIO 2 (fácil): Desenhe uma árvore.
+## OPDRACHT 2 (eenvoudig): Teken een boom.
 
-Utilize um retângulo marrom para representar
-o tronco e um círculo verde para representar
-as folhas.
+Gebruik een bruine rechthoek die de stam moet voorstellen 
+en een groene cirkel die de bladeren moeten voorstellen.
 
-## DESAFIO 3 (avançado): Desenhe uma estrela.
+## OPDRACHT 3 (uitdagend): Teken een ster.
 
-Use triângulos para desenhar uma estrela
-de 6 pontas.
+Gebruik driehoeken om een 6-puntige ster te tekenen.
 
-## DESAFIO 4 (avançado): Desenhe um ônibus.
+## OPDRACHT 4 (uitdagend): Teken een bus.
 
-Tente incluir janelas, a frente do ônibus
-e tudo mais que desejar! Não existe uma
-resposta errada. Use a imaginação!
+Probeer ramen te plaatsen, de voorkant van de bus
+en al het andere dat je maar wilt! Er is geen
+fout antwoord. Gebruik je fantasie!
 
-## E agora?
+## En nu?
 
-Conseguiu fazer todos os exercícios? Teve dificuldade em algum?
+Heb je alle oefeningen kunnen doen? Had je moeite met een van hen?
 
-Siga para as [respostas dos desafios](/aula_3_desafios_respostas.html)
-para ver a solução.
+Ga naar [antwoorden van de opdrachten](/les_3_antwoorden.html)
+om de oplossing te zien.

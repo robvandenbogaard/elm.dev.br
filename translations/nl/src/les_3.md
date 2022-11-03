@@ -1,36 +1,33 @@
-# Aula 3 - Posicionando elementos.
+# Les 3 - Elementen positioneren.
 
-## O que você irá aprender nesta aula?
+## Wat leer je in deze les?
 
-1. Como desenhar outras figuras geométricas.  
-2. Posicionar uma forma geométrica.  
-  2.1 Movendo a forma geométrica.  
-  2.2 Rotacionando a forma geométrica.  
+1. Hoe teken je andere geometrische figuren.  
+2. Een geometrische vorm positioneren.  
+  2.1 De vorm verplaatsen.  
+  2.2 De vorm draaien.  
 
-## 1- Como desenhar outras figuras geométricas.
+## 1 - Hoe teken je andere geometrische figuren.
 
-Além de círculos, podemos desenhar:
-- Triâgulos (*triangle*)
-- Quadrados (*square*)
-- Retângulos (*rectangle*)
-- Ovais (*oval*)
-- Pentagonos (*pentagon*)
-- Hexagonos (*hexagon*)
-- Octagonos (*octagon*)
-- Polígonos (*polygon*)
+Naast cirkels kunnen we ook tekenen:  
+- Driehoeken (*triangle*)  
+- Vierkanten (*square*)  
+- Rechthoeken (*rectangle*)  
+- Ovalen (*oval*)  
+- Vijfhoeken (*pentagon*)  
+- Zeshoeken (*hexagon*)  
+- Octagons (*octagon*)  
+- Polygonen (*polygon*)  
 
-Além de desenhar imagens estáticas, podemos também criar animações! Mas isso será abordado em outra aula. 😉   
-Hoje vamos aprender a desenhar triângulos,
-quadrados e retângulos.  
+Naast het tekenen van statische afbeeldingen kunnen we ook animaties maken! Maar dit wordt in een andere les behandeld. 😉   
+Vandaag gaan we leren hoe we driehoeken, vierkanten en rechthoeken moeten tekenen.    
 
-Primeiro vamos fazer um programa que desenha
-um quadrado dentro de um círculo, um triângulo
-dentro deste quadrado e, por último, um pequeno
-retângulo.  
+Eerst gaan we een programma maken dat
+een vierkant in een cirkel tekent, een driehoek
+binnen dit vierkant en tenslotte een kleine rechthoek.  
 
-Mais uma vez, abra uma aba em seu navegador o *site*
-<a href='https://elm-lang.org/try' target='_blank'>https://elm-lang.org/try</a>,
-cole o código abaixo e pressione *Rebuild* para ver o resultado.
+Open nogmaals een tabblad met de *site*
+<a href='https://elm-lang.org/try' target='_blank'>https://elm-lang.org/try</a> in jouw browser. Plak de onderstaande code en druk op *Rebuild* om het resultaat te zien..
 
 ```haskell
 import Playground exposing (..)
@@ -44,67 +41,55 @@ main =
     ]
 ```
 
-Note que no caso do círculo, o segundo parâmetro 
-é o tamanho do raio. Já no quadrado, o segundo
-parâmetro é o tamanho dos lados (lembre-se que
-os lados de um quadrado tem sempre o mesmo
-tamanho, por isso precisamos passar apenas um
-número).
+Merk op dat in het geval van de cirkel de tweede parameter 
+de grootte van de straal is. Voor het vierkant is de tweede
+parameter de lengte van de zijden (denk eraan dat
+de zijden van een vierkant altijd even lang
+zijn, dus we hoeven maar één getal door te geven).
 
-No caso do triângulo, será desenhado um triângulo
-equilatero (todos os lados de tamanhos iguais).
-Mas o número do segundo parâmetro **não** é o tamanho
-dos lados, mas sim o **raio**, ou seja, a distância
-entre o centro do triângulo e os 3 pontos que
-formam o triângulo (similar ao raio do círculo).  
-Ficou em dúvida? Altere o tamanho do triângulo
-para ser igual ao do círculo e veja o que
-acontece!
+In het geval van de driehoek, wordt een driehoek gelijkzijdig getekend (alle zijden even lang).
+Maar, het getal in de tweede parameter is **niet** de lengte
+van de zijden, maar de **radius** (straal), dat wil zeggen de afstand
+tussen het middelpunt van de driehoek en de drie punten die
+de driehoek vormen (vergelijkbaar met de straal van een cirkel).  
+Twijfel je? Verander de grootte van de driehoek maar eens en maak deze gelijk als die van de cirkel. Kijk eens wat er gebeurt?
 
-Note também que o retângulo recebe, além da cor,
-dois parâmetros numéricos.  
-Como talvez você tenha adivinhado, 
-o primeiro número representa a largura do
-retângulo e o último, sua altura.
+Merk ook op dat de rechthoek, naast de kleur,
+twee numerieke parameters heeft.  
+Zoals je misschien al geraden hebt, staat
+het eerste getal voor de breedte van de
+rechthoek en het tweede getal voor de hoogte ervan.
 
-## 2 - Posicionar uma forma geométrica.
+## 2 - Een geometrische vorm positioneren.
 
-### 2.1 - Movendo a forma geométrica.
+### 2.1 -  Het verplaatsen van de vorm.
 
-Você deve ter notado que toda forma geométrica
-desenhada até agora apareceu bem no meio
-da tela, certo? Desta forma fica difícil
-desenhar coisas mais legais, como uma
-árvore ou um carro. Para fazer desenhos
-complexos temos que **posicionar** os elementos
-na tela. Para isso, basta logo depois de
-declarar uma forma geométrica, colocar o
-simbolo **|>**, que indica que queremos
-aplicar uma **transformação**. Em seguida, você pode
-indicar para o computador que quer MOVER a forma geométrica
-através da função *move* (mover em inglês).  
+Je hebt misschien gemerkt dat elke geometrische vorm 
+die tot nu toe getekend is, precies in het midden van het scherm verschijnt, toch? Op deze manier is het moeilijk 
+om nog leukere dingen te tekenen, zoals een boom of een auto. 
+Om complexe tekeningen te maken, moeten we de elementen **positioneren** op het scherm. Om dat te doen, 
+plaats je net nadat je een geometrische vorm hebt opgegeven, 
+het **|> symbool**. Dit geeft aan dat we
+een **transformatie** willen toepassen 
+(iets met de vorm willen doen). Vervolgens kun je de computer vertellen dat je de vorm wilt verplaatsen met behulp van de *move* functie.   
 
-Para mover algo precisamos passar dois
-parâmetros: o valor do deslocamento no eixo
-*x* e o valor do deslocamento no eixo *y*.  
-O valor do eixo *x* vai deslocar a forma
-geométrica para direita do centro da tela
-(caso o valor seja positivo) ou para
-esquerda (caso o valor seja negativo).  
-O valor de *y* irá desloca-la
-para baixo (caso valor seja negativo)
-ou para cima (caso positivo).  
+Om iets te verplaatsen, moet je twee parameters opgeven: 
+de waarde van de verplaatsing op de *x*-as (het eerste getal) 
+en de waarde van de verplaatsing op de *y*-as (het tweede getal).  
+De waarde op de *x*-as zal de vorm rechts van het midden van het scherm plaatsen (als de waarde positief is) of links van het midden 
+(als de waarde negatief is).  
+De waarde op de *y*-as zal de vorm omlaag plaatsen
+(als de waarde negatief is) of omhoog (als de waarde positief is).   
 
-🚨 __Atenção__: o ponto 0,0 encontra-se bem no
-meio da tela e é a partir dele que
-vamos deslocar as formas geométricas.
+🚨 __Let op__: het punt 0,0 ligt precies in de
+het midden van het scherm. Dit is precies het punt vanaf waar
+we de geometrische vormen verplaatsen.
 
-No exemplo abaixo, são desenhados dois círculos,
-um ao lado do outro. Veja com atenção o
-código e tente entendê-lo. Em seguida,
-copie o código para a outra aba de seu
-navegador e clique em *Rebuild* para ver o
-resultado.
+In het onderstaande voorbeeld zijn twee cirkels getekend,
+de ene naast de andere. Kijk goed naar de
+code en probeer het te begrijpen. Daarna 
+kopieer je de code naar een ander tabblad van je
+browser en klik op *Rebuild* om het resultaat te bekijken.
 
 ```haskell
 import Playground exposing (..)
@@ -118,35 +103,28 @@ main =
    ]
 ```
 
-Experimente alterar os valores e veja o
-resultado.
+Probeer de waarden te veranderen en bekijk het
+resultaat.
 
-### 2.2 Rotacionando a forma geométrica.
+### 2.2 De geometrische vorm draaien.
 
-Além de mover nos eixos *x* e *y*, podemos
-também rotacionar as formas.  
-Podemos fazer com que o triângulo fique
-um pouco torto, por exemplo.
-Assim temos mais liberdade na hora de
-desenhar.  
-Rotacionar uma forma é muito similar ao
-que fizemos para mova-las. Utilizamos
-o simbolo **|>** seguido da palavra
-*rotate* (rotacionar em inglês).  
+Naast het bewegen langs de *x*- en *y*-assen
+kunnen we vormen ook roteren.  
+We kunnen de driehoek bijvoorbeeld
+een beetje scheef maken.
+Dit biedt ons meer vrijheid bij het tekenen.  
+Het roteren van een vorm lijkt heel erg op
+wat we deden om een vorm te verplaatsen. We gebruiken
+het symbool **|>** gevolgd door het woord
+*rotate*.  
 
-O *rotate* recebe apenas um parâmetro,
-que é um número entre 0 e 360, que
-representa o grau do ângulo. Este valor 
-também pode ser negativo.  
-Valores positivos rotacionam a figura
-no sentido ANTI-horário. Negativos,
-no sentido horário.  
-Você consegue ler o código abaixo
-e tentar imaginar o que será desenhado?
+De *rotate* heeft maar één parameter nodig. Dit betreft een getal tussen 0 en 360 dat staat voor de graad van de hoek. Deze waarde kan ook negatief zijn.  
+Positieve waarden draaien het figuur TEGEN de klok in. 
+Negatieve waarden met de klok mee.  
+Kun jij onderstaande code lezen? Probeer je voor te stellen wat er getekend gaat worden..
 
-Copie o código para a outra aba de seu
-navegador e clique em *Rebuild* para ver o
-resultado.
+Kopieer de code in het andere tabblad van je browser
+en klik op *Rebuild* om het resultaat te zien.
 
 ```haskell
 import Playground exposing (..)
@@ -162,11 +140,10 @@ main =
    ]
 ```
 
-Fácil né?! Experimente mudar os número e veja o que acontece.
+Makkelijk, hè? Probeer de getallen te veranderen en kijk wat er gebeurt.
 
-## E agora?
+## En nu?
 
-Agora chegou a hora de você colocar as mãos na massa
-e praticar mais um pouco!
+Nu is het tijd om aan de slag te gaan en nog meer te oefenen!
 
-Siga para os [desafios da Aula 3](/aula_3_desafios.html) e bons estudos.
+Ga naar [Les 3 opdrachten](/les_3_opdrachten.html) en veel succes met oefenen!
