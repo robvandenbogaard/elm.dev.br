@@ -1,5 +1,7 @@
 # Programmeren voor beginners
 
+*..en voor wie een nieuwe programmeer-superkracht wil ontdekken.*
+
 ## Introductie
 
 Op deze site kun je leren programmeren.  
@@ -45,6 +47,7 @@ hele les.
 Sommige opdrachten zijn makkelijk, andere uitdagender.
 Het is normaal er wat moeite mee te hebben; dat is onderdeel
 van het leerproces.
+
 Exploreer, experimenteer en wees niet bang fouten te maken.
 Het ergste dat kan gebeuren is dat je een foutmelding krijgt. 😆
 
