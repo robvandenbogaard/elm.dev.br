@@ -28,3 +28,4 @@
 - [True, False en condities](./les_10.md)
   - [Opdrachten](./les_10_opdrachten.md)
   - [Antwoorden](./les_10_antwoorden.md)
+- [Cheat sheet](./cheat_sheet.md)

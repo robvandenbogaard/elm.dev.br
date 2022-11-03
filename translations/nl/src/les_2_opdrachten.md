@@ -5,7 +5,7 @@ Om dat wat je leert te onthouden, moet je oefenen.
 In dit gedeelte bieden wij jouw enkele opdrachten aan om zelf te proberen. Het is **zeer** belangrijk dat je ze probeert op te lossen voordat je de antwoorden ziet!
 
 Open eerst het volgende adres in een ander tabblad in jouw browser:
-<a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>.  
+<a href='https://elm-lang.org/try' target='_blank'>https://elm-lang.org/try</a>.
 
 Kopieer en voer dezelfde code uit die we in les 2 zagen:
 
@@ -67,5 +67,5 @@ Vergelijkbaar met de vorige opdracht, maar deze keer moeten er 4 cirkels zijn: d
 
 Heb je alle oefeningen kunnen doen? Had je moeite met een van hen?
 
-Ga naar [opdrachten_antwoorden](/Les_2_opdrachten_antwoorden.html)
+Ga naar [opdrachten_antwoorden](Les_2_opdrachten_antwoorden.html)
 om de oplossing te zien.
