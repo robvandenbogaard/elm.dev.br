@@ -7,13 +7,13 @@ In dit gedeelte bieden wij jou enkele opdrachten aan om zelf te proberen. Het is
 Open eerst het volgende adres in een ander tabblad in jouw browser:
 <a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>.   
 
-## OPDRACHT 1 (eenvoudig): Teken een auto.
+## OPDRACHT 1: Teken een auto.
 
 Gebruik een rechthoek die de auto moet voorstellen
 en twee cirkels die zijn wielen moeten voorstellen.  
 Gebruik de *move* instructie om de wielen te plaatsen.
 
-## OPDRACHT 2 (eenvoudig): Teken een boom.
+## OPDRACHT 2: Teken een boom.
 
 Gebruik een bruine rechthoek die de stam moet voorstellen 
 en een groene cirkel die de bladeren moeten voorstellen.
