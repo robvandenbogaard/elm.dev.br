@@ -2,13 +2,30 @@
 
 Het verradelijk verslavende blok-kantelspel, naar voorbeeld van het oudere Flash-spel Bloxorz (vroeger waren veel online spellen gemaakt in Flash), gemaakt door [Wiktor Toporek](https://github.com/vViktorPL/one-two-one). De uitgeklede versie hieronder is aangepast zodat het in één geheel in [Try Elm](https://elm-lang.org/try) kan worden gekopieerd en worden gespeeld.
 
-Prikkelende vragen:
+## Packages
+
+Pas op: Omdat dit spel gebruikt maakt van 3D, moet je een aantal "packages" installeren. Dat installeren kan niet in de CompuRob workshop, maar wel bij Try Elm.
+
+Je kunt packages installeren door **op "packages" te klikken en in het zoekveld steeds de naam van een package te typen, en dan op het plusje naast de juiste te klikken**. De benodigde packages zijn:
+
+- elm/**json**
+- avh4/**elm-color**
+- ianmackenzie/**elm-units** (je kunt `elm-units` typen, maar pas op dat je de juiste hebt, met ianmackenzie)
+- ianmackenzie/**elm-geometry** (je kunt `elm-geometry` typen)
+- ianmackenzie/**elm-3d-scene**
+- ianmackenzie/**elm-3d-camera**
+
+Als je het blok wilt bewegen met de pijltjestoetsen op een toetsenbord, dan moet je eerst even in het spel klikken; daarna luistert het spel naar de toetsen.
+
+## Challenges (vragen en uitdagingen)
 
 - Kun je de kleur van het blok aanpassen?
 - Maak eens wat extra gaten in de vloer van bijvoorbeeld level 1..
 - Hoe zou je het blok op een andere tegel kunnen laten vallen in het begin van het level?
 - Snap je hoe je een brug kan laten open- of dichtklappen?
 - Hoe zou je een nieuwe soort tegel aan de vloeren kunnen toevoegen? In welke gedeeltes van de code moet dan wat veranderd worden?
+
+## De code
 
 ```haskell
 module Main exposing (main)
