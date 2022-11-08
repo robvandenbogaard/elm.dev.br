@@ -57,7 +57,7 @@ De oorspronkelijke _z_-functie is:
 z = x + y
 ```
 
-We kunnen eerst de waarde van _y_ vervangen:
+We kunnen bijvoorbeeld eerst de waarde van _y_ vervangen:
 
 ```haskell
 z = x + 10
@@ -211,4 +211,4 @@ om andere soorten bomen te tekenen. Of je kunt een nieuw _stam_ type maken en de
 
 Nu is het tijd om aan de slag te gaan en nog meer te oefenen!
 
-Ga naar [Les 4 opdrachten](/les_4_opdrachten.html) en veel succes met oefenen!
+Ga naar [Les 4 opdrachten](les_4_opdrachten.html) en veel succes met oefenen!

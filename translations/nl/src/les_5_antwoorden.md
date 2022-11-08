@@ -1,93 +1,89 @@
-# Aula 5: Resposta dos desafios
+# Les 5: Antwoorden van de opdrachten
 
-## DESAFIO 1 (fácil): Crie mais frutas.
+## OPDRACHT 1 (eenvoudig): Maak meer fruit
 
-### Resposta
+### Antwoord
 
-Para resolvermos este desafio, bastava chamarmos
-a função *fruta* mais algumas vezes.  
+Om deze opdracht op te lossen, hoefden we alleen maar de *fruit* functie nog een paar keer aan te roepen.  
 
 ```haskell
 import Playground exposing (..)
 
 main =
   picture
-    [ tronco
-    , folhas
-    , fruta 50 50
-    , fruta -40 20
-    , fruta -50 100
-    , fruta 40 130
-    , fruta 10 10
-    , fruta -10 -50
-    , fruta 70 -40
+    [ stam
+    , bladeren
+    , fruit 50 50
+    , fruit -40 20
+    , fruit -50 100
+    , fruit 40 130
+    , fruit 10 10
+    , fruit -10 -50
+    , fruit 70 -40
     ]
 
-tronco =
+stam =
   rectangle darkBrown 60 250
     |> move 0 -150
 
-folhas =
+bladeren =
   circle green 150
     |> move 0 50
 
-fruta x y =
+fruit x y =
   circle red 20
     |> move x y
 ```
 
-O que aconteceria se tentassemos desenhar
-frutas fora da árvore? Por enquanto não temos nenhuma
-forma de bloquear isso, mas em um sistema real, teríamos
-que pensar em formas de evitar que isso acontecesse.
+Wat zou er gebeuren als we probeerden fruit buiten de boom 
+te tekenen? Op dit moment hebben we geen
+manier om dat te blokkeren, maar in een echt systeem zouden we manieren moeten bedenken om dat te voorkomen.
 
-## DESAFIO 2 (intermediário): Tamanho de folhas parametrizável.
+## OPDRACHT 2 (gemiddeld): Het formaat van de bladeren instelbaar maken
 
-No mesmo código do desafio 1, crie
-um parâmetro para a função *folhas*
-que represente o tamanho do círculo.  
-Tente aumentar e diminuir o tamanho
-do círculo.  
 
-👩‍🏫 __Dica__: Se você passar um valor muito grande ou muito pequeno
-provavelmente sua árvore ficará estranha. Não se preocupe com
-esses cenários por enquanto.
+Maak in dezelfde code als in opdracht 1 
+een parameter voor de *bladeren* functie
+om de grootte van de cirkel weer te geven.  
+Probeer de grootte van de cirkel te vergroten en te verkleinen.   
 
-### Resposta
+👩‍🏫 __Tip__: Als je een waarde doorgeeft die te groot of te klein is, zal jouw boom er waarschijnlijk vreemd uitzien, omdat de bladeren de stam niet raken. Maak je hier voorlopig geen zorgen over.
 
-Para resolver este desafio, criei um novo parâmetro na função *folhas*
-chamado **diametro**. Em seguida, repassei o valor desta variável
-ao acionar a função *circle*.
+### Antwoord
+
+Om deze opdracht op te lossen, maken we een nieuwe parameter in de functie *bladeren* aan, genaamd **diameter**. Vervolgens geef je de waarde van deze variabele door bij het aanroepen van de *circle* functie.
+
+
 
 ```haskell
 import Playground exposing (..)
 
 main =
   picture
-    [ tronco
-    , folhas 150
-    , fruta 50 50
-    , fruta -40 20
-    , fruta -50 100
-    , fruta 40 130
-    , fruta 10 10
-    , fruta -10 -50
-    , fruta 70 -40
+    [ stam
+    , bladeren 150
+    , fruit 50 50
+    , fruit -40 20
+    , fruit -50 100
+    , fruit 40 130
+    , fruit 10 10
+    , fruit -10 -50
+    , fruit 70 -40
     ]
 
-tronco =
+stam =
   rectangle darkBrown 60 250
     |> move 0 -150
 
-folhas diametro =
-  circle green diametro
+bladeren diameter =
+  circle green diameter
     |> move 0 50
 
-fruta x y =
+fruit x y =
   circle red 20
     |> move x y
 ```
 
-## E agora?
+## En nu?
 
-Siga para a [Aula 6](/aula_6.html) e bons estudos!
+Ga nu door met [Les 6](les_6.html), veel succes!

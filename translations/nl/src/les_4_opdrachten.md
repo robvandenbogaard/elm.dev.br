@@ -1,6 +1,6 @@
 # Les 4: Opdrachten
 
-## OPDRACHT 1 (eenvoudig): Maak de tekening van de auto af.
+## OPDRACHT 1 (eenvoudig): Maak de tekening van de auto af
 
 Hieronder staat een onvolledig stuk code voor het tekenen van een auto.  
 Schrijf de drie ontbrekende functies
@@ -20,7 +20,7 @@ auto =
   ]
 ```
 
-## OPDRACHT 2 (eenvoudig): Teken fruit aan de boom.
+## OPDRACHT 2 (eenvoudig): Teken fruit aan de boom
 
 De onderstaande code stelt een boom zonder fruit voor.
 
@@ -55,5 +55,5 @@ om dit soort problemen op te lossen.
 
 Is het je gelukt om alle oefeningen te doen? Had je moeite met een van hen?
 
-Ga naar [antwoorden van de opdrachten](/les_4_antwoorden.html)
+Ga naar [antwoorden van de opdrachten](les_4_antwoorden.html)
 om de oplossing te zien.
