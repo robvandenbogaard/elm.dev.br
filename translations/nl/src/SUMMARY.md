@@ -29,3 +29,7 @@
   - [Opdrachten](./les_10_opdrachten.md)
   - [Antwoorden](./les_10_antwoorden.md)
 - [Cheat sheet](./cheat_sheet.md)
+- [Listings](./listings.md)
+  - [eekhoorn](./listing_eekhoorn.md)
+  - [giraffe](./listing_giraffe.md)
+  - [one-two-one](./listing_one-two-one.md)
