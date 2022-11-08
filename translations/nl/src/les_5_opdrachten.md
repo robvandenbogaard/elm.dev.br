@@ -1,52 +1,47 @@
-# Aula 5: Desafios
+# Les 5: Opdrachten
 
-## DESAFIO 1 (fácil): Crie mais frutas.
+## OPDRACHT 1 (eenvoudig): Maak meer fruit
 
 ```haskell
 import Playground exposing (..)
 
 main =
   picture
-    [ tronco
-    , folhas
-    , fruta 50 50
-    , fruta -40 20
-    , fruta -50 100
-    , fruta 40 130
+    [ stam
+    , bladeren
+    , fruit 50 50
+    , fruit -40 20
+    , fruit -50 100
+    , fruit 40 130
     ]
 
-tronco =
+stam =
   rectangle darkBrown 60 250
     |> move 0 -150
 
-folhas =
+bladeren =
   circle green 150
     |> move 0 50
 
-fruta x y =
+fruit x y =
   circle red 20
     |> move x y
 ```
 
-Altere o código definido acima e crie mais
-três frutas em nossa árvore.
+Wijzig de hierboven gedefinieerde code en maak nog
+drie vruchten in jouw boom.
 
-## DESAFIO 2 (intermediário): Tamanho de folhas parametrizável.
+## OPDRACHT 2 (gemiddeld): Het formaat van de bladeren instelbaar maken
 
-No mesmo código do desafio 1, crie
-um parâmetro para a função *folhas*
-que represente o tamanho do círculo.  
-Tente aumentar e diminuir o tamanho
-do círculo.  
+Maak in dezelfde code als in opdracht 1 
+een parameter voor de *bladeren* functie
+om de grootte van de cirkel weer te geven.  
+Probeer de grootte van de cirkel te vergroten en te verkleinen. 
 
-👩‍🏫 __Dica__: Se você passar um valor muito grande ou muito pequeno
-provavelmente sua árvore ficará estranha, já que as folhas não
-estarão tocando o tronco. Não se preocupe com esses cenários
-por enquanto.
+👩🏫 __Tip__: Als je een waarde doorgeeft die te groot of te klein is, zal jouw boom er waarschijnlijk vreemd uitzien, omdat de bladeren de stam niet raken. Maak je hier voorlopig geen zorgen over.
 
-## E agora?
+## En nu?
 
-Conseguiu fazer todos os exercícios? Teve dificuldade em algum?
+Is het je gelukt om alle oefeningen te doen? Had je moeite met een van hen?
 
-Siga para as [respostas dos desafios](/aula_5_desafios_respostas.html)
-para ver a solução.
+Ga naar [antwoorden van de opdrachten](les_5_antwoorden.html) om de oplossing te zien.

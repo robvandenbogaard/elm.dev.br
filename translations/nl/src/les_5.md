@@ -1,142 +1,127 @@
-# Aula 5 - Passagem de parâmetros.
+# Les 5 - Parameters doorgeven.
 
-## O que você irá aprender nesta aula?
+## Wat leer je in deze les??
 
-1. Passagem de parâmetro.  
-2. Bibliotecas de software.  
-3. Como criar suas próprias funções parametrizadas?  
-4. Parâmetros nomeados.  
+1. Parameters doorgeven.  
+2. Software bibliotheken (libraries).  
+3. Hoe maak je je eigen functies met parameters?  
+4. Parameters op naam.  
 
-## 1- Passagem de parâmetro
+## 1 - Parameters doorgeven
 
-Como já disse em outras aulas, quase tudo 
-em *Elm* são **funções**. Isso inclui as palavras
-*circle*, *triangle*, *square*, entre outras.  
-Quando digitamos por exemplo:
+Zoals je in andere lessen hebt kunnen lezen: bijna alles
+in *Elm* zijn **functies**. Dit omvat ook de woorden
+*circle*, *triangle*, *square*, en andere.  
+Als we bijvoorbeeld typen:
 
 ```haskell
 circle yellow 100
 ```
 
-*circle* é o nome de uma função que tem
-dois **parâmetros**: uma cor e um diâmetro.
-Por isso, sempre que vamos criar um
-círculo, precisamos passar 2
-argumentos (em ordem).
+*circle* is de naam van een functie die
+twee **parameters** heeft: een kleur en een diameter.
+Dus, wanneer we een cirkel maken, moeten we 2
+argumenten (in volgorde) doorgeven.
 
-Esta função *circle* está definida
-dentro do *Playground*, que é uma
-biblioteca do *Elm*.  
+Deze *circle*-functie is gedefinieerd
+binnen *Playground*, dat een bibliotheek van *Elm* is.
 
-## 2- Bibliotecas de software
 
-Ao desenvolver um *software* você irá se deparar
-com vários problemas que outras pessoas já 
-enfrentaram e solucionaram.  
-Nestes casos você pode reutilizar as soluções pré-existentes,
-facilitando assim seu trabalho.  
-Por exemplo: desenhar um elemento na tela é uma tarefa
-recorrente e utilizada para vários programas diferentes.  
-Por isso, outra pessoa desenvolvedora já solucionou este
-problema e você pode reaproveitar o trabalho dela para
-desenvolvermos o seus programas.  
-Este conjunto de código escrito por outras pessoas
-é o que chamamos de **bibliotecas**. Até agora utilizamos
-uma biblioteca, a *Playground*,
-que contém funções que podemos utilizar
-para desenhar e animar figuras na tela.
+## 2 - Software bibliotheken (libraries)
 
-## 3- Como criar suas próprias funções parametrizadas?
+Bij het ontwikkelen van *software* kom je
+verschillende problemen tegen die andere mensen al eerder zijn tegengekomen en hebben opgelost. 
+In deze gevallen kun je reeds bestaande oplossingen hergebruiken,
+waardoor jouw werk gemakkelijker wordt.  
+Bijvoorbeeld: het tekenen van een element op het scherm is een
+terugkerende taak en wordt gebruikt voor verschillende programma's. 
+Daarom heeft een andere ontwikkelaar dit probleem al opgelost
+en kun je zijn of haar werk hergebruiken om jouw programma's te ontwikkelen.  
+Deze set code, geschreven door andere mensen, noemen we **bibliotheken** (libraries). Tot nu toe hebben we één bibliotheek gebruikt, de *Playground*. Deze bevat functies die we kunnen gebruiken
+om figuren op het scherm te tekenen en te animeren.
 
-As funções que definir em seus
-códigos também podem ter parâmetros.  
-Observe o exemplo abaixo e tente
-entender o que está acontecendo. Preste especial
-atenção na definição da função _fruta_.
+## 3 - Hoe maak je je eigen functies met parameters?
+
+De functies die je definieert in jouw codes, kunnen ook parameters hebben.  
+Kijk naar het onderstaande voorbeeld en probeer te
+begrijpen wat er gebeurt. Geef speciaal
+aandacht aan de definitie van de functie _fruit_.
 
 ```haskell
 import Playground exposing (..)
 
 main =
   picture
-    [ tronco
-    , folhas
-    , fruta 50 50
-    , fruta -40 20
-    , fruta -50 100
-    , fruta 40 130
+    [ stam
+    , bladeren
+    , fruit 50 50
+    , fruit -40 20
+    , fruit -50 100
+    , fruit 40 130
     ]
 
-tronco =
+stam =
   rectangle darkBrown 60 250
     |> move 0 -150
 
-folhas =
+bladeren =
   circle green 150
     |> move 0 50
 
-fruta x y =
+fruit x y =
   circle red 20
     |> move x y
 ```
 
-O resultado final é o mesmo
-do desafio da aula passada: uma árvore
-com frutas. Mas o código está
-menor e mais simples.  
-Além disso, agora é mais fácil criar novas 
-frutas em sua árvore!
+Het eindresultaat is hetzelfde als van de uitdaging 
+uit de vorige les: een boom met fruit. Maar de code is
+kleiner en eenvoudiger.  
+Bovendien is het nu gemakkelijker om nieuw 
+fruit aan je boom te tekenen!
 
-A função *frutas* definida
-no código acima agora depende de dois parâmetros:
-_**x**_ e _**y**_.  
-Isso significa que sempre que for
-utilizar esta função, será necessário
-passar 2 argumentos (valores).
+De functie *fruit* gedefinieerd
+in de bovenstaande code is nu afhankelijk van twee parameters:
+_**x**_ en _**y**_.
+Dit betekent dat wanneer je deze functie gebruikt, je twee argumenten (waarden) moet doorgeven.
 
-👩‍🏫 **Dica**: Em algumas linguagens de programação
-precisamos especificar explicitamente
-qual o tipo de cada variável. Em *Elm* isso não é necessário. A
-linguagem é esperta o suficiente para
-descobrir que _**x**_ e _**y**_, neste caso, são
-números.
+👩🏫 **Tip**: In sommige programmeertalen
+moeten we expliciet specificeren
+welk type elke variabele is. In *Elm* is dit niet nodig. De
+taal is slim genoeg om uit te zoeken dat _**x**_ en _**y**_, in dit geval, getallen zijn.
 
-Observe também que dentro da função *fruta*
-repassamos os valores de _**x**_ e _**y**_ para 
-outra função na seguinte linha: 
+Merk ook op dat we binnen de *fruit* functie
+de waarden van _**x**_ en _**y**_ doorgeven aan 
+een andere functie op de volgende regel: 
 
 ```haskell
 move x y
 ```
 
-Ou seja, *move* também é uma função parametrizada.
-Na verdade, a maioria das funções em _Elm_ 
-esperam pelo menos 1 parâmetro.
+Dat wil zeggen, *move* is ook een functie met parameters.
+In feite verwachten de meeste functies in _Elm_ 
+ten minste 1 parameter.
 
-## 4- Parâmetros nomeados
+## 4 - Parameters op naam
 
-Embora no exemplo anterior o nome dos
-parâmetros sejam apenas um caracter (_**x**_ e _**y**_),
-você pode escolher nomes maiores e mais
-expressivos. Poderia ser, por exemplo:
+Hoewel de namen van de parameters in het vorige voorbeeld 
+uit slechts één karakter (_**x**_ en _**y**_) bestaan, kun je langere en meer betekenisvolle namen kiezen. Een voorbeeld hiervan zou kunnen zijn:
 
 ```haskell
-fruta posicaoX posicaoY =
+fruit positieX positieY =
  circle red 20
-   |> move posicaoX posicaoY
+   |> move positieX positieY
 ```
 
-Mas neste caso específico, talvez os nome anteriores (_**x**_ e _**y**_) já fossem claros o suficiente.
+Maar in dit specifieke geval waren de vorige namen (_**x**_ en _**y**_) misschien al duidelijk genoeg.
 
-🚨 **Importante**: dar bons nomes para nossas variáveis e
-funções é uma das tarefas mais difíceis na programação! 
-Por isso, reflita bastante antes de escolher um nome e, 
-se necessário, troque por um mais descritivo sempre que
-achar que o código está ficando confuso.
+🚨 **Belangrijk**: goede namen geven aan onze variabelen en
+functies is een van de moeilijkste taken in het programmeren! 
+Dus, denk lang en goed na voordat je een naam kiest en verander hem, 
+indien nodig, naar een meer beschrijvende naam wanneer
+je vindt dat de code verwarrend wordt.
 
-## E agora?
+## En nu?
 
-Agora chegou a hora de você colocar as mãos na massa
-e praticar mais um pouco!
+Nu is het tijd om aan de slag te gaan en nog meer te oefenen!
 
-Siga para os [desafios da Aula 5](/aula_5_desafios.html) e bons estudos.
+Ga naar [Les 5 opdrachten](les_5_opdrachten.html) en veel succes met oefenen!
