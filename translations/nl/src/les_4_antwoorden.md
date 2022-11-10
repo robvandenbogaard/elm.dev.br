@@ -1,6 +1,6 @@
 # Les 4: Antwoorden van de opdrachten
 
-## OPDRACHT 1 (eenvoudig): Maak de tekening van de auto af.
+## OPDRACHT 1 (eenvoudig): Maak de tekening van de auto af
 
 Schrijf de drie ontbrekende functies
 om de auto te tekenen.
@@ -32,7 +32,7 @@ achterwiel =
      |> move 100 -100
 ```
 
-## OPDRACHT 2 (eenvoudig): Teken fruit aan de boom.
+## OPDRACHT 2 (eenvoudig): Teken fruit aan de boom
 
 ### Antwoord
 
@@ -85,4 +85,4 @@ Binnenkort zullen we leren hoe we ditzelfde soort probleem op een elegantere man
 
 ## En nu?
 
-Ga nu door met [Les 5](/les_5.html), veel succes!
+Ga nu door met [Les 5](les_5.html), veel succes!

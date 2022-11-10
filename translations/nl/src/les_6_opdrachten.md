@@ -1,6 +1,6 @@
-# Aula 6: Desafios
+# Les 6: Opdrachten
 
-## DESAFIO 1 (fácil): alterando a velocidade.
+## OPDRACHT 1 (eenvoudig): verander de snelheid.
 
 ```haskell
 import Playground exposing (..)
@@ -14,32 +14,27 @@ view time =
     ]
 ```
 
-Altere o código definido acima para que o triângulo gire 2x mais rápido.  
-Em seguida altere-o para que gire 2x mais lento.
+Verander de hierboven gedefinieerde code zodat de driehoek 2x sneller draait.  
+Verander het dan zodat het 2x langzamer draait.
 
-## DESAFIO 2 (intermediário): mais formas geométricas.
+## OPDRACHT 2 (gemiddeld): meer geometrische vormen.
 
-No mesmo código do desafio 1, adicione ao fundo do triângulo um
-quadrado amarelo. O quadrado deve girar 2x mais lento que o triângulo.
+Voeg in dezelfde code als in opdracht 1 een
+geel vierkant toe. Het vierkant moet 2x langzamer draaien dan de driehoek.
 
-## DESAFIO 3 (avançado): rotacionando no sentido horário.
+## OPDRACHT 3 (uitdagend): met de klok meedraaien.
 
-Até agora nossas animações estão girando no sentido anti-horário
-(para esquerda). Altere o código do desafio 2 para que o triângulo 
-gire no sentido horário (para direita) e o quadrado continue
-girando no sentido anti-horário.
+Tot nu toe draaien onze animaties tegen de klok in
+(naar links). Verander de code van opdracht 2 zodat de driehoek 
+met de klok mee draait (naar rechts) en het vierkant gewoon verder draait, tegen de klok in.
 
-👩‍🏫 __Dicas__: 
-  - Lembre-se que a função *rotate* pode receber valores positivos
-  ou negativos. Valores positivos fazem com que a figura seja rotacionado
-  no sentido anti-horário e valore negativos no sentido horário.  
-  - Para girar no sentido anti-horário o resultado do valor *(spin 8 time)*
-  precisa ser negativo.
+👩‍🏫 __Tips__:  
+- Onthoud dat de functie *rotate* zowel positieve waarden als negatieve waarden kan ontvangen. Positieve waarden zorgen ervoor dat het figuur tegen de klok in wordt gedraaid en negatieve waarden zorgen ervoor dat het figuur met de klok mee draait.  
+- Om tegen de klok in te draaien, moet het resultaat van de *(spin 8 time)* waarde negatief zijn.
 
-## E agora?
+## En nu?
 
-Conseguiu fazer todos os exercícios? Teve dificuldade em algum?
+Is het je gelukt om alle oefeningen te doen? Had je moeite met een van hen?
 
-Siga para as [respostas dos desafios](/aula_6_desafios_respostas.html)
-para ver a solução.
+Ga naar [antwoorden van de opdrachten](les_6_antwoorden.html) om de oplossing te zien.
 

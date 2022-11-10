@@ -1,6 +1,6 @@
-# Aula 6: Resposta dos desafios
+# Les 6: Antwoorden van de opdrachten
 
-## DESAFIO 1 (fácil): alterando a velocidade.
+## OPDRACHT 1 (eenvoudig): verander de snelheid.
 
 ```haskell
 import Playground exposing (..)
@@ -14,18 +14,15 @@ view time =
     ]
 ```
 
-Altere o código definido acima para que o triângulo gire 2x mais rápido.  
-Em seguida altere-o para que gire 2x mais lento.
+Verander de hierboven gedefinieerde code zodat de driehoek 2x sneller draait.  
+Verander het dan zodat het 2x langzamer draait.
 
-### Resposta
+### Antwoord
 
-Para que o triângulo gire 2x mais rápido, basta dividir pela
-metade o primeiro parâmetro do método *spin*. Lembre-se: o primeiro
-parâmetro indica quantos segundos vai demorar para que a figura
-faça uma rotação completa. Logo, quanto menor o tempo, mais rápido
-será a velocidade de rotação da figura.
+Om de driehoek 2x sneller te laten draaien, halveer je de eerste parameter van de *spin* methode. Onthoud: de eerste
+parameter geeft aan hoeveel seconden het duurt om het figuur een volledige rotatie te laten maken. Dus, hoe korter de tijd, hoe sneller de draaisnelheid van het figuur is.
 
-Código com rotação 2x mais rápida:
+Code met 2x snellere rotatie:
 
 ```haskell
 import Playground exposing (..)
@@ -39,7 +36,7 @@ view time =
     ]
 ```
 
-Código com rotação 2x mais devagar:
+Code met 2x langzamere rotatie:
 
 ```haskell
 import Playground exposing (..)
@@ -53,24 +50,20 @@ view time =
     ]
 ```
 
-## DESAFIO 2 (intermediário): mais formas geométricas.
+## OPDRACHT 2 (gemiddeld): meer geometrische vormen.
 
-No mesmo código do desafio 1, adicione ao fundo do triângulo um
-quadrado amarelo. O quadrado deve girar 2x mais lento que o triângulo.
+Voeg in dezelfde code als in opdracht 1 een
+geel vierkant toe. Het vierkant moet 2x langzamer draaien dan de driehoek.
 
-A nossa função *view* define uma lista de formas geométricas.
-Para adicionarmos um quadrado ao fundo do triângulo, basta
-declarmos um *square* no inicio da lista de formas geométricas.  
-Como queremos que ele rotacione na metade da velocidade, precisamos
-aplicar a transformação através da função *rotate* de forma similar
-ao que fizemos com o triângulo, mas passando um valor maior para a
-função *spin*, para que o intervalor de rotação seja maior.  
-Lembre-se que em uma lista, separamos os elementos através da vírgula.
+Onze *view*-functie definieert een lijst met geometrische vormen.
+Om een ​​vierkant aan de onderkant van de driehoek toe te voegen, hoef je alleen een *square* aan het begin van de lijst met geometrische vormen aan te brengen.  
+Omdat we willen dat het vierkant op halve snelheid draait, hebben we het volgende nodig: pas de transformatie via de functie *rotate* toe op een vergelijkbare manier als wat we met de driehoek hebben gedaan. Maar, we geven een grotere waarde door aan de
+*spin* functie, zodat het rotatie-interval groter is.
+Onthoud dat we in een lijst de elementen scheiden met een komma.
 
-### Resposta
+### Antwoord
 
-Vamos quebrar a resposta em 2 partes. Primeiro vamos adicionar o
-quadrado (*square* em inglês) ao fundo da imagem sem animação:
+We gaan het antwoord in 2 delen splitsen. Laten we eerst het vierkant (*square* in het Engels) onderaan de afbeelding toevoegen, zonder animatie:
 
 ```haskell
 import Playground exposing (..)
@@ -85,7 +78,7 @@ view time =
     ]
 ```
 
-Agora vamos completar o desafio, rotacionando nosso quadrado:
+Laten we nu de opdracht afmaken door ons vierkant te laten draaien:
 
 ```haskell
 import Playground exposing (..)
@@ -101,31 +94,24 @@ view time =
     ]
 ```
 
-## DESAFIO 3 (avançado): rotacionando no sentido horário.
+## OPDRACHT 3 (uitdagend): met de klok meedraaien.
 
-Até agora nossas animações estão girando no sentido anti-horário
-(para esquerda). Altere o código do desafio 2 para que o triângulo 
-gire no sentido horário (para direita) e o quadrado continue
-girando no sentido anti-horário.
+Tot nu toe draaien onze animaties tegen de klok in
+(naar links). Verander de code van opdracht 2 zodat de driehoek 
+met de klok mee draait (naar rechts) en het vierkant verder gaat,
+draaiend tegen de klok in.
 
-👩‍🏫 __Dicas__: 
-  - Lembre-se que a função *rotate* pode receber valores positivos
-  ou negativos. Valores positivos fazem com que a figura seja rotacionado
-  no sentido anti-horário e valore negativos no sentido horário.  
-  - Para girar no sentido anti-horário o resultado do valor *(spin 8 time)* 
-  precisa ser negativo.
+👩‍🏫 __Tips__:  
+- Onthoud dat de functie *rotate* zowel positieve waarden als negatieve waarden kan ontvangen. Positieve waarden zorgen ervoor dat de afbeelding tegen de klok in wordt gedraaid en negatieve waarden zorgen ervoor dat de afbeelding met de klok mee draait.  
+- Om tegen de klok in te draaien, moet het resultaat van de *(spin 8 time)* waarde negatief zijn.
 
-### Resposta
+### Antwoord
 
-Existem algumas formas de resolver este problema. Talvez a mais simples
-seja partirmos do valor 360 (graus) e subtraírmos deste valor o resultado
-da operação *(spin 8 time)*.  
-Desta forma, quando o valor da operação *(spin 8 time)* for 0, vamos transformar
-este resultado em 360. E quando ele for 360, vamos transforma-lo em 0.
-Quando for 180, transformaremos em -180, e assim por diante.  
+Er zijn een paar manieren om dit probleem op te lossen. Misschien wel de eenvoudigste manier is uitgaan van de waarde 360 ​​(graden) en van deze waarde het resultaat van de bewerking *(spin 8 time)* aftrekken.
+Op deze manier zullen we, wanneer de waarde van de bewerking *(spin 8 time)* 0 is, dit resultaat transformeren naar 360. En als het 360 is, transformeren we het naar 0.
+Wanneer de waarde 180 is, maken we er -180 van, enzovoort.  
 
-Lembre-se de colocar um novo parênteses para que o valor seja calculado primeiro,
-caso contrário irá receber uma mensagem de erro.
+Vergeet niet om nieuwe haakjes te plaatsen zodat de waarde eerst wordt berekend, anders krijg je een foutmelding.
 
 ```haskell
 import Playground exposing (..)
@@ -141,6 +127,6 @@ view time =
     ]
 ```
 
-## E agora?
+## En nu?
 
-Siga para a [Aula 6](/aula_6.html) e bons estudos!
+Ga nu door met [Les 7](les_7.html), veel succes!

@@ -1,19 +1,18 @@
-# Aula 6 - Sua primeira animação.
+# Les 6 - Je eerste animatie
 
-Esta aula será um pouco mais teórica pois você irá aprender os
-fundamentos para conseguir criar animações.
+Deze les is meer theoretisch, omdat je de
+basisprincipes leert om animaties te kunnen maken.
 
-## O que você irá aprender nesta aula?
+## Wat leer je in deze les?
 
-1. Como criar uma animação.  
-  1.1. O que é a função *animation*?  
-2. Como rotacionar uma figura de acordo com o tempo.  
-  2.1 Entendendo melhor o controle do tempo.  
+1. Hoe maak je een animatie.  
+  1.1. wat is de *animation* functie?  
+2. Hoe draai je een figuur volgens de tijd.  
+  2.1 Een beter begrip krijgen van het beheersen van de tijd. 
 
-## 1- Como criar uma animação.
+## 1- Hoe maak je een animatie
 
-Ao final desta aula você será capaz de entender 
-o seguinte código:
+Aan het einde van deze les zul je in staat zijn om de volgende code te begrijpen:
 
 ```haskell
 import Playground exposing (..)
@@ -27,142 +26,113 @@ view time =
     ]
 ```
 
-Mas para isso você precisa conhecer a função _animation_
-e saber também como controlar o tempo.
+Maar daarvoor moet je de _animation_ functie kennen en ook weten hoe je de tijd moet beheersen.
 
-### 1.1- O que é a função *animation*.
+### 1.1 - Wat is de *animation* functie?
 
-*animation* (animação em inglês) é o nome da função que
-você deve acionar para que o computador entenda 
-que o desenho que quer criar é uma imagem animada.
+*animation* is de naam van de functie 
+die je moet activeren zodat de computer begrijpt 
+dat de tekening die je wilt maken een geanimeerde afbeelding is.
 
-A função *animation* recebe um parâmetro
-diferente do que aprendeu nas aulas anteriores: ela
-espera que seja passado como argumento uma função. Ou seja,
-é uma função que recebe como parâmetro uma outra função.
+De *animation* functie ontvangt een andere soort parameter dan wat je in de vorige lessen hebt geleerd: het verwacht dat een functie als argument wordt doorgegeven. Met andere woorden, het is een functie die een andere functie als parameter neemt.
 
-🚨 **Importante**: Isso costuma gerar dúvidas. Em *Elm* (e também
-*JavaScript*, *Clojure* e muitas outras linguagens de programação) 
-isso é algo bastante comum: às vezes as funções vão receber
-valores "normais", como números ou textos mas, em outros casos, receberá uma **função** como argumento. Ou seja, *animation* é uma função 
-que recebe uma referência dê outra função como argumento. 🤯
+🚨 **Belangrijk**: Dit roept vaak vragen op. In *Elm* (en ook
+*JavaScript*, *Clojure* en vele andere programmeertalen) 
+is dit heel gebruikelijk: soms ontvangen functies
+"normale" waarden, zoals getallen of tekst, maar in andere gevallen ontvangt het een **functie** als argument. Dat wil zeggen, *animation* is een functie die een verwijzing naar een andere functie als argument neemt. 🤯
 
-No exemplo anterior, a função *animation* está recebendo como
-argumento uma referência para a função *view* 
-(que significa **vista** ou **ver** em inglês).   
-Em *Elm* este costuma ser o nome padrão dado para a função
-onde iremos definir o que será exibido na tela.
+In het vorige voorbeeld krijgt de *animation*-functie als
+argument een verwijzing naar de *view* functie 
+(view betekent in het Engels **zicht** of **zien**).   
+In *Elm* is dit meestal de standaardnaam voor de
+functie waar we definiëren wat er op het scherm komt.
 
-Perceba que a função *view* recebe um parâmetro chamado *time* 
-(que significa **tempo** ou **hora** em inglês).  
-Você pode dar qualquer outro nome mas, por convenção,
-este é o nome que costumamos usar neste parâmetro.  
+Merk op dat de *view* functie een parameter krijgt met de naam *time*. 
+(wat staat voor **tijd**).  
+Je kunt het elke andere naam geven, maar volgens afspraak is dit 
+de naam die we gewoonlijk voor deze parameter gebruiken.  
 
-Através de uma animação você pode alterar o desenho
-ao longo do tempo. Por isso, precisa deste parâmetro
-para sabermos qual o valor atual do tempo e, assim,
-especificar como o desenho deve ser apresentado.
+Via een animatie kun je je tekening na een tijdje veranderen. 
+Daarom heb je deze *time*-parameter nodig
+om de huidige waarde van de tijd te kennen en dus
+aan te geven hoe de tekening moet worden weergegeven.
 
-Pense assim: imagine que você chutou uma bola de futebol
-em linha reta. Conhecendo a direção que ela está indo
-e a intensidade do seu chute, como poderia saber qual
-a posição atual da bola? A resposta é: depende! Depende do
-**tempo**. Zero segundos após você chutar, ela ainda estará
-encostada em seu pé. Um segundo depois estará um pouco
-mais longe. Ou seja, para descobrir onde deve 
-desenhar esta bola é necessário saber o tempo decorrido
-desde o momento do seu chute.
+Zie het zo: stel je voor dat je een voetbal in een rechte lijn trapt. Als je weet in welke richting de bal gaat en wat de intensiteit van je trap is, hoe weet je dan de huidige positie van de bal? Het antwoord is: dat hangt ervan af! Het hangt af van de **tijd**. Nul seconden nadat je de bal schopt, raakt het nog steeds je voet. Een seconde later ben je een stukje verder weg. Met andere woorden, om uit te vinden waar je deze bal kan tekenen, is het nodig dat je de verstreken tijd weet vanaf het moment dat je er tegenaan trapte.
 
-Voltando para código, a função _view_ será
-executada (automaticamente pelo computador) diversas vezes,
-e em cada execução o valor da variável _**time**_ será diferente 
-(contendo a hora atual no momento daquela execução).  
-É isso que permite que na primeira vez que esta função
-seja acionada o triângulo seja desenhado de uma forma
-e, conforme o valor da hora (_time_) muda, a
-forma como nosso triângulo é desenhado também se altera.
+Terug naar de code. De functie _view_ wordt
+meerdere keren (automatisch door de computer) uitgevoerd,
+en bij elke uitvoering zal de waarde van de variabele _**time**_ anders zijn (met daarin de huidige tijd op het moment van die uitvoering).  
+Dit is wat er gebeurt als deze functie de eerste keer wordt opgeroepen: de driehoek wordt in één richting getekend
+en, als de waarde van de tijd (_time_) verandert, dan
+verandert ook de manier waarop onze driehoek wordt getekend.
 
-Todas as animações deste curso serão feitas seguindo esta
-lógica: suas funções vão precisar do tempo (_time_) 
-decorrido para saber qual o momento atual da animação.
+Alle animaties in deze cursus worden gemaakt volgens deze zelfde
+logica: hun functies zullen de verstreken tijd nodig hebben (_time_) 
+om het huidige moment van de animatie te kennen.
 
-## 2. Como rotacionar uma figura de acordo com o tempo.  
+## 2. Hoe draai je een figuur volgens de tijd  
 
-Você já havia utilizado a função *rotate* antes, para
-rotacionar as imagens. Como deve lembrar, ela
-recebe um parâmetro com o ângulo que deseja rotacionar
-(um número entre -360 e 360). No exemplo anterior o valor
-passado como parâmetro é este:
+Je hebt de *rotate* functie eerder gebruikt om een afbeelding te laten draaien. Zoals jij je misschien herinnert, 
+krijgt de functie *rotate* een parameter met de hoek die je wilt draaien (een getal tussen -360 en 360). In het vorige voorbeeld is de waarde, die als parameter is doorgegeven, ddeze:
 
 ```haskell
 rotate (spin 8 time)
 ```
 
-🚨 **Importante**: A primeira obervação que preciso fazer aqui
-é o uso dos parânteses. Se os retirar, seu programa
-não vai funcionar. Eles são importantes pois indicam para 
-o computador que ele deve dar prioridade em resolver tudo que está dentro dos parânteses para, em seguida, pegar o resultado destas
-operações e usar o valor deste resultado como argumento da função
-rotate.  
+🚨 **Belangrijk**: De eerste opmerking die ik hier moet maken
+betreft het gebruik van haakjes. Als je deze haakjes verwijdert, zal je programma niet werken. Ze zijn belangrijk omdat ze de computer vertellen dat hij prioriteit moet geven aan het oplossen van alles binnen de haakjes om vervolgens het resultaat van deze
+bewerkingen te krijgen en de waarde van dit resultaat te gebruiken als argument voor de *rotate* functie. 
 
-Você pode fazer uma associação com a matemática:  
+Je kunt een verband leggen met wiskunde: 
 
 ```haskell
 x = 2 * 1 + 1  
 y = 2 * (1 + 1)  
 ```
 
-No exemplo acima,  _**x**_ é igual a 3 e _**y**_ é igual a 4.  
-Assim como na matemática, os parânteses são
-muito importantes na programação!
+In bovenstaand voorbeeld is _**x**_ gelijk aan 3 en _**y**_ gelijk aan 4.  
+Net als in de wiskunde zijn haakjes
+erg belangrijk bij het programmeren!
 
-Voltando pro o exemplo, primeiro será avaliado o 
-valor de _**spin 8 time**_ para em seguida usar este valor
-como argumento para a função _rotate_.
+Terug naar het voorbeeld, eerst zal de 
+waarde van _**spin 8 time**_ worden bepaald en daarna zal die waarde gebruikt worden als een argument voor de _rotate_ functie.
 
-*Spin* em inglês significa girar.  
-Você consegue imaginar o que ela faz? Pare e reflita um pouco
-antes de continuar lendo.
+*Spin* betekent in het Engels draaien.
+Kun je je voorstellen wat het doet? Stop en denk hier even over na voordat je verder leest.
 
-Mais uma vez, como quase tudo em *Elm*, *spin* é uma função.
-E como você deve ter observado, ela recebe dois parâmetros.
-O primeiro é o **período**, indicando quantos segundos deve
-demorar cada rotação da imagem. Quanto menor o valor, mais rápida
-será a velocidade de rotação. No exemplo, este valor é 8. 
-Isso significa que nosso triângulo irá rodar por completo 1
-vez a cada 8 segundos.  
-O segundo parâmetro é o tempo decorrido. Em geral você irá apenas
-repassar o valor que já recebeu como argumento em sua função.
-Quem controla o tempo é o computador e ele repassa esta informação
-pra gente.
+Nogmaals, zoals bijna alles in *Elm*, is *spin* een functie.
+En zoals je misschien hebt gemerkt, zijn er twee parameters nodig.  
+De eerste parameter is de **periode**. Deze geeft aan hoeveel seconden elke rotatie van het beeld moet nemen. Hoe lager de waarde, hoe sneller zal de rotatiesnelheid zijn. 
+In het voorbeeld is deze waarde 8. Dit betekent dat onze driehoek 1 keer volledig ronddraait per elke 8 seconden.  
+De tweede parameter is de verstreken tijd. Hier zul je in het algemeen gewoon de waarde doorgeven die je al als argument doorkreeg in je functie.
+De computer controleert de tijd en geeft deze informatie door
+aan ons.
 
-### 2.1 Entendendo melhor o controle do tempo.
+### 2.1 - Een beter begrip krijgen van het beheersen van de tijd
 
-Seu programa começa na função *main*. Mas quem aciona esta função?
-O computador! Ou mais tecnicamente falando, a *runtime* do *Elm*.
-Mas isso é apenas um detalhe. O que precisa entender é neste exemplo, a função *main* foi definida da seguinte forma:
+Je programma begint met de *main* functie. Maar wie activeert deze functie?
+De computer! Of meer technisch gesproken, de *Elm* *runtime*.
+Maar dat is slechts een detail. Wat je moet begrijpen is dat in dit voorbeeld de *main* functie als volgt is gedefinieerd:
 
 ```haskell
 main =
   animation view
 ```
 
-Sendo que, em algum momento, a função _animation_ irá acionar a função _view_ e, como já víamos antes, a função _view_ recebe 
-um parâmetro indicando o tempo (o parâmetro _time_):
+Op een bepaald moment zal de _animation_ -functie de _view_ -functie activeren en, zoals we eerder hebben gezien, ontvangt de functie _view_ een parameter die de tijd aangeeft (de _time_ parameter):
 
 ```haskell
 view time =
 ```
 
-Você não precisa se preocupar com o controle desta variável, o computador vai fazer este trabalho pra você. Precisa apenas saber 
-que irá receber este valor e o que ele representa.
+Je hoeft je geen zorgen te maken over het beheersen van deze variabele, dat doet de computer voor je. Je moet alleen weten 
+wie deze waarde zal ontvangen en wat hij vertegenwoordigt.
 
-Se toda esta explicação ficou muito confusa, não se preocupe!
-Tudo vai ficar mais claro conforme você treina.
+Als deze hele uitleg te verwarrend was, maak je dan geen zorgen!
+Alles wordt duidelijker als je oefent.
 
-## E agora?
+## En nu?
 
-Agora chegou a hora de você colocar as mãos na massa
-e praticar um pouco!
+Nu is het tijd om aan de slag te gaan en nog meer te oefenen!
 
-Siga para os [desafios da Aula 6](/aula_6_desafios.html) e bons estudos.
+Ga naar [Les 6 opdrachten](les_6_opdrachten.html) en veel succes met oefenen!
