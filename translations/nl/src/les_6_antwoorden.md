@@ -1,6 +1,6 @@
 # Les 6: Antwoorden van de opdrachten
 
-## OPDRACHT 1 (eenvoudig): verander de snelheid.
+## OPDRACHT 1 (eenvoudig): verander de snelheid
 
 ```haskell
 import Playground exposing (..)
@@ -50,7 +50,7 @@ view time =
     ]
 ```
 
-## OPDRACHT 2 (gemiddeld): meer geometrische vormen.
+## OPDRACHT 2 (gemiddeld): meer geometrische vormen
 
 Voeg in dezelfde code als in opdracht 1 een
 geel vierkant toe. Het vierkant moet 2x langzamer draaien dan de driehoek.
@@ -94,7 +94,7 @@ view time =
     ]
 ```
 
-## OPDRACHT 3 (uitdagend): met de klok meedraaien.
+## OPDRACHT 3 (uitdagend): met de klok meedraaien
 
 Tot nu toe draaien onze animaties tegen de klok in
 (naar links). Verander de code van opdracht 2 zodat de driehoek 

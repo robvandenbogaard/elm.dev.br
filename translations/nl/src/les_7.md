@@ -1,13 +1,13 @@
-# Aula 7 - Fazendo movimentos de onda.
+# Les 7 - Golfbewegingen maken.
 
-## O que você irá aprender nesta aula?
+## Wat leer je in deze les?
 
-1. Como animar uma figura usando movimento ondular.  
-1.1 A função *wave*.  
+1. Hoe animeer je een figuur met behulp van golfbewegingen.  
+1.1 De *wave* functie.  
 
-## 1- Como animar uma figura usando movimento ondular.
+## 1 - Hoe animeer je een figuur met behulp van golfbewegingen.
 
-Antes, vamos relembrar como desenhar um círculo na tela:
+Laten we ons eerst eens herinneren hoe je een cirkel op het scherm tekent:
 
 ```haskell
 import Playground exposing (..)
@@ -19,22 +19,17 @@ view time =
   [ circle blue 100 ]
 ```
 
-Imagine que você queira criar uma animação nesta figura,
-fazendo com que ela fique "pulsando" (aumentando e diminuindo
-seu diâmetro ao longo do tempo).
+Stel je voor dat je een animatie wilt maken op deze figuur,
+waardoor hij gaat "pulseren" (vergroten en verkleinen van de diameter
+gedurende de tijd).
 
-No exemplo acima o diâmetro do círculo está fixo em 100. Para
-atingir seu objetivo, é preciso fazer com que este valor
-seja variável e mude de acordo com o tempo (aquela variável
-_time_ que vimos na aula passada).
+In bovenstaand voorbeeld is de diameter van de cirkel vastgesteld op 100. Om je doel ("pulseren") te bereiken, moet je ervoor zorgen dat de waarde van de diameter variabel kan zijn in plaats van vast, en gedurende de tijd kan veranderen (met behulp van die variabele _time_ die we in les 6 zagen).
 
-Uma das formas de implementar isso é utilizando uma função chamada
-_wave_ (que significa onda em inglês).
+Een van de manieren om dit toe te passen (implementeren), is het gebruik van een functie genaamd _wave_ (wat in het Engels golf betekent).
 
-Abra mais uma vez o site <a href="https://elm-lang.org/try">https://elm-lang.org/try</a>,
-copie e execute o código a seguir.  
-Por enquanto não se preocupe em interpretar tudo, apenas
-veja o resultado para entender melhor o comportamento desta função.
+Open de <a href="https://elm-lang.org/try">https://elm-lang.org/try</a> website opnieuw,
+kopieer en voer de volgende code uit.  
+Maak je voor nu geen zorgen over het interpreteren van alles. Bekijk  gewoon het resultaat om het gedrag van deze functie beter te begrijpen.
 
 ```haskell
 import Playground exposing (..)
@@ -47,34 +42,25 @@ view time =
   ]
 ```
 
-### 1.1 - A função _wave_.
+### 1.1 - De _wave_ functie.
 
-Como você deve ter observado, agora é acionada a função _wave_ e 
-o resultado desta chamada irá definir o tamanho do diâmetro do círculo.  
+Zoals je misschien hebt gemerkt, wordt nu de functie _wave_ aangeroepen en het resultaat van deze oproep bepaalt de grootte van de diameter van de cirkel.  
 
-A função _wave_ recebe 4 parâmetros. Os 2 primeiros correspondem ao
-valor mínimo e o tamanho máximo do diâmetro. Já os 2 últimos parâmetros estão
-relacionados com a velocidade que o este valor deve ser alterado.  
-Neste exemplo, o valor 7 indica quantos segundos deve demorar o
-ciclo total da animação (ou seja, o intervalo de tempo que
-deve transcorrer para que o valor varie entre o mínimo e o máximo
-e volte até o valor mínimo novamente). Já o _time_ é apenas a hora atual (que 
-recebemos como parâmetro na função _view_ e repassamos o mesmo valor).
+De functie _wave_ heeft 4 parameters. De eerste 2 parameters komen overeen met de minimale waarde en de maximale grootte van de diameter. De laatste twee parameters hangen samen met de snelheid waarmee deze waarde moet veranderen.   
+In dit voorbeeld geeft de waarde 7 aan hoeveel seconden de
+totale cyclus van de animatie duurt (dat is: het tijdsinterval dat
+moet verstrijken zodat de waarde varieert tussen het minimum en maximum en weer terug naar de minimumwaarde).  
+De _time_ is gewoon de huidige tijd (die we als parameter krijgen in de _view_ functie en die we dezelfde waarde doorgeven).
 
-O valor de _time_ será atualizado automaticamente e a função 
-_view_ será acionada muitas e muitas vezes, cada vez com um valor diferente
-para a variável _time_. Mas você não precisa se preocupar com ela:
-basta repassa-la como parâmetro para a função _wave_ e ela saberá
-retornar qual deve ser o tamanho do circulo para o momento atual. 
+De waarde van _time_ wordt automatisch bijgewerkt en de functie
+_view_ wordt steeds opnieuw aangeroepen, elke keer met een andere waarde voor de variabele _time_. Maar je hoeft je daar geen zorgen over te maken:
+geef _time_ gewoon door als een parameter aan de _wave_- functie en het zal weten wat de grootte van de cirkel op dit moment moet zijn. 
 
-Agora releia o código anterior e tente entender melhor o que está
-acontecendo. Altere os valores 50, 100 e 7 para outros valores
-quaisquer e veja o resultado. Mas antes de executar,
-tente imaginar como ficará a animação.
+Herlees nu de vorige code en probeer beter te begrijpen wat er gebeurt. Verander de waarden 50, 100 en 7 naar andere waarden
+en bekijk het resultaat. Maar voordat je de code uitvoert (via Rebuild), probeer je eerst voor te stellen hoe de animatie eruit zal zien.
 
-## E agora?
+## En nu?
 
-Agora chegou a hora de você colocar as mãos na massa
-e praticar mais um pouco!
+Nu is het tijd om aan de slag te gaan en nog meer te oefenen!
 
-Siga para os [desafios da Aula 7](/aula_7_desafios.html) e bons estudos.
+Ga naar [Les 7 opdrachten](les_7_opdrachten.html) en veel succes met oefenen!
