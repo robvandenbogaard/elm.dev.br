@@ -21,18 +21,20 @@ Probeer nu de code te veranderen om onderstaande opdrachten te kunnen maken. En,
 Probeer het eens, testen, onderzoeken, fouten maken. Het ergste dat kan gebeuren is dat je een foutmelding krijgt
 
 
-## OPDRACHT 1 (eenvoudig): De grootte van een cirkel veranderen.
+## OPDRACHT 1: De grootte van een cirkel veranderen.
 
 Verander de waarde van de cirkelgrootte in een willekeurig getal.  
 Het kan een kleine waarde zijn zoals 1 of 2, of een grote waarde zoals 999999999.  
 Klik dan op *Rebuild* en zie het resultaat!
 
-## OPDRACHT 2 (eenvoudig): De kleur van de cirkel veranderen.
+
+## OPDRACHT 2: De kleur van de cirkel veranderen.
 
 Verander de kleurwaarde van de cirkel in de kleur van jouw voorkeur.  
 Vergeet niet dat je de naam van de kleuren in het Engels moet schrijven. Als je moeite hebt met Engels, kijk dan hieronder op de lijst met beschikbare kleuren.
 
 ### Lijst met kleuren:
+
 red, orange, yellow, green, blue, purple, brown,
 lightRed, lightOrange, lightYellow, lightGreen,
 lightBlue, lightPurple, lightBrown, darkRed,
@@ -40,6 +42,7 @@ darkOrange, darkYellow, darkGreen, darkBlue,
 darkPurple, darkBrown, white, lightGrey, grey,
 darkGrey, lightCharcoal, charcoal, darkCharcoal,
 black, lightGray, gray and darkGray.
+
 
 ## OPDRACHT 3 (uitdagend): Maak 2 cirkels, de één binnen de ander.
 
@@ -62,6 +65,7 @@ voor de grootste in de lijst staat, komt hij achter de grootste te staan en kun 
 ## OPDRACHT 4 (uitdagend): Maak 4 cirkels, de één binnen de ander.
 
 Vergelijkbaar met de vorige opdracht, maar deze keer moeten er 4 cirkels zijn: de ene binnen de andere, met verschillende maten en kleuren.
+
 
 ## En nu?
 
