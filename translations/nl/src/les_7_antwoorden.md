@@ -1,9 +1,9 @@
-# Aula 7: Resposta dos desafios
+# Les 7: Antwoorden van de opdrachten
 
-## DESAFIO 1 (fácil): alterando a velocidade.
+## OPDRACHT 1 (eenvoudig): Het veranderen van de snelheid
 
-Leia o código abaixo e tente imaginar o que irá aparecer na tela. 
-E o que significam os valores 10, 100 e 12?
+Lees onderstaande code en probeer je voor te stellen wat er op het scherm zal verschijnen.
+En, wat betekenen de waarden 10, 100 en 12?
 
 ```haskell
 import Playground exposing (..)
@@ -16,19 +16,19 @@ view time =
   ]
 ```
 
-Agora altere o código acima para que o círculo pulse 4 vezes mais rápido.  
-Em seguida, altere-o para que pulse 4 vezes mais lento que o código original.  
+Verander nu bovenstaande code zodat de cirkel 4 keer zo snel pulseert.  
+Verander het dan zodat het 4 keer langzamer pulseert dan in de originele code.  
 
-### Resposta
+### Antwoord
 
-A parte do código *12 time* é que define qual será a velocidade da
-animação. Lembre-se: quanto menor o valor, mais rápida será a animação.  
-Isso acontece pois este valor indica a quantidade de segundos que
-queremos que demore a animação completa. Quanto menor o tempo total
-da animação, mais rápida ela irá ser exibida.
+*10* stelt de minimale waarde van de cirkel voor (wanneer is hij op zijn kleinst). *100* stelt de maximale grootte van de diameter voor. Het *12 time* deel van de code bepaalt de snelheid van de
+animatie. Onthoud hier: hoe kleiner die waarde, hoe sneller de animatie.  
+Dit gebeurt omdat deze waarde het aantal seconden aangeeft dat
+we willen dat de animatie duurt. Hoe korter de totale tijd
+van de animatie, hoe sneller deze wordt weergegeven.
 
-Para que a animação ocorra 4 vezes mais rápido, basta dividirmos 
-o valor *12 time* por 4:
+Om de animatie 4 keer zo snel te laten verlopen, delen we gewoon 
+de waarde *12 time* door 4:
 
 ```haskell
 import Playground exposing (..)
@@ -41,8 +41,7 @@ view time =
   ]
 ```
 
-Para que seja 4 vezes mais devagar, multiplicamos o valor original
-por 4:
+Om de animatie 4 keer langzamer te maken, vermenigvuldigen we de oorspronkelijke waarde met 4:
 
 ```haskell
 import Playground exposing (..)
@@ -55,18 +54,17 @@ view time =
   ]
 ```
 
-Agora nossa animação vai ficar beeeeem devagar, demorando 48 segundos
-para que termine o ciclo todo.
+Nu zal onze animatie zeer traag zijn, en 48 seconden duren
+om de hele cyclus af te maken.
 
-## DESAFIO 2 (fácil): Adicione um círculo dentro do outro.
+## OPDRACHT 2 (eenvoudig): Voeg een cirkel in een andere
 
-Inclua no código acima um novo círculo vermelho que fique estático/parado.
-Este novo círculo deve ficar sob o círculo azul e deve ter um diâmetro
-igual a 200.
+Neem in de bovenstaande code een nieuwe rode cirkel op die statisch/stil is.
+Deze nieuwe cirkel moet onder de blauwe cirkel liggen ​​en een diameter van 200 hebben.
 
-### Resposta
+### Antwoord
 
-Desta vez bastava adicionarmos um círculo vermelho na lista de figuras:
+Deze keer hoefden we alleen maar een rode cirkel toe te voegen aan de lijst met figuren:
 
 ```haskell
 import Playground exposing (..)
@@ -80,7 +78,7 @@ view time =
   ]
 ```
 
-## DESAFIO 2 (Intermediário): Crie 2 círculos pulsando.
+## OPDRACHT 3 (gemiddeld): Maak 2 cirkels die pulseren
 
 ```haskell
 import Playground exposing (..)
@@ -93,16 +91,13 @@ view time =
   ]
 ```
 
-Altere o código acima para atender os seguintes critérios:  
-- Mova o circulo para a esquerda em 200 unidades.  
-- Crie um novo círculo azul com a mesma ondulação deste e o
-mova para direita em 200 unidades.  
+Wijzig de bovenstaande code om aan de volgende criteria te voldoen:  
+- Verplaats de cirkel 200 eenheden naar links.  
+- Maak een nieuwe blauwe cirkel met dezelfde golf (wave) als deze en plaats hem 200 eenheden naar rechts.  
 
-O resultado final esperado são dois círculos pulsando no
-mesmo ritmo, um ao lado do outro. Talvez dê para imaginarmos
-isso como sendo a animação de dois olhos piscando?
+Het verwachte eindresultaat is: twee cirkels die op hetzelfde moment pulseren in hetzelfde ritme, de ene naast de andere. Misschien kunnen we dit voor ons zien als de animatie van twee knipperende ogen?
 
-### Resposta
+### Antwoord
 
 ```haskell
 import Playground exposing (..)
@@ -118,26 +113,21 @@ view time =
   ]
 ```
 
-## DESAFIO 3 (Avançado): Crie um triângulo entre os círculos.
+## OPDRACHT 4 (uitdagend): Maak een driehoek tussen de cirkels
 
-Complemente o código do desafio 2 e crie um triângulo amarelo
-estático/parado entre os dois círculos. 
+Vul de code van opdracht 2 aan en maak een statische/stilstaande gele driehoek tussen de twee cirkels. 
 
-Se imaginarmos que os círculos são 2 olhos, o triânulo seria
-como se fosse um nariz! Ele deve obedecer as seguintes regras:  
-- Deve ser na cor amarela.  
-- Deve ter um diâmetro igual a 50.  
-- Deve ficar 75 unidades para baixo no eixo vertical (eixo y)
-em relação ao centro e bem no meio (0 unidades) no eixo vertical.  
-- Deve ficar rotacionado de forma que a parte de cima seja
-plana e a parte de baixo forme um ângulo.
+Als we ons voorstellen dat de cirkels 2 ogen zijn, dan zou de driehoek een neus kunnen zijn! De driehoek moet aan de volgende regels voldoen:  
+- Hij moet geel van kleur zijn.  
+- Hij moet een diameter van 50 hebben.  
+- Hij moet 100 eenheden naar beneden op de verticale as (y-as).
+ten opzichte van het centrum en rechts in het midden (0 eenheden) op de verticale as.  
+- Hij moet zo worden gedraaid dat de bovenkant 
+plat is en de onderkant een hoek/punt vormt.
 
-O resultado final esperado são dois círculos pulsando no
-mesmo ritmo, um ao lado do outro e um triângulo amarelo
-simulando um nariz. Ou talvez o bico de um pássado!
-Use sua imaginação :)
+Het verwachte eindresultaat is: twee cirkels die op hetzelfde moment pulseren in hetzelfde ritme, de ene naast de andere én een gele driehoek die een neus zou kunnen voorstellen. Of misschien de snavel van een vogel! Gebruik je fantasie :)
 
-### Resposta
+### Antwoord
 
 ```haskell
 import Playground exposing (..)
@@ -156,25 +146,20 @@ view time =
   ]
 ```
 
-## DESAFIO 4 (Avançado/livre): Desenhe a figura de uma animal.
+## OPDRACHT 5 (uitdagend/vrij): Maak een tekening van een dier
 
-Ao longo das aulas aprendemos como desenhar triângulos, círculos,
-retângulos e quadrados. Aprendemos também como rotacioná-los,
-posicioná-los na tela e hoje aprendemos nossa primeira forma
-de animação: movimento de ondulação (*wave*).
+Tijdens de lessen hebben we geleerd hoe we driehoeken, cirkels, rechthoeken en vierkanten kunnen tekenen. We hebben ook geleerd hoe we ze moeten draaien, positioneren (een plek geven) op het scherm en vandaag leerden we een eerste animatievorm: de golfbeweging (*wave*).
 
-Use este conhecimento todo que você adquiriu até o momento e
-tente desenhar a figura de um animal qualquer na tela. 
+Gebruik alle kennis die je tot nu toe hebt opgedaan en
+probeer een afbeelding van een dier op het scherm te tekenen.
 
-Se estiver sem inspiração, você pode tentar: desenha um pássaro,
-um macaco, um cachorro, um gato... não se preocupe em deixar
-o desenho perfeito. O importante é treinar!
+Als je geen inspiratie hebt, kun je proberen het volgende te tekenen: een vogel, een aap, een hond, een kat... 
+Maak je er geen zorgen over dat je de perfecte tekening moet maken. Het belangrijkste is dat je oefent!
 
-### Resposta
+### Antwoord
 
-Este era um desafio livre e, portanto, não tem respostas
-certas ou erradas :)
+Dit was een vrije opdracht en heeft daarom geen goede of foute antwoorden :)
 
-## E agora?
+## En nu?
 
-Siga para a [Aula 8](/aula_8.html) e bons estudos!
+Ga nu door met [Les 8](les_8.html), veel succes!
