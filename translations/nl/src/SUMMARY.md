@@ -30,6 +30,7 @@
   - [Antwoorden](./les_10_antwoorden.md)
 - [Cheat sheet](./cheat_sheet.md)
 - [Listings](./listings.md)
+  - [poppetje](./listing_poppetje.md)
   - [eekhoorn](./listing_eekhoorn.md)
   - [giraffe](./listing_giraffe.md)
   - [one-two-one](./listing_one-two-one.md)
