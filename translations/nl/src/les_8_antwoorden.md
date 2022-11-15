@@ -1,12 +1,10 @@
-# Aula 8: Desafios
+# Les 8: Antwoorden van de opdrachten
 
-## DESAFIO 1 (fácil): Movendo na vertical.
+## OPDRACHT 1 (eenvoudig): Verticaal bewegen
 
-Altere o código abaixo para que o quadrado se
-mova na vertical (de cima para baixo) variando
-sua posição no eixo *y* entre -100 e 100.  
-A animação deve demorar 2 segundos para completar
-o ciclo.
+Verander onderstaande code zodat het vierkant
+verticaal beweegt (van boven naar beneden). Dit doe je door de positie van het vierkant op de *y* -as te variëren tussen -100 en 100.  
+De animatie moet 2 seconden duren om de cyclus te voltooien.
 
 ```haskell
 import Playground exposing (..)
@@ -20,10 +18,10 @@ view time =
   ]
 ```
 
-### Resposta
+### Antwoord
 
-Basta fixar o eixo *x* sempre no valor 0 e deixar
-o eixo *y* variando entre -100 e 100 usando a função *zigzag*.
+Stel gewoon de *x*-as altijd in op 0 en laat
+de *y*-as variëren tussen -100 en 100 met behulp van de *zigzag*-functie.
 
 ```haskell
 import Playground exposing (..)
@@ -37,20 +35,16 @@ view time =
   ]
 ```
 
-## DESAFIO 2 (fácil): Movendo na diagonal.
+## OPDRACHT 2 (eenvoudig): Diagonaal (schuin) bewegen
 
-Altere o código do exercício 1 para que o quadrado
-se mova na diagonal. O movimento deve começar no
-ponto -100, -100 e terminar em 100, 100.
+Verander de code in opdracht 1 zodat het vierkant
+diagonaal beweegt. De beweging moet beginnen op het 
+punt -100, -100 en eindigen op 100, 100.
 
-### Resposta
+### Antwoord
 
-Existem algumas formas de resolver este exercício.  
-A mais simples seria replicarmos a mesma chamada
-que usamos no eixo *y* do exercício anterior
-para o eixo *x*. Assim, movemos os 2 eixos
-sempre da mesma forma, tendo como resultado o
-movimento na diagonal.
+Er zijn een paar manieren om deze oefening op te lossen.
+De eenvoudigste manier is om dezelfde code, die we voor de *y*-as in de vorige opdracht gebruikten, ook te gebruiken voor de *x*-as. We verplaatsen dus de 2 assen altijd op dezelfde manier. Dit zorgt voor een diagonale beweging 
 
 ```haskell
 import Playground exposing (..)
@@ -64,20 +58,20 @@ view time =
   ]
 ```
 
-## DESAFIO 3 (livre): Misture movimentos.
+## OPDRACHT 3 (vrij): Mix de bewegingen
 
-Utilizando as funções *zigzag* e *wave*, desenhe figuras
-se movendo pela tela.  
-Você pode animar as rodas de um carro, os olhos de um animal,
-ou simplesmente desenhar várias figuras se movendo
-freneticamente pela tela! Use a imaginação.
+Teken met behulp van de functies *zigzag* en *wave* figuren
+die over het scherm bewegen.  
+Je kunt de wielen van een auto animeren, de ogen van een dier,
+of gewoon verschillende figuren tekenen die verwoed bewegen
+op het scherm! Gebruik je fantasie.
 
-### Repostas
+### Antwoord
 
-Exercícios livres não possuem respostas certas ou erradas!
-O importante é praticar e se divertir.
+Vrije oefeningen hebben geen goede of foute antwoorden!
+Het belangrijkste is om te oefenen en plezier te hebben.
 
-## E agora?
+## En nu?
 
-Siga para a [Aula 9](/aula_9.html) e bons estudos!
+Ga nu door met [Les 9](les_9.html), veel succes!
 
