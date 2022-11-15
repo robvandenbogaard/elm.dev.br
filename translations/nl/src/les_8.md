@@ -1,14 +1,14 @@
-# Aula 8 - Fazendo movimentos de zigzag.
+# Les 8 - Zigzagbewegingen maken
 
-## O que você irá aprender nesta aula?
+## Wat leer je in deze les?
 
-1. Como animar uma figura usando movimento de zigzag.  
-1.1 A função *zigzag*.  
+1.  Hoe animeer je een figuur met een zigzagbeweging.   
+1.1 De *zigzag* functie.  
 
-## 1- Como animar uma figura usando movimento de zigzag.  
+## 1 - Hoe animeer je een figuur met een zigzagbeweging 
 
-Vamos partir do desenho de um círculo na tela,
-deslocando-o um pouco para esquerda.
+We beginnen met het tekenen van een cirkel op het scherm, en 
+verplaatsen het een beetje naar links..
 
 ```haskell
 import Playground exposing (..)
@@ -22,33 +22,25 @@ view time =
   ]
 ```
 
-Imagine que você queira criar uma animação nesta figura,
-fazendo com que ela fique fazendo "zigzag" (alternando
-sua direção).
+Stel je voor dat je een animatie wilt maken op deze figuur,
+waardoor deze "zigzagt" (zijn richting steeds afwisselt).
 
-No exemplo acima a posição do círculo está fixa em -200 no
-eixo horizontal e 0 no vertial.  
-Para fazer o movimento de "zigzag", este valor precisa ser
-alterado conforme o tempo passa (aquela variável
-_time_ que você conheceu na aula passada).
+In het bovenstaande voorbeeld is de positie van de cirkel vastgesteld op -200 op de horizontale as en 0 op de verticale as.  
+Om de "zigzag"-beweging te maken, moet deze waarde
+veranderen naarmate de tijd verstrijkt (die variabele
+_time_ waar je over geleerd hebt in de vorige les.
 
-Para, por exemplo, criar uma animação onde o círculo fique
-se movendo da esquerda para direita, é necessário variar sua posição na
-horizontal. Ou seja, substituir o valor -200 por um
-valor que se altere de forma linear ao longo do tempo. E a função **zigzag** cumpre 
-justamente esta tarefa.
+Om bijvoorbeeld een animatie te maken waarbij de cirkel
+van links naar rechts beweegt, is het noodzakelijk om de positie ervan te wijzigen op de horizontale as.  Dat wil zeggen, vervang de waarde -200 door een waarde die lineair verandert in de tijd. 
+En de **zigzag** functie vervult precies deze taak.
 
-### 1.1 - A função _zigzag_.
+### 1.1 - De _zigzag_ functie
 
-_zigzag_ é uma função parecida com a _wave_. Ela também recebe quatro
-parâmetros, sendo que os dois primeiros indicam os valores mínimo
-e máximo e o terceiro indica a quantidade de segundos que a animação deve 
-demorar para completar.
+_zigzag_ is een functie die vergelijkbaar is met _wave_. 
+Het ontvangt ook vier parameters, waarbij de eerste twee parameters de minimale en maximum waarden aangeven. De derde parameter geeft het aantal seconden aan dat de animatie nodig heeft om te voltooien.
 
-Agora que você já conhece a função _zigzag_ e sua finalidade, consegue
-imaginar como seria o código para que um círculo fique se movendo
-da esquerda para direita entre a posição -200 e 200 em um intervalo
-de 5 segundos?
+Nu je de _zigzag_ functie en zijn doel kent, 
+stel je dan het volgende voor: hoe zou de code eruit kunnen zien om een cirkel van links naar rechts te laten bewegen, tussen positie -200 en 200 met een interval van 5 seconden?
 
 ```haskell
 import Playground exposing (..)
@@ -62,18 +54,15 @@ view time =
   ]
 ```
 
-Mais uma vez, você não podem esquecer os parênteses, já que
-o primeiro parâmetro da função _move_ deve ser o resultado
-da função _zigzag_. Para isso, é preciso indicar para o computador
-(através do uso dos parênteses) que você quer primeiro processar e calcular
-o valor da função *zigzag* para em seguida processar a função *move*.
+Nogmaals, let op: je mag de haakjes niet vergeten, want
+de eerste parameter van de functie _move_ moet het resultaat zijn
+van de _zigzag_ functie. 
+Om dit te doen, is het noodzakelijk om aan de computer door te geven (via het gebruik van haakjes) dat je eerst 
+de waarde van de *zigzag*-functie wilt verwerken en berekenen om vervolgens de *move*-functie te verwerken.
+En, kun je nu al de mogelijkheden voorstellen van het maken van complexere animaties en wie weet zelfs spelletjes met deze functies? 😃
 
-E aí? Já está começando a imaginar as possibilidades para criar
-animações mais complexas e quem sabe até jogos com essas funções? 😃
+## En nu?
 
-## E agora?
+Nu is het tijd om aan de slag te gaan en nog meer te oefenen!
 
-Agora chegou a hora de você colocar as mãos na massa
-e praticar mais um pouco!
-
-Siga para os [desafios da Aula 8](/aula_8_desafios.html) e bons estudos.
+Ga naar [Les 8 opdrachten](les_8_opdrachten.html) en veel succes met oefenen!
