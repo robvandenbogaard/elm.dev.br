@@ -1,216 +1,201 @@
-# Aula 9: Desafios
+# Les 9: Antwoorden van de opdrachten
 
-## DESAFIO 1 (fácil): abstraindo o conceito de Árvore.
+## OPDRACHT 1 (eenvoudig): het concept van de Boom abstraheren
 
-Observe o código abaixo e tente entender o que está acontecendo.
+Kijk naar onderstaande code en probeer te begrijpen wat er gebeurt.
 
 ```haskell
 import Playground exposing (..)
 
-type alias Arvore =
-  { altura : Number 
-  , largura : Number
-  , raioCopa: Number
+type alias Boom =
+  { hoogte : Number 
+  , breedte : Number
+  , straalKruin: Number
   }
 
-minhaArvore = Arvore 150 40 75
+mijnBoom = Boom 150 40 75
 
 main =
-  picture (desenharArvore minhaArvore)
+  picture (tekenBoom mijnBoom)
 
--- Esta função está incompleta.
-desenharArvore arvore =
-  [ circle green arvore.raioCopa
+-- Deze functie is niet compleet.
+tekenBoom boom =
+  [ circle green boom.straalKruin
   ]
 ```
 
-Você consegue imaginar o que vai acontecer se executarmos este código?
+Kun je je bedenken wat er gebeurt als je deze code uitvoert?
 
-Utilizando um *type alias* estamos primeiro explicando para o
-computador o que é uma árvore. Neste caso, uma árvore é formada
-por 3 campos: altura, largura e raioCopa. Os dois primeiros
-representam informações do tronco e o último da copa/folhas.  
-Com estas informações somos capazes de, a partir desta estrutura,
-desenharmos árvores parecidas com as que fizemos na
-<a href="./aula_3_desafios_respostas.html">aula 3</a>e 
-<a href="./aula_4.html">aula 4</a> deste curso.
+oor een *type alias* te gebruiken, leggen we eerst aan de
+computer uit wat een boom is. 
+In dit geval wordt een boom gevormd door 3 velden: hoogte, breedte en straalKruin. De eerste twee velden 
+vertegenwoordigen informatie van de stam en de laatste van de kroon/bladeren.  
+Met deze informatie kunnen we, vanuit deze structuur,
+bomen tekenen die lijken op degene die we hebben gedaan in
+<a href="./les_3_antwoorden.html">les 3</a> en
+<a href="./les_4.html">les 4</a> van deze cursus. 
 
-Como deve ter observado, a função _desenharArvore_ está incompleta e
-estamos desenhando apenas a copa/folhas de nossa árvore.
+Zoals je misschien hebt gemerkt, is de _tekenBoom_ functie onvolledig en tekenen we alleen de kroon/bladeren van onze boom.
 
-Antes de continuar, abra o seguinte endereço em uma
-outra aba em seu navegador:
+Voordat je verder gaat, open je het volgende adres in een
+in een ander tabblad van jouw browser:
 <a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>
-e execute o código definido mais acima.
+en voer de hierboven gedefinieerde code uit.
 
-Agora altere a função _desenharArvore_ para que ela desenhe também
-o tronco de nossa árvore.
+Verander nu de _tekenBoom_ functie zodat die ook
+de stam van onze boom tekent.
 
-### Resposta
+### Antwoord
 
-Existem várias várias formas de resolver este desafio. A parte mais difícil
-não tem a ver com programação, mas com matemática! :)
+Er zijn verschillende manieren om deze uitdaging op te lossen. Het moeilijkste deel
+heeft niets te maken met programmeren, maar met wiskunde! :)
 
-Precisamos definir onde será desenhado o retângulo que representa o tronco
-de nossa árvore e, dessa vez, este valor é parametrizado. Desenhar o
-retângulo é a parte fácil:
+We moeten bepalen waar we de rechthoek tekenen die de stam van onze boom voorstelt,
+en deze keer komt deze waarde tot stand via parameters.  
+Het tekenen van de rechthoek is het makkelijke deel:
 
-```haskell
+````haskell
 import Playground exposing (..)
 
-type alias Arvore =
-  { altura : Number 
-  , largura : Number
-  , raioCopa: Number
+type alias Boom =
+  { hoogte : Number 
+  , breedte : Number
+  , straalKruin: Number
   }
 
-minhaArvore = Arvore 100 20 50
+mijnBoom = Boom 150 40 75
 
 main =
-  picture (desenharArvore minhaArvore)
+  picture (tekenBoom mijnBoom)
 
-desenharArvore arvore =
-  [ circle green arvore.raioCopa
-  , rectangle darkBrown arvore.largura arvore.altura
+tekenBoom boom =
+  [ circle green boom.straalKruin
+  , rectangle darkBrown boom.breedte boom.hoogte
   ]
 ```
 
-Mas se executarmos este código, vamos ver que o tronco é desenhado
-em cima das folhas. Precisamos move-lo para baixo para que fique
-na borda do círculo.
+Maar, als we deze code uitvoeren, zien we dat de stam bovenop de bladeren wordt getekend. We moeten het naar beneden verplaatsen zodat het tegen de rand van de cirkel aan staat.
 
-Aqui, você poderia ter adotado diferentes estratégias. Eu optei por
-calcular o ponto exato onde termina o círculo para mover meu
-tronco até este local. Para isso preciso somar 2 valores: o raio do
-círculo mais metade da altura do tronco. Desta forma o tronco
-ficará posicionado exatamente no final das folhas:
+Hier had je verschillende strategieën kunnen toepassen. Wij kiezen ervoor om het exacte punt te berekenen waar de cirkel eindigt om de stam naar deze plek te verplaatsen. Daarvoor moeten we 2 waarden toevoegen: de straal van de cirkel plus de helft van de hoogte van de stam. Op deze manier zal de stam precies aan het einde van de bladeren staan:
 
 ```haskell
 import Playground exposing (..)
 
-type alias Arvore =
-  { altura : Number 
-  , largura : Number
-  , raioCopa: Number
+type alias Boom =
+  { hoogte : Number 
+  , breedte : Number
+  , straalKruin: Number
   }
 
-minhaArvore = Arvore 150 40 75
+mijnBoom = Boom 150 40 75
 
 main =
-  picture (desenharArvore minhaArvore)
+  picture (tekenBoom mijnBoom)
 
-desenharArvore arvore =
-  [ circle green arvore.raioCopa
-  , rectangle darkBrown arvore.largura arvore.altura
-    |> move 0 -(arvore.raioCopa + (arvore.altura / 2))
+tekenBoom boom =
+  [ circle green boom.straalKruin
+  , rectangle darkBrown boom.breedte boom.hoogte
+    |> move 0 -(boom.straalKruin + (boom.hoogte / 2))
   ]
 ```
 
-## DESAFIO 2 (difícil): desenhando olhos.
+## OPDRACHT 2 (moeilijk): ogen tekenen
 
-Vamos criar uma maneira de desenhar olhos na tela de forma parametrizada.  
+Laten we een aanpak bedenken om ogen op het scherm te tekenen met behulp van parameters.  
 
-Você deve criar uma função chamada *olho* que irá receber como
-parâmetro um *Record*. Para isso, crie um *type alias* chamado *Posicao* 
-contendo os campos *x* e *y*, ambos do tipo *Number*.  
+Je moet een functie met de naam *oog* maken die een *Record* als parameter ontvangt. 
+Maak hiervoor een *type-alias* aan met de naam *Positie*
+met daarin de velden *x* en *y*, beiden van het type *Number*. 
 
-A função *olho* deve retornar uma lista de círculos que representará
-um olho na tela. Nosso olho será composto por pelo menos 2 círculos,
-um dentro do outro. Use sua imaginação para desenha-lo!
+De functie *oog* moet een lijst van cirkels opleveren die staan voor een oog op het scherm. 
+Ons oog zal uit minstens twee cirkels bestaan,
+de ene in de andere. Gebruik je fantasie om het te tekenen!
 
-Em seguida crie 2 outras funções chamadas *olhoEsquerdo* e *olhoDireito*.
-Estas funções devem acionar a função *olho* passando a posição dos
-olhos. O olho esquerdo deve ser desenhado a partir do ponto _(-100, 20)_ e o
-olho direito a partir do ponto _(100, 20)_.
+Maak vervolgens 2 andere functies genaamd *linkerOog* en *rechterOog*.
+Deze functies moeten de *oog*-functie activeren door de
+positie langs te gaan. Het linkeroog wordt getekend vanuit het punt _(-100, 20)_ en het
+rechteroog vanuit het punt _(100, 20)_.
 
-Por último a sua função *main* deve acionar as funções *olhoEsquerdo* e
-*olhoDireito* para desenhar as figuras na tela.
+en slotte moet uw *main*-functie de functies *linkerOog* en *rechterOog* activeren om de plaatjes op het scherm te tekenen.
 
-👩‍🏫 **Dica**: ambas as funções *olhoEsquerdo* e *olhoDireito* retornam uma
-lista de figuras. Será necessário juntar estas duas listas em uma só
-antes de acionar a função *main* (que espera uma única lista de figuras).
-Para fazer isso você pode usar o simbolo **++**. Exemplo: 
+👩‍🏫 **Hint**: zowel de functies *linkerOog* en *rechterOog* geven een lijst met plaatjes. Het zal nodig zijn om deze twee lijsten samen te voegen tot één lijst
+voordat de functie *main* wordt aangeroepen (die een enkele lijst met plaatjes verwacht).
+Hiervoor kun je het symbool **++** gebruiken. Voorbeeld:
 
 ```haskell
-numerosPequenos = [1,2,3]
-numerosGrandes = [100,101,102]
-listaDeNumeros = numerosPequenos ++ numerosGrandes
+kleineGetallen = [1,2,3]
+groteGetallen = [100,101,102]
+lijstMetGetallen = kleineGetallen ++ groteGetallen
 ```
-No código acima, *listaDeNumeros* irá conter a seguinte lista: [1,2,3,100,101,102]
+In bovenstaande code zal *lijstMetGetallen* de volgende lijst bevatten: [1,2,3,100,101,102].
 
-Teste resolver o exercício. Caso tenha muita dificuldade você pode seguir
-a estrutura criada abaixo:
+Probeer de opdracht op te lossen. Als het je veel moeite kost, kun je de structuur volgen die we hieronder gemaakt hebben:
 
 ```haskell
 import Playground exposing (..)
 
-type alias Posicao =
-  -- defina aqui os campos x e y
+type alias Positie =
+  -- stel hier de x- en y-velden in
 
-olhoEsquerdo = 
-  -- aqui você deve acionar a função olho (lembre-se dos parânteses!)
+linkerOog = 
+  -- hier moet je de oogfunctie activeren (denk aan de haakjes!)
 
-olhoDireito =
-  -- aqui você deve acionar a função olho novamente
+rechterOog =
+  -- hier moet je de oogfunctie opnieuw activeren
 
 main =
-  -- Passe como parâmetro da função picture o resultado da concatenação 
-  -- do resultado das função olhoEsquero e olhoDireito.
-  picture
+  -- Geef als parameter van de functie *picture* het resultaat van de samenvoeging van de functies linkerOog + rechterOog door.
 
-olho posicao =
-  [ -- desenhe aqui um olho usando pelo menos 2 círculos.
+oog positie =
+  [ 
+-- teken hier een oog met minstens 2 cirkels.
   ]
 ```
 
-### Resposta
+### Antwoord
 
-Existem infinitas formas de resolver este exercício! O importante
-é praticar. Abaixo deixo como o exemplo a minha resposta. Nela, usei
-3 círculos para representar cada olho.  
+Er zijn oneindig veel manieren om deze opdracht op te lossen! Het belangrijkste is om te blijven oefenen. Hieronder zie je als voorbeeld ons antwoord staan. Daarin worden voor elk oog 3 cirkels gebruikt om een oog te maken.
 
 ```haskell
 import Playground exposing (..)
 
-type alias Posicao =
+type alias Positie =
   { x : Number
   , y : Number
   }
 
-olhoEsquerdo = 
-  olho (Posicao -100 20)
+linkerOog = 
+  oog (Positie -100 20)
 
-olhoDireito =
-  olho (Posicao 100 20)
+rechterOog =
+  oog (Positie 100 20)
 main =
-  picture (olhoEsquerdo ++ olhoDireito)
+  picture (linkerOog ++ rechterOog)
 
-olho posicao =
+oog positie =
   [ circle gray 50 
-    |> move posicao.x posicao.y
+    |> move positie.x positie.y
   , circle black 20
-    |> move (posicao.x - 10) (posicao.y - 5)
+    |> move (positie.x - 10) (positie.y - 5)
   , circle white 5
-    |> move (posicao.x - 15) (posicao.y - 8)
+    |> move (positie.x - 15) (positie.y - 8)
   ]
 ```
 
-## DESAFIO 3 (livre): desenhando o restante do rosto.
+## OPDRACHT 3 (vrij): de rest van het gezicht tekenen
 
-Crie outras função para demais partes do rosto. Por exemplo: nariz, orelha,
-boca, sombrancelha... use a imaginação!
+Creëer andere functies voor andere delen van het gezicht. Bijvoorbeeld: neus, oor,
+mond, wenkbrauw... gebruik je fantasie!
 
-### Repostas
+### Antwoord
 
-Exercícios livres não possuem respostas certas ou erradas!
-O importante é praticar e se divertir.
+Vrije oefeningen hebben geen goede of foute antwoorden!
+Het belangrijkste is om te oefenen en plezier te hebben.
 
-## E agora?
+## En nu?
 
-Este curso ainda está sendo criado e por enquanto possui uma quantidade
-reduzida de aulas. Novas aulas vão ser publicadas ao longo das
-próximas semanas!
+Deze cursus is nog volop in ontwikkeling en heeft voorlopig een beperkt aantal lessen. Gedurende de hele cursus zullen nieuwe lessen worden gepubliceerd in komende weken!
 
-Gostou da ideia deste projeto? Quer mandar alguma sugestão ou tirar
-alguma dúvida? Entre em contato com o autor enviando um e-mail para
+Vond je het idee van dit project leuk? Wil je een suggestie sturen of meenemen
+Nog vragen? Neem contact op met de auteur door een e-mail te sturen naar
 **marcio@segunda.tech**.

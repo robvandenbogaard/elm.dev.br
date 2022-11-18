@@ -1,196 +1,174 @@
-# Aula 9 - Entendendo o que são os _Records_.
+# Les 9 - Begrijpen wat _Records_ zijn
 
-Quando você tem muitas informações em seus programas, 
-precisa começar a se preocupar em como organiza-las.
+Wanneer je veel informatie in je programma's hebt, 
+moet je beginnen na te denken over hoe je het  organiseert.
 
-Você já aprendeu a criar listas usando os símbolos **[** e
-**]**. Esta é uma das formas de organizar. Outra é
-através dos _Records_.
+Je hebt al geleerd hoe je lijsten kunt maken met de symbolen **[** en **]**. Dit is een manier om te organiseren. Een andere manier is
+door gebruik te maken van _Records_.
 
-Esta aula será bastante teórica, mas você precisa entender 
-alguns conceitos importantes para conseguir dar continuidade
-aos estudos.
+Deze les is weer vrij theoretisch, maar je moet enkele belangrijke concepten begrijpen om verder te kunnen komen met je Elm-studie.
 
-## O que você irá aprender nesta aula?
+## Wat leer je in deze les?
 
-1. O que são os *Records*.  
-2. Como criar uma função que recebe um *Record* como parâmetro.
+1. Wat zijn *Records*.  
+2. Hoe maak je een functie die een *Record* als parameter gebruikt.  
 
-## 1- O que são os *Records*.  
+## 1 - Wat zijn *Records*  
 
-*Record* é uma forma de organizar nossos dados na linguagem
-de programação *Elm*. 
+*Records* is een manier om onze gegevens in de programmeertaal *Elm* te organiseren.
 
-Vamos partir de um código criado sem o uso de *Records* para
-entender o tipo de problemas que possivelmente vamos enfrentar.
+Laten we beginnen met een code die is gemaakt zonder *Records* te gebruiken, om te begrijpen  met wat voor soort problemen we waarschijnlijk te maken zullen krijgen.
 
-Com o que aprendemos até agora, para criar uma função que
-recebe como parâmetro um ponto no espaço, passamos dois
-argumentos numéricos separados: *x* e *y*, como no exemplo abaixo:
+Wat we tot nu toe over functies hebben geleerd, is dat we om een ​​functie te maken die
+als parameter een punt in de ruimte neemt, we twee
+afzonderlijke numerieke argumenten doorgeven: *x* en *y*, zoals in het onderstaande voorbeeld:
 
 ```haskell
 import Playground exposing (..)
 
 main =
   picture
-  [ circuloVerde 10 20
+  [ groeneCirkel 10 20
   ]
 
-circuloVerde x y =
+groeneCirkel x y =
   circle green 50
     |> move x y
 ```
 
-Você consegue entender o que está acontecendo no código acima?  
-Caso tenha dificuldades, <a href=./aula_4.md>volte para a aula 4</a> para
-revisar como criar uma função parametrizada.
+Begrijp je wat er in bovenstaande code gebeurt? 
+Als je het niet meer precies weet, <a href=./les_4.md>ga terug naar les 4</a> om te
+bekijken hoe je een functie met parameters kunt maken.
 
-Neste exemplo nossa função *circuloVerde* recebe dois parâmetros numéricos
-que chamamos de *x* e *y*. Neste caso isso é suficiente e funciona bem. Mas
-podemos fazer de uma outra maneira: podemos criar uma estrutura (ou um *Record*)
-que representa um **Ponto**. A ideia é deixar mais explícito no código o que 
-essa informação representa.
+In dit voorbeeld neemt onze *groeneCirkel* functie twee numerieke parameters aan die we *x* en *y* noemen. In dit geval is dat voldoende en werkt het goed. 
+Maar we kunnen het ook op een andere manier doen: we kunnen een structuur (of een *Record*) maken
+die een **Punt** voorstelt. Het idee is om in de code nadrukkelijker aan te geven waar 
+deze informatie voor staat.
 
-Então *Record* é uma **estrutura de dados** com rótulos. Abaixo temos um exemplo
-de um *Record*.
+Dus, *Record* is een **gegevensstructuur** met labels. Hieronder volgt een voorbeeld
+van een *Record*.
 
 ```haskell
 { x = 10, y = 15 }
 ```
 
-Na linguagem _Elm_, tudo que estiver entre **{** e **}** é um *record*.
+In de taal _Elm_ is alles tussen **{** en **}** een *record*.
 
-## 2. Como criar uma função que recebe um *Record* como parâmetro.
+## 2 - Hoe maak je een functie die een *Record* als parameter gebruikt
 
-Podemos agora alterar o código anterior para que nossa função
-_circuloVerde_ receba um _Record_:
+We kunnen nu de vorige code veranderen zodat onze functie _groeneCirkel_ een _Record_ krijgt:
 
 ```haskell
 import Playground exposing (..)
 
 main =
   picture
-  [ circuloVerde {x = 10, y = 20}
+  [ groeneCirkel {x = 10, y = 20}
   ]
 
-circuloVerde {x, y} =
+groeneCirkel {x, y} =
   circle green 50
     |> move x y
 ```
 
-Se preferirmos, podemos também armazenar estes valores em uma variável,
-como no exemplo abaixo:
+Als we willen, kunnen we deze waarden ook opslaan in een variabele,
+zoals in onderstaand voorbeeld:
 
 ```haskell
 import Playground exposing (..)
 
-posicao = {x = 10, y = 20}
+positie = {x = 10, y = 20}
 
 main =
   picture
-  [ circuloVerde posicao
+  [ groeneCirkel positie
   ]
 
-circuloVerde {x, y} =
+groeneCirkel {x, y} =
   circle green 50
     |> move x y
 ```
 
-Agora ficou um pouco mais claro o que significa o 10 e o 20, mas podemos
-dar um passo além. É possível dar um nome (um *alias*) para
-esta estrutura.
+Nu is het iets duidelijker wat de 10 en de 20 betekenen, maar we kunnen een stapje verder gaan.
+Het is mogelijk om een naam (een *alias*) aan deze structuur te geven.  
 
-## Criando um *alias*.
+## Een *alias* aanmaken
 
-No código abaixo definimos o que é um Ponto2D. Podemos dar um qualquer nome,
-mas ele deve começar **obrigatóriamente** com uma letra maiúscula.  
+In de onderstaande code definiëren we wat een Point2D is. We kunnen het elke naam geven die we willen,
+maar het moet **verplicht** beginnen met een hoofdletter.
 
 ```haskell
-type alias Ponto2D =
+type alias Point2D =
   { x : Number 
   , y : Number
   }
 ```
 
-Neste código, explicamos para o computador que um Ponto2D é uma **estrutura de dados**
-que contém dois campos: o _x_ e o _y_. Desta vez também avisamos o computador que
-estes campos devem armazer dados do tipo _Number_ (número em inglês).
+In deze code leggen we de computer uit dat een Point2D een **gegevensstructuur** is die twee velden bevat: de _x_ en de _y_. Deze keer vertellen we ook aan de computer dat
+deze velden gegevens moeten bevatten van het type _Number_ (nummer in het Engels).
 
-A linguagem de programação _Elm_ possui <a href="https://guide.elm-lang.org/types/" target=_blank>
-uma série de tipos de dados</a> que podemos utilizar. Alguns exemplos são: _Number_, _Int_, _String_,
-_Bool_, _List_, _Float_, entre outras. Mas não se preocupe em decorar isso! Ao longo do curso
-vamos aprender quando utilizá-las.
+De programmeertaal _Elm_ heeft <a href="https://guide.elm-lang.org/types/" target=_blank>
+een reeks gegevenstypen</a> die we kunnen gebruiken. Enkele voorbeelden zijn: _Number_, _Int_, _String_, _Bool_, _List_, _Float_. Maar maak je geen zorgen over het onthouden daarvan! Gedurende de hele les zullen we leren wanneer we ze moeten gebruiken.
 
-Ao criar um novo *alias* Ponto2D apenas definirmos o que ele representa, mas ainda não
-criamos um ponto efetivamente. A linguagem _Elm_ automatizamente disponibilizará
-uma nova **função** chamada **Ponto2D** (esperando os respectivos parâmetros definidos no _alias_), 
-que chamamos de **construtor** (ou _Type Constructor_ - Construtor de Tipos em inglês).
-Acionando esta função podemos construir um novo ponto:
+Bij het maken van een nieuwe *alias* Point2D bepalen  we alleen wat het vertegenwoordigt, maar we maken niet effectief een punt. De taal _Elm_ zal automatisch een nieuwe **functie**, genaamd **Point2D**, beschikbaar stellen, waarvan de  parameters gedefinieerd worden in _alias_, die we een **constructor** noemen (of _Type Constructor_).
+Door deze functie te activeren, kunnen we een nieuw punt bouwen:
 
 ```haskell
 import Playground exposing (..)
 
-type alias Ponto2D =
+type alias Point2D =
   { x : Number 
   , y : Number
   }
 
-posicao = Ponto2D 10 20
+positie = Point2D 10 20
 
 main =
   picture
-  [ circuloVerde posicao
+  [ groeneCirkel positie
   ]
 
-circuloVerde {x, y} =
+groeneCirkel {x, y} =
   circle green 50
     |> move x y
 ```
 
-Neste exemplo a função _circuloVerde_ continua recebendo um _Record_
-de forma mais simples, usando as chaves. Mas podemos ir além e
-dar um mome para este parâmetro:
+In dit voorbeeld krijgt de functie _groeneCirkel_ steeds een _Record_
+op een eenvoudigere manier, met behulp van de toetsen. Maar we kunnen verder gaan en deze parameter een naam geven:
 
 ```haskell
 import Playground exposing (..)
 
-type alias Ponto2D =
+type alias Point2D =
   { x : Number 
   , y : Number
   }
 
-posicao = Ponto2D 10 20
+posicao = Point2D 10 20
 
 main =
   picture
-  [ circuloVerde posicao
+  [ groeneCirkel positie
   ]
 
-circuloVerde ponto =
+groeneCirkel punt =
   circle green 50
-    |> move ponto.x ponto.y
+    |> move punt.x punt.y
 ```
 
-Agora ficou muito claro na nossa função _circuloVerde_ que
-o parâmetro esperado é um ponto e que este ponto
-possui dois campos (_x_ e _y_) e que ambos são números. 
-Para acessar estes campos utilizamos o símbolo de ponto final. 
-Logo, para acessar o campo _x_ basta digitar _ponto.x_.
+Nu is het heel duidelijk in onze functie _groeneCirkel_ dat de verwachte parameter een punt is en dat dit punt twee velden (_x_ en _y_) heeft en die beiden getallen zijn. 
+Om toegang te krijgen tot deze velden gebruiken we het puntteken ("."). 
+Dus, om toegang te krijgen tot het veld _x_, typ je gewoon _point.x_.
 
-## Conclusão
+## Conclusie
 
-É provável que você esteja se perguntando o por que disso
-tudo! Esta nova versão do nosso código é maior e talvez um pouco mais
-confusa. E eu diria que... você está certa! Neste exemplo,
-complicamos uma solução que era simples e isso não é uma
-boa prática. Mas precisei fazer isso para explicar
-os conceitos pra você. Em outras situações o uso de _Records_
-irá **simplificar** muito o código. Por isso é muito importante
-entender este conceito.
+Je vraagt je waarschijnlijk af waarom dit allemaal zo is! Deze nieuwe versie van onze code is groter en misschien een beetje meer
+verwarrend. En wij zouden zeggen... je hebt gelijk! In dit voorbeeld maken we een oplossing die eenvoudig was, moeilijker en dit is geen
+goede zaak. Maar we moesten dit doen om de concepten aan jou uit te leggen. In andere situaties zal het gebruik van _Records_ de code erg **vereenvoudigen**. Daarom is het heel belangrijk
+om dit concept te begrijpen.
 
-## E agora?
+## En nu?
 
-Esta aula foi bastante teórica, então chegou a hora de você
-colocar as mãos na massa e praticar mais um pouco!
+Deze les was behoorlijk theoretisch, dus het is nu tijd om aan de slag te gaan en nog meer te oefenen!
 
-Siga para os [desafios da Aula 9](/aula_9_desafios.html) e bons estudos.
+Ga naar [Les 9 opdrachten](les_9_opdrachten.html) en veel succes met oefenen!
