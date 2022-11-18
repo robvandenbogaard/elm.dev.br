@@ -28,6 +28,7 @@
 - [True, False en condities](./les_10.md)
   - [Opdrachten](./les_10_opdrachten.md)
   - [Antwoorden](./les_10_antwoorden.md)
+- [Words (tekst)](./words.md)
 - [Cheat sheet](./cheat_sheet.md)
 - [Listings](./listings.md)
   - [poppetje](./listing_poppetje.md)

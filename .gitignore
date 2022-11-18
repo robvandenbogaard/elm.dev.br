@@ -1,3 +1,4 @@
 build/
-.netlify/
 book/
+.netlify/
+.DS_Store
