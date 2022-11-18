@@ -54,7 +54,7 @@ We moeten bepalen waar we de rechthoek tekenen die de stam van onze boom voorste
 en deze keer komt deze waarde tot stand via parameters.  
 Het tekenen van de rechthoek is het makkelijke deel:
 
-````haskell
+```haskell
 import Playground exposing (..)
 
 type alias Boom =
