@@ -196,6 +196,6 @@ Het belangrijkste is om te oefenen en plezier te hebben.
 
 Deze cursus is nog volop in ontwikkeling en heeft voorlopig een beperkt aantal lessen. Gedurende de hele cursus zullen nieuwe lessen worden gepubliceerd in komende weken!
 
-Vond je het idee van dit project leuk? Wil je een suggestie sturen of meenemen
+Vond je het idee van dit project leuk? Wil je een suggestie sturen of een vraag stellen?
 Nog vragen? Neem contact op met de auteur door een e-mail te sturen naar
 **marcio@segunda.tech**.

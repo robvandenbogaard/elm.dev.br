@@ -1,180 +1,158 @@
-# Aula 10: Desafios
+# Les 10: Antwoorden van de opdrachten
 
-## DESAFIO 1 (intermediário): Desenhando um balão.
+## OPDRACHT 1 (gemiddeld): Teken een ballon
 
-O código abaixo desenha um balão verde na tela.
+De onderstaande code tekent een groene ballon op het scherm.
 
-Execute o código para ver seu resultado.
+Voer de code uit om het resultaat te zien.
 
 ```haskell
 import Playground exposing (..)
 
-tamanhoDoFioDoBalao = 50
+lengteBallonDraad = 50
 
-larguraDoFioDoBalao = 3
+dikteBallonDraad = 3
 
-corDoBalao = green
+kleurBallon = green
 
-raioDoMeuBalao = 60
+radiusVanMijnBallon = 60
 
 main =
   picture
-   (balao raioDoMeuBalao)
+   (ballon radiusVanMijnBallon)
 
 
-balao raio =
-  [ circle corDoBalao raio
-  , rectangle lightRed larguraDoFioDoBalao tamanhoDoFioDoBalao
-    |> move 0 (-raio - (tamanhoDoFioDoBalao / 2))
+ballon radius =
+  [ circle kleurBallon radius
+  , rectangle lightRed dikteBallonDraad lengteBallonDraad
+    |> move 0 (-radius - (lengteBallonDraad / 2))
   ]
 ```
 
-Desta vez optei por definir os valores em variáveis, para poder
-dar nomes e tornar assim o seu significado mais explícito.  
+Deze keer hebben we ervoor gekozen om de waarden in variabelen te definiëren, zodat we ze namen kunnen geven en zo hun betekenis explicieter kunnen maken.
 
-Eu admito, meu balão não se parece muito um balão, mas... tente
-usar sua imaginação! ;)
+Toegegeven, de ballon lijkt niet echt op een ballon, maar... probeer maar een beetje je fantasie te gebruiken! ;)
 
-A parte mais difícil deste código provavelmente é a seguinte linha:
+Het moeilijkste deel van deze code is waarschijnlijk de volgende regel:
 ```haskell
-|> move 0 (-raio - (tamanhoDoFioDoBalao / 2))
+|> move 0 (-radius - (lengteBallonDraad / 2))
 ```
 
-Já vimos um código muito parecido com esse [nos desafios da aula 9](./aula_9_desafios.md).
-Não se preocupe se ainda não conseguir entendê-lo muito bem. Tudo que
-está fazendo é apenas posicionar o fio do balão em sua parte inferior.
+We hebben al eerder code gezien die hier sterk op lijkt [in les 9 opdrachten](./les_9_opdrachten.md).
+Maak je geen zorgen als je het nog steeds niet goed begrijpt. Het enige dat je doet is gewoon het touwtje van de ballon aan de onderkant plaatsen.
 
-Agora altere o código anterior para que o balão tenha a
-cor verde (*green*) se o seu raio for inferior a 50 e a cor
-vermelha caso seu raio supere este valor.
+Verander nu de vorige code zodat de ballon de
+kleur groen (*green*) krijgt als zijn straal (radius) kleiner is dan 50 en de kleur
+rood als zijn straal deze waarde overschrijdt.
 
-### Resposta
+### Antwoord
 
-Precisamos alterar a função *corDoBalao* para que ela receba
-o valor do **raio** como parâmetro. Assim, fica fácil altermos
-esta função para que ela retorne *green* caso este valor seja
-inferior a 50 e *red* caso seja igual ou superior a este número.
+We moeten de functie *kleurBallon* veranderen zodat deze de waarde van de **radius** als parameter krijgt. Dit maakt het gemakkelijk om
+deze functie te veranderen zodat deze *green* teruggeeft als het
+minder dan 50 is en *rood* als het gelijk is aan of groter is dan dit getal.
 
 ```haskell
 import Playground exposing (..)
 
-tamanhoDoFioDoBalao = 50
+lengteBallonDraad  = 50
 
-larguraDoFioDoBalao = 3
+dikteBallonDraad = 3
 
-corDoBalao raio = 
-  if raio < 50 then
+kleurBallon radius = 
+  if radius < 50 then
     green
   else 
     red
 
-raioDoMeuBalao = 60
+radiusVanMijnBallon = 60
 
 main =
   picture
-   (balao raioDoMeuBalao)
+   (ballon radiusVanMijnBallon)
 
 
-balao raio =
-  [ circle (corDoBalao raio) raio
-  , rectangle lightRed larguraDoFioDoBalao tamanhoDoFioDoBalao
-    |> move 0 (-raio - (tamanhoDoFioDoBalao / 2))
+ballon radius =
+  [ circle (kleurBallon radius) radius
+  , rectangle lightRed dikteBallonDraad lengteBallonDraad
+    |> move 0 (-radius - (lengteBallonDraad / 2))
   ]
 ```
 
-Uma parte do código que talvez você tenha tido
-dificuldades para entender é esta aqui:
+Een stukje code dat je misschien
+moeilijk te begrijpen vindt, is deze:
 ```haskell
-circle (corDoBalao raio) raio
+circle (kleurBallon radius) radius
 ```
 
-Consegue entender por que temos duas referências ao *raio*
-nesta linha?
+Kun je zien waarom we twee verwijzingen naar *radius* hebben op deze regel?
 
-Na primeira estamos apenas passando o seu valor para a 
-função *corDoBalao*, que agora precisa desta informação
-para decidir qual será a cor do nosso balão. O retorno da
-execução de *(corDoBalao raio)* será uma cor: ou *green* ou
-*red*. Este retorno será usado como sendo o **primeiro**
-argumento da função *circle*.   
-Já o *raio* que aparece no final da linha é o **segundo** 
-argumento que também será passado para a função *circle*.
+In eerste instantie geven we de waarde gewoon door aan de functie *kleurBallon*, die deze informatie nu nodig heeft om te beslissen welke kleur onze ballon zal krijgen. De uitkomst van *(kleurBallon radius)* zal een kleur zijn: ofwel *green* of
+*red*. Deze uitkomst wordt gebruikt als het **eerste** argument van de functie *circle*.
+De *radius* die aan het einde van de regel verschijnt, is het **tweede**
+argument dat ook wordt doorgegeven aan de functie *circle*.
 
-Experimente alterar o valor da variável *raioDoMeuBalao*
-e veja o que acontece quando este valor é inferior a 50.
+Probeer de waarde van de variabele *radiusVanMijnBallon* te wijzigen
+en kijk wat er gebeurt als deze waarde kleiner is dan 50.
 
-## DESAFIO 2 (intermediário): Adicionando mais uma cor.
 
-Altere a sua resposta do exercício anterior para contemplar
-uma terceira cor, obedecendo as seguintes regras:
+## OPDRACHT 2 (gemiddeld): Nog een kleur toevoegen
 
-- O balão deve ser verde (*green*) caso tenha um raio
-inferior a 50;  
-- O balão deve ser da cor amarela (*yellow*) caso tenha um raio
-superior ou igual a 50 e inferior a 65;  
-- O balão deve ser da cor vermelha (*red*) caso tenha um raio
-superior a 65.
+Wijzig je antwoord van de vorige opdracht om een derde kleur toe te voegen, volgens de volgende regels:
 
-Depois de escrever o código, altere o valor de *raioDoMeuBalao*
-para que ele fique primeiro verde, depois amarelo e por último
-vermelho.
+1. De ballon moet groen (*green*) gekleurd zijn als hij een straal heeft van minder dan 50;  
+2. De ballon moet geel (*yellow*) gekleurd zijn als hij een straal heeft van 50 of meer, en minder dan 65;  
+3. De ballon moet rood (*red*) gekleurd zijn als hij een straal heeft van meer dan 65.  
 
-### Resposta
+Wijzig na het schrijven van de code de waarde van *radiusVanMijnBallon* zodat het eerst groen wordt, dan geel en tenslotte rood.
 
-Para resolver este exerício precisamos criar uma condição
-dentro da outra. Primeiro verificamos se o valor é
-**inferior a 50**. Se for, já sabemos que a cor é verde.  
-Caso contrário, é necessário fazer uma segunda
-verificação: precisamos saber se é inferior a 65.  
-Se neste momento o valor for inferior a 65, sabemos que
-ele **é um número entre 50 e 65**, afinal, já havíamos feito
-a primeira validação (se era inferior a 50) antes.  
-E se esta segunda validação também for falsa, sabemos que
-trata-se de **um valor acima de 65** e, portanto, devemos
-utilizar a cor vermelha.
+### Antwoord
 
-Ou, em outra palavras, precisamos fazer um *if* dentro
-do nosso *if*:
+Om deze opdracht op te lossen, moeten we een conditie  creëren binnen de andere conditie.  
+1. Eerst controleren we of de waarde van de straal  **minder dan 50** is. Als dat zo is, weten we al dat de kleur groen is. Zo niet, dan moeten we een ​​tweede controle doen:  
+2. We moeten weten of de waarde van de straal minder is dan 65. 
+Als op dit moment de waarde minder is dan 65, weten we dat het **een getal tussen de 50 en 65** is. Dat  hadden we immers al gecheckt bij de eerste controle/validatie (als het minder dan 50 is). De kleur is dan geel. 
+3. En als deze tweede validatie ook onwaar is, weten we dat de straal **een waarde boven de 65** heeft. In dat geval moeten we de rode kleur gebruiken.
+
+Of, met andere woorden, we moeten een *if* maken 
+binnen onze *if*:
 
 ```haskell
 import Playground exposing (..)
 
-tamanhoDoFioDoBalao = 50
+lengteBallonDraad = 50
 
-larguraDoFioDoBalao = 3
+dikteBallonDraad = 3
 
-corDoBalao raio = 
-  if raio < 50 then
+kleurBallon radius = 
+  if radius < 50 then
     green
   else 
-    if raio < 65 then
+    if radius < 65 then
       yellow
     else
       red
 
-raioDoMeuBalao = 64
+radiusVanMijnBallon = 64
 
 main =
   picture
-   (balao raioDoMeuBalao)
+   (ballon radiusVanMijnBallon)
 
 
-balao raio =
-  [ circle (corDoBalao raio) raio
-  , rectangle lightRed larguraDoFioDoBalao tamanhoDoFioDoBalao
-    |> move 0 (-raio - (tamanhoDoFioDoBalao / 2))
+ballon radius =
+  [ circle (kleurBallon radius) radius
+  , rectangle lightRed dikteBallonDraad lengteBallonDraad
+    |> move 0 (-radius - (lengteBallonDraad / 2))
   ]
 ```
 
-Repare na indentação dos _ifs_. O segundo está um pouco mais a direita
-e se necessário poderíamos adicionar outros _ifs_ aninhados. Mas precisamos
-tomar cuidado pois isso pode tornar nossos códigos muito
-difíceis de entender.
+Let op het inspringen van de _ifs_. De tweede is iets verder naar rechts
+en indien nodig kunnen we andere geneste _ifs_ toevoegen. Maar wees hier voorzichtig mee want dit kan ervoor zorgen dat onze code erg moeilijk te begrijpen wordt.
   
-## E agora?
+## En nu?
 
-Este curso ainda está sendo criado e por enquanto possui uma quantidade reduzida de aulas. Novas aulas vão ser publicadas ao longo das próximas semanas!
+Deze cursus is nog steeds in ontwikkeling en heeft voorlopig een beperkt aantal lessen. De komende weken worden er nieuwe lessen gepubliceerd!
 
-Gostou da ideia deste projeto? Quer mandar alguma sugestão ou tirar alguma dúvida?
-Entre em contato comigo enviando um e-mail para **marcio@segunda.tech** ou me procure
-no twitter: [@marciofrayze](https://twitter.com)
+Vond je het idee van dit project leuk? Wil je een suggestie sturen of een vraag stellen?
+Neem contact met de auteur op door een e-mail te sturen naar **marcio@segunda.tech** of zoek hem op
+op twitter: [@marciofrayze](https://twitter.com)
