@@ -1,51 +1,45 @@
-# Aula 10 - True, False e condicionais.
+# Les 10 - True, False en condities
 
-## O que você irá aprender nesta aula?
+## Wat leer je in deze les?
 
-1. Pra que servem as condicionais?
-2. Usando condicionais.
-3. Tornando o código mais legível.
+1. Waar zijn condities (voorwaarden) voor?
+2. Condities gebruiken.
+3. De code leesbaarder maken.
 
-## 1- Pra que servem as condicionais?
+## 1 - Waar zijn condities (voorwaarden) voor?
 
-Imagine que você esteja desenvolvendo um jogo de plataforma 2D, parecido com
-o da imagem abaixo.
+Stel je voor dat je een 2D platformspel ontwikkelt, vergelijkbaar met die in de afbeelding hieronder.
 
 ![Imagem do jogo SuperTux](/resources/supertux.png)
 
-As regras de um jogo vão impor certas condições. Por exemplo:
+De spelregels leggen bepaalde voorwaarden op. Bijvoorbeeld:
 
-**Se** a jogadora encostar em uma moeda, **então:**  
-&nbsp;&nbsp;&nbsp;&nbsp;a moeda deve desaparecer **e**  
-&nbsp;&nbsp;&nbsp;&nbsp;a quantidade de moedas que a jogadora possui deve ser incrementado em 1.  
-**Senão:**    
-&nbsp;&nbsp;&nbsp;&nbsp;a moeda deve continuar aparecendo **e**  
-&nbsp;&nbsp;&nbsp;&nbsp;a quantidade de moedas deve permanecer a mesma.
+**Als** de speler een munt aanraakt, **dan:**  
+&nbsp;&nbsp;&nbsp;&nbsp;verdwijnt de munt **en**  
+&nbsp;&nbsp;&nbsp;&nbsp;moet het aantal munten dat de speler heeft met 1 worden verhoogd.  
+**Anders:**   
+&nbsp;&nbsp;&nbsp;&nbsp;moet de munt getoond blijven **en**  
+&nbsp;&nbsp;&nbsp;&nbsp;moet het aantal munten hetzelfde blijven.
 
-Podemos separar o exemplo acima em 3 partes:  
-- A **condição**, que pode ser Verdadeira (*true* em inglês) ou Falsa (*false* em inglês); 
-- As consequências caso aquela condição seja **verdadeira** e;  
-- As consequências caso a condição seja **falsa**.
+Wij kunnen het bovenstaande voorbeeld in 3 delen opsplitsen:  
+1. De **conditie (voorwaarde)**, die WAAR (*True* in het Engels) of ONWAAR (*False* in het Engels) kan zijn; 
+2. De gevolgen als die conditie **waar** is en;  
+3. De gevolgen als de conditie **onwaar** is.
 
-Sem as condicionais seria inviável aplicarmos as nossas regras e
-a personagem principal nunca iria perder ou ganhar. Assim, nosso jogo
-seria muito chato!
+Zonder voorwaarden zou het onmogelijk zijn onze regels toe te passen en de hoofdpersoon zou dan nooit winnen of verliezen. Dus, ons spel zou dan erg saai zijn!
 
-# 2- Usando condicionais.
+## 2 - Condities gebruiken
 
-A forma mais simples de criarmos uma condição é utilizando o *if*
-(que significa **se**, em inglês).
+De eenvoudigste manier om een conditie te creëren is door *if* te gebruiken 
+(dit betekent **als** in het Engels).
 
-Vamos supor que precisamos fazer uma condição para saber se nosso jogo
-deve ou não continuar. A regra deve ser: **Se** a jogadora tive mais
-de 0 vidas, **então** o jogo deve continuar. **Senão**, devemos interromper
-o jogo.
+Stel dat we een conditie moeten maken om te weten of ons spel moet doorgaan of niet. De regel zou dan moeten zijn: **Als** de speler meer had
+0 levens heeft, **dan** moet het spel doorgaan. **Anders** moeten we het spel stoppen.
 
-Para simplificar nossa implementação caso a condição indique que o
-jogo deve continuar exibiremos um círculo verde na tela. Caso não
-deva continuar, exibiremos um círculo vermelho.
+Om onze uitvoering te vereenvoudigen, doen we het volgende: als de conditie aangeeft dat het spel moet doorgaan, dan verschijnt er een groene cirkel op het scherm. Als het spel niet
+moet doorgaan, tonen we een rode cirkel.
 
-Vamos começar desenhando um círculo vermelho no centro da tela:
+Laten we beginnen met het tekenen van een rode cirkel in het midden van het scherm:
 
 ```haskell
 import Playground exposing (..)
@@ -56,14 +50,14 @@ main =
   ]
 ```
 
-Por enquanto desenhamos sempre um círculo vermelho. Precisamos agora
-adicionar uma **condição**. Mas antes, vamos criar uma variável
-onde iremos definir qual a quantidade de vidas da jogadora:
+Voorlopig tekenen we altijd een rode cirkel.  
+Nu moeten we een **conditie** toevoegen. Maar, laten we eerst een variabele aanmaken
+waar we het aantal levens van de speler bepalen:
 
 ```haskell
 import Playground exposing (..)
 
-quantidadeDeVidas = 1
+hoeveelheidLevens = 1
 
 main =
   picture [
@@ -71,64 +65,58 @@ main =
   ]
 ```
 
-Pronto! Agora temos tudo que precisamos para criar nossa condicional.
-Caso a *quantidadeDeVidas* contenha um valor maior que 1, desenhamos
-um cículo verde. Caso contrário, um cículo vermelho.
+Klaar! Nu hebben we alles wat we nodig hebben om onze conditie te maken.
+Als *hoeveelheidLevens* een waarde groter dan 1 bevat, tekenen we
+een groene cirkel. Anders een rode cirkel.
 
 ```haskell
 import Playground exposing (..)
 
-quantidadeDeVidas = 1
+hoeveelheidLevens = 1
 
 main =
   picture [ 
-    if quantidadeDeVidas > 0 then
+    if hoeveelheidLevens > 0 then
       circle green 100 
     else 
       circle red 100
   ]
 ```
 
-Note que sempre que definirmos uma condição (*if*) colocamos 
-em seguida a palavra *then* (que significa **então**
-em inglês) e por último, definimos um segundo bloco, utilizando
-a palavra *else* (**senão** em inglês).  
+Merk op dat telkens wanneer we een voorwaarde (*if*) definiëren, we ook het woord *then* (wat **dan** betekent in het Engels) zetten. En, tot slot definiëren we een tweede blok, met behulp van
+het woord *else* (**anders** in het Engels). 
 
-O tipo do conteúdo que é definido entre as palavras *then*
-e *else* e o conteúdo definido a partir da palavra *else*
-precisam ser iguais. Neste caso, ambos são uma figura.
+Het soort inhoud dat wordt gedefinieerd tussen de woorden *then*
+en *else*, en de inhoud die wordt gedefinieerd vanaf het woord *else*
+moet hetzelfde zijn. In dit geval zijn beide een figuur.
 
-Experimente mudar o valo da *quantidadeDeVidas* para 0 ou -1 e
-execute o programa novamente.
+Probeer de waarde van *hoeveelheidLevens* te veranderen in 0 of -1 en
+voer het programma opnieuw uit.
 
-## 3- Tornando o código mais legível.
+## 3 - De code leesbaarder maken
 
-No nosso exemplo talvez seja fácil uma outra pessoa olhar
-a seguinte linha de código e entender nossa intenção:
+In ons voorbeeld kan het voor iemand anders gemakkelijk zijn om naar de volgende regel code te kijken en direct te begrijpen wat we bedoelen:
 
 ```haskell
-if quantidadeDeVidas > 0 then
+if hoeveelheidLevens > 0 then
 ```
 
-Mas é comum que nossas regras condicionais fiquem bem mais
-complexas que isso. E é muito importante que outras pessoas 
-entendam o que motivou a criação daquela condição.
+Maar het is meer gebruikelijk dat onze conditionele  regels veel complexer zijn dan dat. En het is heel belangrijk dat andere mensen begrijpen wat de aanleiding was voor het maken van die conditie.
 
-Nestes cenários é recomendado **extrairmos** esta parte do código
-para uma função. Assim, podemos deixar mais explicito qual
-a real intenção daquela condição, como no exemplo abaixo.
+In deze scenario's wordt aanbevolen om dit deel van de code **los te trekken**
+en in een functie te plaatsen. Zo kunnen we duidelijker maken wat de werkelijke bedoeling van die conditie is, zoals in het onderstaande voorbeeld.
 
 ```haskell
 import Playground exposing (..)
 
-quantidadeDeVidas = 1
+hoeveelheidLevens = 1
 
-jogadoraAindaPossuiVidas =
-  quantidadeDeVidas > 0
+spelerLeeftNog =
+  hoeveelheidLevens > 0
 
 main =
   picture [ 
-    if jogadoraAindaPossuiVidas then
+    if spelerLeeftNog then
       circle green 100 
     else 
       circle red 100
@@ -136,16 +124,13 @@ main =
 
 ```
 
-Neste último exemplo, a função *jogadoraAindaPossuiVidas* irá
-retornar *true* caso *quantidadeDeVidas* seja superior a 0 e
-*false* caso contrário.
+In dit laatste voorbeeld zal de functie *spelerLeeftNog* het resultaat *True* weergeven als *hoeveelheidLevens* groter is dan 0 en
+*False* in elk ander geval.
 
-Existem várias formas de organizar este código. Esta é apenas
-uma delas.
+Er zijn verschillende manieren om deze code te ordenen. Dit is er slechts één van.
 
-## E agora?
+## En nu?
 
-Esta aula foi bastante teórica, então chegou a hora de você
-colocar as mãos na massa e praticar mais um pouco!
+Deze les was behoorlijk theoretisch, dus het is nu tijd om aan de slag te gaan en nog meer te oefenen!
 
-Siga para os [desafios da Aula 10](/aula_10_desafios.html) e bons estudos.
+Ga naar [Les 10 opdrachten](les_10_opdrachten.html) en veel succes met oefenen!

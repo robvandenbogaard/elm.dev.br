@@ -1,73 +1,63 @@
-# Aula 10: Desafios
+# Les 10: Opdrachten
 
-## DESAFIO 1 (intermediário): Desenhando um balão.
+## OPDRACHT 1 (gemiddeld): Teken een ballon
 
-O código abaixo desenha um balão verde na tela.
+De onderstaande code tekent een groene ballon op het scherm.
 
-Execute o código para ver seu resultado.
+Voer de code uit om het resultaat te zien.
 
 ```haskell
 import Playground exposing (..)
 
-tamanhoDoFioDoBalao = 50
+lengteBallonDraad = 50
 
-larguraDoFioDoBalao = 3
+dikteBallonDraad = 3
 
-corDoBalao = green
+kleurBallon = green
 
-raioDoMeuBalao = 60
+radiusVanMijnBallon = 60
 
 main =
   picture
-   (balao raioDoMeuBalao)
+   (ballon radiusVanMijnBallon)
 
 
-balao raio =
-  [ circle corDoBalao raio
-  , rectangle lightRed larguraDoFioDoBalao tamanhoDoFioDoBalao
-    |> move 0 (-raio - (tamanhoDoFioDoBalao / 2))
+ballon radius =
+  [ circle kleurBallon radius
+  , rectangle lightRed dikteBallonDraad lengteBallonDraad
+    |> move 0 (-radius - (lengteBallonDraad / 2))
   ]
 ```
 
-Desta vez optei por definir os valores em variáveis, para poder
-dar nomes e tornar assim o seu significado mais explícito.  
+Deze keer hebben we ervoor gekozen om de waarden in variabelen te definiëren, zodat we ze namen kunnen geven en zo hun betekenis explicieter kunnen maken.
 
-Eu admito, meu balão não se parece muito um balão, mas... tente
-usar sua imaginação! ;)
+Toegegeven, de ballon lijkt niet echt op een ballon, maar... probeer maar een beetje je fantasie te gebruiken! ;)
 
-A parte mais difícil deste código provavelmente é a seguinte linha:
+Het moeilijkste deel van deze code is waarschijnlijk de volgende regel:
 ```haskell
-|> move 0 (-raio - (tamanhoDoFioDoBalao / 2))
+|> move 0 (-radius - (lengteBallonDraad / 2))
 ```
 
-Já vimos um código muito parecido com esse [nos desafios da aula 9](./aula_9_desafios.md).
-Não se preocupe se ainda não conseguir entendê-lo muito bem. Tudo que
-está fazendo é apenas posicionar o fio do balão em sua parte inferior.
+We hebben al eerder code gezien die hier sterk op lijkt [in les 9 opdrachten](./les_9_opdrachten.md).
+Maak je geen zorgen als je het nog steeds niet goed begrijpt. Al wat je doet is gewoon het touwtje van de ballon aan de onderkant plaatsen.
 
-Agora altere o código anterior para que o balão tenha a
-cor verde (*green*) se o seu raio for inferior a 50 e a cor
-vermelha caso seu raio supere este valor.
+Verander nu de vorige code zodat de ballon de
+kleur groen (*green*) krijgt als zijn straal (radius) kleiner is dan 50 en de kleur
+rood als zijn straal deze waarde overschrijdt.
 
-## DESAFIO 2 (intermediário): Adicionando mais uma cor.
+## OPDRACHT 2 (gemiddeld): Nog een kleur toevoegen
 
-Altere a sua resposta do exercício anterior para contemplar
-uma terceira cor, obedecendo as seguintes regras:
+Wijzig je antwoord van de vorige opdracht om een derde kleur toe te voegen, volgens de volgende regels:
 
-- O balão deve ser verde (*green*) caso tenha um raio
-inferior a 50;  
-- O balão deve ser da cor amarela (*yellow*) caso tenha um raio
-superior ou igual a 50 e inferior a 65;  
-- O balão deve ser da cor vermelha (*red*) caso tenha um raio
-superior a 65.
+- De ballon moet groen (*green*) gekleurd zijn als hij een straal heeft van minder dan 50;  
+- De ballon moet geel (*yellow*) gekleurd zijn als hij een straal heeft van 50 of meer, en minder dan 65;  
+- De ballon moet rood (*red*) gekleurd zijn als hij een straal heeft van meer dan 65.  
 
-Depois de escrever o código, altere o valor de *raioDoMeuBalao*
-para que ele fique primeiro verde, depois amarelo e por último
-vermelho.
+Wijzig na het schrijven van de code de waarde van *radiusVanMijnBallon* zodat het eerst groen wordt, dan geel en tenslotte rood.
 
-## E agora?
+## En nu?
 
-Conseguiu fazer todos os exercícios? Teve dificuldade em algum?
+Is het je gelukt om alle oefeningen te doen? Had je moeite met een van hen?
 
-Siga para as [respostas dos desafios](/aula_10_desafios_respostas.html)
-para ver a solução.
+Ga naar [antwoorden van de opdrachten](les_10_antwoorden.html) om de oplossing te zien.
 
