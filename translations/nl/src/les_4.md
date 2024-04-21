@@ -24,7 +24,7 @@ wat we schrijven dat het functies zijn! Dat komt omdat het een
 taal is die het **functionele paradigma** volgt. Er zijn
 verschillende soorten talen (paradigma's): Object-georiënteerd,
 Imperatief, Logisch en ook Functioneel. Elke
-paradigma heeft zijn voor- en nadelen. In deze cursus,
+paradigma heeft zijn voor- en nadelen. In deze cursus
 leer je het **functionele paradigma**.
 
 ## 1.1 - Wiskundige functies
