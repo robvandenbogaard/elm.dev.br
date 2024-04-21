@@ -1,16 +1,16 @@
-# Aula 2: Desafios
+# Lesson 2: Challenges
 
-Para fixar o conhecimento é preciso praticar.
+To consolidate what you learnt it is important to practice.
 
-Nesta seção são propostos alguns desafios para você
-tentar fazer sozinho. É **muuuito** importante que você tente
-resolve-los antes de ver as respostas!
 
-Antes de mais nada, abra o seguinte endereço em uma
-outra aba em seu navegador:
-<a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>.  
+In this section we propose some challenges for you to try out
+yourself. It's **sooooo** important that you try to
+solve them before seeing the answers!
 
-Copie e execute o mesmo código que vimos durante a aula 2:
+First, open the following address into a new tab in your browser:
+<a href='https://elm-lang.org/try' target='_blank'>https://elm-lang.org/try</a>.  
+
+Copy and execute the same code we saw in lesson 2:
 
 ```haskell
 import Playground exposing (..)
@@ -20,65 +20,49 @@ main =
     [ circle green 100 ]
 ```
 
-Agora tente alterar o código para atender os desafios
-propostos abaixo. E não tenha medo de errar! Experimente,
-teste, explore, erre. O pior que pode acontecer é
-aparecer uma mensagem de erro.
+Now, try to change the code to do the exercises below.
+Don't be afraid to make mistakes!
+Experiment, check, explore, make errors. The worst that can happen is that an error message will appear.
 
-## DESAFIO 1 (fácil): Mudando tamanho do círculo.
+## CHALLENGE 1 (easy): Change the size of the circle.
 
-Altere o valor do tamanho do círculo para um
-número que quiser.  
-Pode ser um valor pequeno como 1 ou 2, ou um número
-bem grande como 9999999.  
-Em seguida clique em *Rebuild* e veja o resultado!
+Change the value of the size of the circle to a number you like.
+It can be a value as small as 1 or 2, or a number quite big like 9999999.
+Proceed by clicking *Rebuild* and inspect the result!
 
-## DESAFIO 2 (fácil): Mudando a cor do círculo.
+## CHALLENGE 2 (easy): Change the color of the circle.
 
-Altere o valor da cor do círculo para sua cor
-preferida. Lembre-se que o nome das cores deve ser
-em inglês. Se tiver dificuldades com inglês, consulte a lista
-de cores disponíveis abaixo.
+Change the value of the color of the circle to a color you like.
+Below is a list of the names of colors our *Playground* recognizes.
 
-### Lista de cores:
+### List of colors:
 red, orange, yellow, green, blue, purple, brown,
 lightRed, lightOrange, lightYellow, lightGreen,
 lightBlue, lightPurple, lightBrown, darkRed,
 darkOrange, darkYellow, darkGreen, darkBlue,
 darkPurple, darkBrown, white, lightGrey, grey,
 darkGrey, lightCharcoal, charcoal, darkCharcoal,
-black, lightGray, gray e darkGray.
+black, lightGray, gray and darkGray.
 
-## DESAFIO 3 (avançado): Crie 2 círculos, um dentro do outro.
+## CHALLENGE 3 (advanced): Make 2 circles, one inside another.
 
-Nosso desenho (*picture*) atualmente tem apenas um
-círculo. Tente adicionar um segundo círculo de
-outra cor e um pouco menor que o primeiro.
+Our *picture* currently only has one circle.
+Try to add a second circle with a different color and
+a bit smaller than the first one.
 
-👩‍🏫 __Dicas__:
-- Lembre-se que os símbolos **[** e **]** indicam uma
-lista. Então o segundo círculo deve estar
-dentro destes símbolos.
-- Pense na lista como sendo algo similar à lista
-de compras no supermercado, mas ao invés de
-alimentos, nossa lista vai guardar formas
-geométricas.
-- Utilize uma vírgula para indicar que quer
-criar um segundo círculo dentro da lista de
-formas geométricas.
-- Cuidado com a ordem! Se o círculo menor ficar
-antes do maior na lista, ele ficará atrás do
-maior e não será possível visualiza-lo.
+👩‍🏫 __Hints__:
 
-## DESAFIO 4 (avançado): Crie 4 círculos, um dentro do outro.
+- Remember that for making a list you need to use the symbols **[** and **]**. So the second circle needs to be inbetween those symbols.
+- Think of a list as something similar to a shopping list, but instead of groceries our list will contain geometric shapes.
+- Use a comma to indicate that you want to create a second circle inside the list of geometric shapes.
+- Beware of the ordering! If the small circle is first in the list, it will be painted behind the bigger circle, and you would not be able to see it.
 
-Bastante similar ao desafio anterior, mas desta vez
-devem ser 4 círculos, um dentro do outro, com
-tamanhos e cores diferentes.
+## CHALLENGE 4 (advanced): Make 4 circles, each one inside the others.
 
-## E agora?
+Just like the previous exercise, but this time we need to draw 4 circles, each one inside the others, with different sizes and colors.
 
-Conseguiu fazer todos os exercícios? Teve dificuldade em algum?
+## And now?
 
-Siga para as [respostas dos desafios](/aula_2_desafios_respostas.html)
-para ver a solução.
+Could you do all of these challenges? Was it difficult to finish them?
+Go to [the solutions to the challenges](/lesson_2_challenges_solutions.html)
+to compare your answers.

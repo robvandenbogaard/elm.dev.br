@@ -1,23 +1,19 @@
-# Aula 2: Resposta dos desafios
+# Lesson 2: Answers to the challanges
 
-Abra o seguinte endereço em uma outra aba em seu navegador:
+Open the following address in a new tab in your browser:
 <a href='https://elm-lang.org/try' target='_blank'>htts://elm-lang.org/try</a>.  
 
-Copie a resposta de cada exercício abaixo e
-tente entendê-las antes de pressionar *Rebuild*.  
+Copy the answer to each challenge below and try to understand what they will do before clicking on *Rebuild*.  
 
-## DESAFIO 1 (fácil): Mudando tamanho do círculo.
+## CHALLENGE 1 (easy): Change the size of the circle.
 
-Altere o valor do tamanho do círculo para um
-número que quiser.  
-Pode ser um valor pequeno como 1 ou 2, ou um número
-bem grande como 9999999.  
-Em seguida clique em *Rebuild* e veja o resultado!
+Change the value of the size of the circle to a number you like.
+It can be a value as small as 1 or 2, or a number quite big like 9999999.
+Proceed by clicking *Rebuild* and inspect the result!
 
-### Resposta
+### Solution
 
-Este desafio era muito fácil né?! Bastava alterar
-o valor do tamanho do círculo.
+This challenge is quite easy isn't it? You just need to change the value of the size of the circle.
 
 ```haskell
 import Playground exposing (..)
@@ -27,27 +23,23 @@ main =
     [ circle green 5 ]
 ```
 
-## DESAFIO 2 (fácil): Mudando a cor do círculo.
+## CHALLENGE 2 (easy): Change the color of the circle.
 
-Altere o valor da cor do círculo para sua cor
-preferida. Lembre-se que o nome das cores deve ser
-em inglês. Se tiver dificuldades com inglês, consulte a lista
-de cores disponíveis abaixo.
+Change the value of the color of the circle to a color you like.
+Below is a list of the names of colors our *Playground* recognizes.
 
-### Lista de cores:
+### List of colors:
 red, orange, yellow, green, blue, purple, brown,
 lightRed, lightOrange, lightYellow, lightGreen,
 lightBlue, lightPurple, lightBrown, darkRed,
 darkOrange, darkYellow, darkGreen, darkBlue,
 darkPurple, darkBrown, white, lightGrey, grey,
 darkGrey, lightCharcoal, charcoal, darkCharcoal,
-black, lightGray, gray e darkGray.
+black, lightGray, gray and darkGray.
 
-### Resposta
+### Solution
 
-Este também era bem fácil. Bastava mudar o
-primeiro parâmetro do círculo (*circle*) para outra
-cor.
+This one is also quite easy. You just have to change the first parameter of the *circle* to an other color.
 
 ```haskell
 import Playground exposing (..)
@@ -57,33 +49,20 @@ main =
     [ circle red 5 ]
 ```
 
-## DESAFIO 3 (avançado): Crie 2 círculos, um dentro do outro.
+## CHALLENGE 3 (advanced): Make 2 circles, one inside another.
 
-Nosso desenho (*picture*) atualmente tem apenas um
-círculo. Tente adicionar um segundo círculo de
-outra cor e um pouco menor que o primeiro.
+Our *picture* currently only has one circle.
+Try to add a second circle with a different color and
+a bit smaller than the first one.
 
-👩‍🏫 __Dicas__:
-- Lembre-se que os símbolos **[** e **]** indicam uma
-lista. Então o segundo círculo deve estar
-dentro destes símbolos.
-- Pense na lista como sendo algo similar à lista
-de compras no supermercado, mas ao invés de
-alimentos, nossa lista vai guardar formas
-geométricas.
-- Utilize uma vírgula para indicar que quer
-criar um segundo círculo dentro da lista de
-formas geométricas.
-- Cuidado com a ordem! Se o círculo menor ficar
-antes do maior na lista, ele ficará atrás do
-maior e não será possível visualiza-lo.
-Para desenhar mais de uma figura geométrica,
-separamos cada figura com uma vírgula. No exemplo
-abaixo temos um círculo vermelho dentro de um
-verde.  
-Lembre-se que os símbolos **[** e **]** indicam uma lista.  
+👩‍🏫 __Hints__:
 
-### Resposta
+- Remember that for making a list you need to use the symbols **[** and **]**. So the second circle needs to be inbetween those symbols.
+- Think of a list as something similar to a shopping list, but instead of groceries our list will contain geometric shapes.
+- Use a comma to indicate that you want to create a second circle inside the list of geometric shapes.
+- Beware of the ordering! If the small circle is first in the list, it will be painted behind the bigger circle, and you would not be able to see it. 
+
+### Solution
 
 ```haskell
 import Playground exposing (..)
@@ -94,30 +73,19 @@ main =
     , circule red 50
     ]
 ```
+You should read the code above in the following way:
+Our program (*main*) is defined to consist of a drawing (*picture*) containing a list (indicated by the symbols **[** and **]**) of two shapes, two circles, in this case.
 
-Você deve ser capaz de ler o código acima e interpreta-lo da
-seguinte maneira:  
-A nosso programa (*main*) é definido com sendo um
-desenho (*picture*) que contêm uma lista (indicada
-pelos símbolos **[** e **]**) de duas figuras que, neste caso,
-são dois círculos.
+## CHALLENGE 4 (advanced): Make 4 circles, each one inside the others.
 
-## DESAFIO 4 (avançado): Crie 4 círculos, um dentro do outro.
+Just like the previous exercise, but this time we need to draw 4 circles, each one inside the others, with different sizes and colors.
 
-Bastante similar ao desafio anterior, mas desta vez
-devem ser 4 círculos, um dentro do outro, com
-tamanhos e cores diferentes.
+### Solution
 
-### Resposta
+If challenges 3 and 4 were difficult for you, now that you have seen the solution to challenge 3, you can try to solve challenge 4 before looking at the solution below.
 
-Caso tenha tido dificuldades nos exercícios 3 e 4,
-agora que já viu a resposta do 3, que tal tentar
-fazer o 4 antes de ver a resposta? Em seguida veja
-a resposta abaixo.
-
-Antes de executar o código abaixo, você é capaz
-de imaginar o que ele irá desenhar na tela?
-
+Before executing this code below, can you imagine what it will draw on the screen?
+ 
 ```haskell
 import Playground exposing (..)
 
@@ -130,6 +98,6 @@ main =
     ]
 ```
 
-## E agora?
+## And now?
 
-Siga para a [Aula 3](/aula_3.html) e bons estudos!
+Go to [Lesson 3](/lesson_3.html) and good luck!

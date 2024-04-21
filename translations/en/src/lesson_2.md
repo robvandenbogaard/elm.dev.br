@@ -18,9 +18,8 @@ this course should read:
 import Playground exposing (..)
 ```
 
-The word *import* significa importar em inglês.
-This line is necessary because it allows you to use code
-defined in *Playground*. In lesson 5 I will explain it in
+The word *import* means that we will bring something into our program.
+This line says that you can use the words defined in the  *Playground* package. In lesson 5 I will explain it in
 more detail, but without it, drawing on the screen would not be possible.
 That is why all programs in this course start with this line..
 
@@ -123,13 +122,10 @@ rectangles, hexagons and many other shapes.
 In the previous example a *circle* was used.
 To draw a circle it is necessary to specify 2 **parameters**:
 The first parameter defines which color it should be.
-O primeiro parâmetro representa sua cor. No
-exemplo, foi utilizada a cor verde (*green*).
-O segundo indica o diâmetro do círculo. Neste caso, 100.
+For instance, the color *green* is used.
+The second parameter defines the diameter (the size) of the circle. 100, in this case.
 
-## E agora?
+## What's next?
 
-Agora chegou a hora de você colocar as mãos na massa
-e praticar um pouco!
-
-Siga para os [desafios da Aula 2](/aula_2_desafios.html) e bons estudos!
+Now is the time to get your hands dirty and practice a bit!
+Move on to the [challenges of Lesson 2](/lesson_2_challenges.html) - you'll do great!
